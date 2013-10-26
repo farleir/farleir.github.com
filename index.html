@@ -21,8 +21,8 @@
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
-           <!--<link rel="stylesheet" href="css/style-custom.css" />-->
 		</noscript>
+        <link rel="stylesheet" href="css/style-custom.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 		<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
@@ -41,8 +41,8 @@
 			</nav>
 
 		<!-- Home -->
-			<div class="wrapper wrapper-style1 wrapper-first">
-				<article class="container" id="top">
+			<div class="wrapper wrapper-style1 wrapper-first"  id="top">
+				<article class="container">
 					<div class="row">
 						<div class="4u">
 							<span class="me image image-full"><img src="images/farleir.jpg" alt="Foto Farleir em Preto e Branco" /></span>
@@ -51,7 +51,7 @@
 					       <h1>Hello. I'm <strong>Farleir</strong>.</h1>
 						      <p>Yes, just it. <strong>This is my first name. </strong>It's kind of an <i>unique</i> name in the World, so I decide to register this domain. As you will see, <a href="http://goo.gl/INBBAC">I</a> work with IT and here you can check out what I do, why I do and what I think when I am doing...
 						      </p>
-					           <a href="#work" class="button button-big">Read more clicking here</a>
+					           <a href="#work" class="button button-big">Read more going down here</a>
 				        </div>
 					</div>
 				</article>
@@ -62,8 +62,8 @@
 <script async data-blogvio-composition="52620b151d8a0c6074000005" data-width="940px" data-height="31" src="http://blogvio.com/embedder.js"></script>
 -->
 		<!-- Work -->
-			<div class="wrapper wrapper-style2">
-				<article id="work">
+			<div class="wrapper wrapper-style2"  id="work">
+				<article>
 					<header>
 						<h2>Find a job you love...</h2>
 						<span>...and you will never have to work!</span>
@@ -104,8 +104,8 @@
 			</div>
 
 		<!-- Portals -->
-			<div class="wrapper wrapper-style3">
-				<article id="blogs">
+			<div class="wrapper wrapper-style3"  id="blogs">
+				<article>
 					<header>
 						<h2>I try to do many things at the same time</h2>
 						<span>But sometimes it doesn't work at all!</span>
@@ -116,48 +116,32 @@
 							</div>
 						</div>
 						<div class="row">
-                            <div class="4u">
-								<article class="box box-style2">
-									<a class="icon featured-icon icon-twitter" href="http://goo.gl/vLJpDJ" target="_blank"></a>
-									<h3><a href="http://goo.gl/vLJpDJ" target="_blank">My Twitter</a></h3>
-                                    <p>Micro Blog</p>
-									<!--<p><a class="twitter-timeline" href="http://goo.gl/vLJpDJ" data-widget-id="387075862606004224" data-tweet-limit="5" data-chrome="noheader noborders noscrollbar nofooter transparent">@farleir tweets</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>-->
-								</article>
-							</div>
+                            
 							<div class="4u">
 								<article class="box box-style2">
 									<a class="icon featured-icon icon-wordpress" href="http://goo.gl/CFPJFa" target="_blank"></a>
 									<h3><a href="http://goo.gl/CFPJFa" target="_blank">My WordPress</a></h3>
 									<p>Technology Blog</p>
+                                <iframe width="100%" height="1250" src="//farleir.wordpress.com" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 								</article>
 							</div>
+                            
+                            <div class="4u">
+								<article class="box box-style2">
+									<a class="icon featured-icon icon-twitter" href="http://goo.gl/vLJpDJ" target="_blank"></a>
+									<h3><a href="http://goo.gl/vLJpDJ" target="_blank">My Twitter</a></h3>
+                                    <p>Micro Blog</p>
+									<a class="twitter-timeline" href="http://goo.gl/vLJpDJ" data-widget-id="387075862606004224" data-tweet-limit="9" data-chrome="noheader noborders noscrollbar nofooter transparent">@farleir tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+								</article>
+							</div>
+                            
 							<div class="4u">
 								<article class="box box-style2">
 										<a class="icon featured-icon icon-tumblr" href="http://goo.gl/tlWJft" target="_blank"></a>
 										<h3><a href="http://goo.gl/tlWJft" target="_blank">My Tumblr</a></h3>
-                                    <p>Personal Blog</p>
-										<!--<p><script type="text/javascript" src="http://tumblr.farleir.com/js?num=1"></script>
-                                        
-                                            <script type="text/javascript">
-                                              //try to remove img and iframe src asap to avoid image loading
-                                              $('.tumblr_posts .tumblr_photo_post img, .tumblr_posts .html_photoset iframe').each(function(index, element) 
-                                              {
-                                                $(element).attr('data-src', $(element).attr('src'))
-                                                $(element).removeAttr('src').addClass('superload')
-                                              })
-                                            
-                                            //load src when the page is loaded
-                                            $(window).load(function(e) 
-                                            {
-                                              $('.tumblr_posts .tumblr_photo_post img, .tumblr_posts .html_photoset iframe').each(function(index, element) 
-                                              {
-                                                $(element).attr('src', $(element).attr('data-src'))
-                                                $(element).removeAttr('data-src').removeClass('superload')
-                                              })
-                                            }) 
-                                            </script>
-                                    </p>-->
+                                        <p>Personal Blog</p>
+										<script type="text/javascript" src="http://tumblr.farleir.com/js?num=1"></script>
 								</article>
 							</div>
 						</div>
@@ -165,30 +149,29 @@
 						<div class="row" id="social">
 							<div class="4u">
 								<article class="box box-style2">
-									<a href="" class="icon featured-icon icon-google-plus"></a>
-									<h3><a href="#">Google Plus</a></h3>
+									<a href="http://goo.gl/ZKbroF" class="icon featured-icon icon-google-plus"></a>
+									<h3><a href="http://goo.gl/ZKbroF" target="_blank">Google Plus</a></h3>
                                     <p>Personal interests</p>
-                                    
-<!--<div class="g-person" data-width="240" data-href="//plus.google.com/100142983010733508449" data-rel="author"></div>
-                                   
-<div class="g-post" data-width="240" data-href="https://plus.google.com/100142983010733508449/posts/2sf537Pp5NC"></div>-->
+                                    <div class="g-person" data-width="240" data-href="//plus.google.com/100142983010733508449" data-rel="author"></div>
+                                    <a href="https://plus.google.com/100142983010733508449/posts/AqTcbwdD4kF"><img src="https://lh3.googleusercontent.com/-JaHdVwOKnw0/UmtiJvN9OmI/AAAAAAAAdS8/FoqglFKn9s4/w346-h519/IMG_4156-MOTION.gif"></a>
 								</article>
 							</div>
 							<div class="4u">
 								<article class="box box-style2">
-									<a href="#" class="icon featured-icon icon-youtube"></a>
-									<h3><a href="#">Youtube</a></h3>
-									<p>ArDrone Videos</p>
-                                    <!--<iframe width="100%" height="315" src="//www.youtube.com/embed/p7fcre36BrU" frameborder="0" allowfullscreen></iframe>-->
+									<a href="http://goo.gl/JyG4a2" target="_blank" class="icon featured-icon icon-youtube"></a>
+									<h3><a href="http://goo.gl/JyG4a2">Youtube</a></h3>
+									<p>General Videos</p>
+                                    <iframe width="100%" height="315" src="//www.youtube.com/embed/p7fcre36BrU" frameborder="0" allowfullscreen></iframe>
+                                    <iframe width="100%" height="315" src="//www.youtube.com/embed/5nnNDMcKtYw" frameborder="0" allowfullscreen></iframe>
 								</article>
 							</div>
 							<div class="4u">
 								<article class="box box-style2">
-									<a href="#" class="icon featured-icon icon-instagram"></a>
-									<h3><a href="#">Instagram</a></h3>
+									<a href="http://goo.gl/CBDB2Q" class="icon featured-icon icon-instagram"></a>
+									<h3><a href="http://goo.gl/CBDB2Q">Instagram</a></h3>
 									<p>Food Pics</p>
-                                    <!--<img src="//instagram.com/p/eBnFi8qmIr/media/?size=m" width="100%">
-                                    <iframe src="//instagram.com/p/eBnf3_qmJX/embed/" width="100%" height="500" frameborder="0" scrolling="no" allowtransparency="true"></iframe>-->
+                                    <a href="http://goo.gl/AdAn4v" target="_blank"><img src="//instagram.com/p/eBnFi8qmIr/media/?size=m" width="100%"></a>
+                                    <iframe src="//instagram.com/p/eBnf3_qmJX/embed/" width="100%" height="500px" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 								</article>
 							</div>
 						</div>
@@ -202,8 +185,8 @@
 			</div>
 
 		<!-- Contact -->
-			<div class="wrapper wrapper-style4">
-				<article id="contact" class="container small">
+			<div class="wrapper wrapper-style4" id="contact">
+				<article class="container small">
 					<header>
 						<h2>Want to contact me? Get in touch!</h2>
 						<span>Before I finish the form, use the e-mail pls: </span>

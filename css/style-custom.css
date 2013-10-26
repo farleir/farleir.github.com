@@ -1,0 +1,42 @@
+.tumblr_title {
+    
+            font-family: Helvetica, Arial;
+            font-size: 2em;
+            color:#7f8c8d;
+            border-bottom: 1px solid; 
+            border-bottom-color: #95a5a6;
+}
+
+.tumblr_body {
+    
+            text-align:left;
+            line-height:1.8em;
+}
+
+.tumblr_body p {
+    
+            margin-bottom:0.8em;
+}
+
+.tumblr_body p em {
+    
+            font-family: Helvetica, Arial;
+            font-size: 1em;
+}
+
+.tumblr_body p img {
+    
+            max-width: 100%;
+            height: auto;
+            width: auto\9; /* ie8 */
+}
+
+.read_more_container {
+            
+            text-align:right;
+}
+
+#social div article img {
+    
+            width: 100%;
+}
