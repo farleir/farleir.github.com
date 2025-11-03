@@ -1,278 +1,510 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Farleir.com Hub</title>
+    <title>Farleir.com | Hub Digital</title>
+    <!-- Carrega o Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carrega a fonte Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&family=Inter%3Awght%40400%3B500%3B700%3B900&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
     <style>
-      :root {
-        --background-color: #121212;
-        --primary-color: #1a1a1a;
-        --secondary-color: #2a2a2a;
-        --text-color: #ffffff;
-        --accent-color: #007bff;
-      }
+      /* Estilo base para a fonte */
       body {
         font-family: "Inter", sans-serif;
-        background-color: var(--background-color);
-        color: var(--text-color);
-        margin: 0;
-        display: flex;
+        /* Evita barra de rolagem horizontal causada pela animação */
+        overflow-x: hidden;
       }
-      #canvas {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-      }
-      .sidebar {
-        width: 250px;
-        background-color: var(--primary-color);
-        padding: 20px;
-        height: 100vh;
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-      }
-      .sidebar .profile {
-        text-align: center;
-        margin-bottom: 30px;
-      }
-      .sidebar .profile img {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        margin-bottom: 10px;
-      }
-      .sidebar .profile h1 {
-        font-size: 1.2em;
-        margin: 0;
-      }
-      .sidebar .profile p {
-        font-size: 0.9em;
-        color: #aaa;
-      }
-      .sidebar nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      .sidebar nav ul li a {
-        color: var(--text-color);
-        text-decoration: none;
-        display: block;
-        padding: 10px 15px;
-        border-radius: 5px;
-        margin-bottom: 5px;
-        transition: background-color 0.3s;
-      }
-      .sidebar nav ul li a:hover,
-      .sidebar nav ul li a.active {
-        background-color: var(--secondary-color);
-      }
-      .main-content {
-        margin-left: 250px;
-        padding: 40px;
-        width: calc(100% - 250px);
-      }
-      .launchpad {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        margin-bottom: 40px;
-      }
-      .card {
-        background-color: var(--primary-color);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s;
-      }
-      .card:hover {
-        transform: translateY(-5px);
-      }
-      .card-link {
-        text-decoration: none;
-        color: inherit;
-      }
-      .card h2 {
-        margin-top: 0;
-        color: var(--accent-color);
-      }
-      .content-section {
-        background-color: var(--primary-color);
-        padding: 30px;
-        border-radius: 10px;
-        margin-bottom: 40px;
-      }
-      .social-icons {
-        display: flex;
-        gap: 15px;
-      }
-      .social-icons a {
-        font-size: 1.5em;
-        color: var(--text-color);
-        transition: color 0.3s;
-      }
-      .social-icons a:hover {
-        color: var(--accent-color);
+      /* Remove o anel de foco padrão do browser */
+      *:focus {
+        outline: none;
+        box-shadow: none;
       }
     </style>
   </head>
-  <body>
-    <canvas id="canvas"></canvas>
-    <aside class="sidebar">
-      <div class="profile">
-        <img
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0GnAzzKFY_3FnGjXj8VKTK4gGdSmkOINv6H2tEmBwjUNx5ZYqFeZE_A9nXFvS87tC_OUOuGIGcI7xPRIw5jGo-KKihBF5HUAQBS4tLAv81W6gi9GjbDjTsrnx3yv_5MVmKM1rfbqNRjE190IVNo0PH8YtO8BSZAKRHC2-YAVmYmQA3kO8Mc10ita-jknqUNkNa1ZoxEqrTWOBT_aSQPJVzuejfZuC7w2muuKKLunq2_9mIF0MoYny63_QupkJI-OlbtxXWJbDprE"
-          alt="Farleir Luís Minozzo"
-        />
-        <h1>Farleir Luís Minozzo</h1>
-        <p>IT Professional</p>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#" class="active">Início (Hub)</a></li>
-          <li><a href="https://farleir.dev">Portfólio (.dev)</a></li>
-          <li><a href="https://farleir.app">Aplicativos (.app)</a></li>
-          <li><a href="#about">Sobre Mim</a></li>
-          <li><a href="#connect">Redes Sociais</a></li>
-        </ul>
-      </nav>
-    </aside>
-
-    <main class="main-content">
-      <section class="launchpad">
-        <a href="https://farleir.dev" class="card-link">
-          <div class="card">
-            <h2>Portfólio (.dev)</h2>
-            <p>Blog técnico, artigos e estudos de caso.</p>
-          </div>
-        </a>
-        <a href="https://farleir.app" class="card-link">
-          <div class="card">
-            <h2>Aplicativos (.app)</h2>
-            <p>Projetos SaaS como o PesquisadorA.</p>
-          </div>
-        </a>
-        <a href="https://github.com/farleir" class="card-link">
-          <div class="card">
-            <h2>Projetos</h2>
-            <p>Explore meus repositórios no GitHub.</p>
-          </div>
-        </a>
-      </section>
-
-      <section id="about" class="content-section">
-        <h2>Sobre Mim</h2>
-        <p>
-          Sou um profissional de TI apaixonado por tecnologia e inovação. Com experiência em desenvolvimento de software e análise de sistemas, busco constantemente novos desafios e oportunidades para aplicar meus conhecimentos e habilidades.
-        </p>
-      </section>
-
-      <section id="connect" class="content-section">
-        <h2>Conecte-se</h2>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/farleir/" target="_blank" title="LinkedIn"><img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn"></a>
-          <a href="https://github.com/farleir" target="_blank" title="GitHub"><img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub"></a>
-          <a href="https://twitter.com/farleir" target="_blank" title="Twitter"><img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter"></a>
+  <body class="bg-gray-950 text-gray-100">
+    <div class="flex min-h-screen w-full">
+      <!-- ===== BARRA LATERAL (Sidebar) ===== -->
+      <aside
+        class="flex w-64 flex-col bg-gray-900 p-6 shadow-2xl"
+        style="z-index: 10"
+      >
+        <!-- Seção do Perfil -->
+        <div class="flex flex-col items-center">
+          <img
+            class="h-28 w-28 rounded-full border-4 border-gray-700 object-cover shadow-lg"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0GnAzzKFY_3FnGjXj8VKTK4gGdSmkOINv6H2tEmBwjUNx5ZYqFeZE_A9nXFvS87tC_OUOuGIGcI7xPRIw5jGo-KKihBF5HUAQBS4tLAv81W6gi9GjbDjTsrnx3yv_5MVmKM1rfbqNRjE190IVNo0PH8YtO8BSZAKRHC2-YAVmYmQA3kO8Mc10ita-jknqUNkNa1ZoxEqrTWOBT_aSQPJVzuejfZuC7w2muuKKLunq2_9mIF0MoYny63_QupkJI-OlbtxXWJbDprE"
+            alt="Foto de Farleir Luís Minozzo"
+          />
+          <h1 class="mt-4 text-xl font-bold text-white">
+            Farleir Luís Minozzo
+          </h1>
+          <p class="text-md text-blue-400">Platform & AI Engineer</p>
         </div>
-      </section>
-    </main>
 
+        <!-- Navegação Principal -->
+        <nav class="mt-10 flex flex-col space-y-3">
+          <a
+            href="#"
+            class="flex items-center space-x-3 rounded-lg bg-blue-600 px-4 py-2 text-white transition-colors duration-200"
+            title="Página atual"
+          >
+            <!-- Ícone: Início -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span class="font-medium">Início (Hub)</span>
+          </a>
+
+          <a
+            href="https://farleir.dev"
+            target="_blank"
+            class="flex items-center space-x-3 rounded-lg px-4 py-2 text-gray-400 transition-colors duration-200 hover:bg-gray-800 hover:text-white"
+            title="Visitar farleir.dev"
+          >
+            <!-- Ícone: Portfólio (.dev) -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            <span class="font-medium">Portfólio (.dev)</span>
+          </a>
+
+          <a
+            href="https://farleir.app"
+            target="_blank"
+            class="flex items-center space-x-3 rounded-lg px-4 py-2 text-gray-400 transition-colors duration-200 hover:bg-gray-800 hover:text-white"
+            title="Visitar farleir.app"
+          >
+            <!-- Ícone: Aplicativos (.app) -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+            <span class="font-medium">Aplicativos (.app)</span>
+          </a>
+
+          <a
+            href="https://status.farleir.com"
+            target="_blank"
+            class="flex items-center space-x-3 rounded-lg px-4 py-2 text-gray-400 transition-colors duration-200 hover:bg-gray-800 hover:text-white"
+            title="Visitar status.farleir.com"
+          >
+            <!-- Ícone: Status Page -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 12h-4l-3 9L9 3l-3 9H2"
+              ></path>
+            </svg>
+            <span class="font-medium">Status Page</span>
+          </a>
+        </nav>
+
+        <!-- Links Sociais -->
+        <div class="mt-auto flex justify-center space-x-6">
+          <a
+            href="https://www.linkedin.com/in/farleir/"
+            target="_blank"
+            title="LinkedIn"
+            class="text-gray-500 transition-colors duration-200 hover:text-blue-500"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://github.com/farleir"
+            target="_blank"
+            title="GitHub"
+            class="text-gray-500 transition-colors duration-200 hover:text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.109-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </aside>
+
+      <!-- ===== CONTEÚDO PRINCIPAL (Launchpad) ===== -->
+      <main class="relative flex-1 p-6 lg:p-12">
+        <!-- Canvas de Partículas (Fundo) -->
+        <canvas
+          id="particle-canvas"
+          class="absolute left-0 top-0 h-full w-full opacity-20"
+          style="z-index: 1"
+        ></canvas>
+
+        <!-- Conteúdo em Cima do Canvas -->
+        <div class="relative" style="z-index: 2">
+          <h1
+            class="text-4xl font-bold text-white drop-shadow-md lg:text-5xl"
+          >
+            Bem-vindo ao Hub
+          </h1>
+          <p class="mt-2 text-lg text-gray-300 drop-shadow-md lg:text-xl">
+            Um ponto de partida para meus projetos, aplicações e portfólio.
+          </p>
+
+          <!-- Grid de Cards -->
+          <div
+            class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+          >
+            <!-- Card 1: Portfólio (.dev) -->
+            <a
+              href="https://farleir.dev"
+              target="_blank"
+              class="group block transform rounded-xl border border-gray-700 bg-gray-900/50 p-6 backdrop-blur-sm shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:shadow-2xl"
+            >
+              <div
+                class="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-600 text-white shadow-lg transition-colors duration-300 group-hover:bg-blue-500"
+              >
+                <!-- Ícone -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="mt-4 text-2xl font-bold text-white">
+                Portfólio Técnico (.dev)
+              </h3>
+              <p class="mt-2 text-gray-300">
+                Artigos, estudos de caso e documentação sobre engenharia de
+                plataforma, IA e nuvem.
+              </p>
+            </a>
+
+            <!-- Card 2: Aplicativos (.app) -->
+            <a
+              href="https://farleir.app"
+              target="_blank"
+              class="group block transform rounded-xl border border-gray-700 bg-gray-900/50 p-6 backdrop-blur-sm shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-green-500 hover:shadow-2xl"
+            >
+              <div
+                class="flex h-12 w-12 items-center justify-center rounded-lg bg-green-600 text-white shadow-lg transition-colors duration-300 group-hover:bg-green-500"
+              >
+                <!-- Ícone -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <h3 class="mt-4 text-2xl font-bold text-white">
+                Projetos & SaaS (.app)
+              </h3>
+              <p class="mt-2 text-gray-300">
+                Aplicações, experimentos com IA (Gemini) e produtos SaaS
+                hospedados no GCP.
+              </p>
+            </a>
+
+            <!-- Card 3: Status Page -->
+            <a
+              href="https://status.farleir.com"
+              target="_blank"
+              class="group block transform rounded-xl border border-gray-700 bg-gray-900/50 p-6 backdrop-blur-sm shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-yellow-500 hover:shadow-2xl"
+            >
+              <div
+                class="flex h-12 w-12 items-center justify-center rounded-lg bg-yellow-600 text-white shadow-lg transition-colors duration-300 group-hover:bg-yellow-500"
+              >
+                <!-- Ícone -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 12h-4l-3 9L9 3l-3 9H2"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="mt-4 text-2xl font-bold text-white">Status Page</h3>
+              <p class="mt-2 text-gray-300">
+                Monitoramento em tempo real do uptime e performance dos
+                serviços (via Cloudflare).
+              </p>
+            </a>
+
+            <!-- Card 4: Sobre Mim (Exemplo de seção interna) -->
+            <div
+              class="group block transform rounded-xl border border-gray-700 bg-gray-900/50 p-6 backdrop-blur-sm shadow-lg transition-all duration-300 md:col-span-2 lg:col-span-1"
+            >
+              <div
+                class="flex h-12 w-12 items-center justify-center rounded-lg bg-purple-600 text-white shadow-lg transition-colors duration-300 group-hover:bg-purple-500"
+              >
+                <!-- Ícone -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <h3 class="mt-4 text-2xl font-bold text-white">Sobre Mim</h3>
+              <p class="mt-2 text-gray-300">
+                Especialista em infraestrutura de nuvem, automação e IA. Foco
+                em criar soluções escaláveis e resilientes.
+                <br />
+                <span class="mt-1 inline-block text-sm text-gray-400"
+                  >(Brasileiro com cidadania Italiana)</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Fim do Grid de Cards -->
+        </div>
+      </main>
+    </div>
+
+    <!-- ===== SCRIPT DO CANVAS DE PARTÍCULAS ===== -->
     <script>
-      const canvas = document.getElementById("canvas");
+      const canvas = document.getElementById("particle-canvas");
       const ctx = canvas.getContext("2d");
+      let particlesArray;
 
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-
-      let particles = [];
-
-      const particleConfig = {
-        count: 100,
-        speed: 0.5,
-        maxDistance: 120,
-        color: "rgba(0, 123, 255, 0.5)",
+      // Objeto para o mouse (inicialmente fora da tela)
+      const mouse = {
+        x: null,
+        y: null,
+        radius: 100, // Raio de interação do mouse
       };
 
+      window.addEventListener("mousemove", function (event) {
+        // Pega a posição do mouse relativa ao elemento 'main'
+        const mainRect = canvas.parentElement.getBoundingClientRect();
+        mouse.x = event.clientX - mainRect.left;
+        mouse.y = event.clientY - mainRect.top;
+      });
+
+      window.addEventListener("mouseout", function () {
+        mouse.x = null;
+        mouse.y = null;
+      });
+
+      // Classe da Partícula
       class Particle {
-        constructor() {
-          this.x = Math.random() * canvas.width;
-          this.y = Math.random() * canvas.height;
-          this.vx = (Math.random() - 0.5) * particleConfig.speed;
-          this.vy = (Math.random() - 0.5) * particleConfig.speed;
+        constructor(x, y, directionX, directionY, size, color) {
+          this.x = x;
+          this.y = y;
+          this.directionX = directionX;
+          this.directionY = directionY;
+          this.size = size;
+          this.color = color;
         }
 
-        update() {
-          this.x += this.vx;
-          this.y += this.vy;
-
-          if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
-          if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
-        }
-
+        // Desenha a partícula
         draw() {
           ctx.beginPath();
-          ctx.arc(this.x, this.y, 2, 0, Math.PI * 2);
-          ctx.fillStyle = particleConfig.color;
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+          ctx.fillStyle = this.color;
           ctx.fill();
         }
-      }
 
-      function createParticles() {
-        for (let i = 0; i < particleConfig.count; i++) {
-          particles.push(new Particle());
+        // Atualiza a posição e verifica bordas
+        update() {
+          // Verifica bordas do canvas
+          if (this.x > canvas.width || this.x < 0) {
+            this.directionX = -this.directionX;
+          }
+          if (this.y > canvas.height || this.y < 0) {
+            this.directionY = -this.directionY;
+          }
+
+          // Move a partícula
+          this.x += this.directionX;
+          this.y += this.directionY;
+
+          // Desenha
+          this.draw();
         }
       }
 
-      function handleParticles() {
-        for (let i = 0; i < particles.length; i++) {
-          particles[i].update();
-          particles[i].draw();
+      // Inicializa o array de partículas
+      function init() {
+        // Redimensiona o canvas para preencher o container 'main'
+        const mainElement = canvas.parentElement;
+        canvas.width = mainElement.offsetWidth;
+        canvas.height = mainElement.offsetHeight;
 
-          for (let j = i + 1; j < particles.length; j++) {
-            const dx = particles[i].x - particles[j].x;
-            const dy = particles[i].y - particles[j].y;
-            const distance = Math.sqrt(dx * dx + dy * dy);
+        particlesArray = [];
+        let numberOfParticles = (canvas.height * canvas.width) / 9000;
+        for (let i = 0; i < numberOfParticles; i++) {
+          let size = Math.random() * 2 + 1; // Tamanho de 1 a 3
+          let x =
+            Math.random() * (canvas.width - size * 2 - size * 2) + size * 2;
+          let y =
+            Math.random() * (canvas.height - size * 2 - size * 2) + size * 2;
+          let directionX = Math.random() * 0.4 - 0.2; // Velocidade X
+          let directionY = Math.random() * 0.4 - 0.2; // Velocidade Y
+          let color = "rgba(100, 150, 255, 0.5)"; // Cor azulada
 
-            if (distance < particleConfig.maxDistance) {
+          particlesArray.push(
+            new Particle(x, y, directionX, directionY, size, color)
+          );
+        }
+      }
+
+      // Conecta as partículas com linhas
+      function connect() {
+        let opacityValue = 1;
+        for (let a = 0; a < particlesArray.length; a++) {
+          for (let b = a + 1; b < particlesArray.length; b++) {
+            let distance =
+              (particlesArray[a].x - particlesArray[b].x) *
+                (particlesArray[a].x - particlesArray[b].x) +
+              (particlesArray[a].y - particlesArray[b].y) *
+                (particlesArray[a].y - particlesArray[b].y);
+
+            // Desenha linha entre partículas próximas
+            if (distance < (canvas.width / 7) * (canvas.height / 7)) {
+              opacityValue = 1 - distance / 20000;
+              ctx.strokeStyle = "rgba(100, 150, 255," + opacityValue + ")";
+              ctx.lineWidth = 1;
               ctx.beginPath();
-              ctx.moveTo(particles[i].x, particles[i].y);
-              ctx.lineTo(particles[j].x, particles[j].y);
-              ctx.strokeStyle = `rgba(0, 123, 255, ${
-                1 - distance / particleConfig.maxDistance
-              })`;
-              ctx.lineWidth = 0.5;
+              ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+              ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
               ctx.stroke();
+            }
+          }
+
+          // Interação com o mouse
+          if (mouse.x) {
+            let mouseDistance =
+                (particlesArray[a].x - mouse.x) *
+                  (particlesArray[a].x - mouse.x) +
+                (particlesArray[a].y - mouse.y) *
+                  (particlesArray[a].y - mouse.y);
+
+            if (mouseDistance < mouse.radius * mouse.radius) {
+                opacityValue = 1 - mouseDistance / (mouse.radius * mouse.radius);
+                ctx.strokeStyle = "rgba(200, 255, 255," + opacityValue + ")"; // Linha mais clara para o mouse
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+                ctx.lineTo(mouse.x, mouse.y);
+                ctx.stroke();
             }
           }
         }
       }
 
+      // Loop de animação
       function animate() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        handleParticles();
         requestAnimationFrame(animate);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        for (let i = 0; i < particlesArray.length; i++) {
+          particlesArray[i].update();
+        }
+        connect();
       }
 
-      createParticles();
-      animate();
-
-      window.addEventListener("resize", () => {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        particles = [];
-        createParticles();
+      // Recria as partículas ao redimensionar a janela
+      window.addEventListener("resize", function () {
+        // Pequeno delay para o layout do Tailwind se ajustar
+        setTimeout(function () {
+          init();
+        }, 100);
       });
+
+      // Inicia a animação
+      init();
+      animate();
     </script>
   </body>
 </html>
