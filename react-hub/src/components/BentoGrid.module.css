@@ -215,6 +215,124 @@
   padding: 0 0.5rem;
 }
 
+/* Skills Grid */
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.skillCategory {
+  padding: 1.5rem;
+}
+
+.skillCategory h4 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  opacity: 0.8;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skillTag {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Photography Marquee */
+.photoMarquee {
+  overflow: hidden;
+  padding: 2rem 0;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marqueeInner {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+.photoThumb {
+  width: 300px;
+  height: 200px;
+  border-radius: 1rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.photoThumb:hover {
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.photoThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 1rem)); }
+}
+
+/* Iframe Section */
+.iframeContainer {
+  position: relative;
+  height: 600px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: white;
+}
+
+.iframeOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(to top, var(--bg-primary), transparent);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  pointer-events: none;
+}
+
+.iframeOverlay a {
+  pointer-events: auto;
+}
+
+.badge {
+  background: var(--accent-primary);
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 @media (max-width: 640px) {
   .grid {
     grid-template-columns: 1fr;
@@ -224,5 +342,8 @@
   }
   .title {
     font-size: 2rem;
+  }
+  .iframeContainer {
+    height: 400px;
   }
 }
