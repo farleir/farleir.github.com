@@ -1,35 +1,42 @@
 import React from 'react';
 import { Code, Briefcase, ExternalLink } from 'lucide-react';
+import { HERO_CONTENT } from '../data/hubContent';
 import styles from './Hero.module.css';
 
 const Hero = () => {
   return (
     <section className={`${styles.hero} animate-fade-in`}>
       <img 
-        src="https://avatars.githubusercontent.com/u/492476?v=4" 
-        alt="Farleir Luís Minozzo" 
+        src={HERO_CONTENT.avatarUrl} 
+        alt={`${HERO_CONTENT.name} Avatar`} 
         className={styles.avatar} 
+        loading="lazy"
       />
       <h1 className={styles.title}>
-        Hello. I'm <span className="text-gradient-accent">Farleir</span>.
+        Hello. I'm <span className="text-gradient-accent">{HERO_CONTENT.name}</span>.
       </h1>
       <p className={styles.subtitle}>
-        Expert em Infraestrutura de TI, Cloud Architect e Governança de Dados (LGPD/IA).
+        {HERO_CONTENT.tagline}
       </p>
       
       <div className={styles.actions}>
-        <a href="https://go.farleir.com/linkedin" target="_blank" rel="noopener noreferrer" className={styles.btnPrimary}>
-          <Briefcase size={20} />
-          LinkedIn
-        </a>
-        <a href="https://go.farleir.com/go-footer-github" target="_blank" rel="noopener noreferrer" className={styles.btnSecondary}>
-          <Code size={20} />
-          GitHub
-        </a>
-        <a href="https://go.farleir.com/lattes" target="_blank" rel="noopener noreferrer" className={styles.btnSecondary}>
-          <ExternalLink size={20} />
-          Lattes
-        </a>
+        {HERO_CONTENT.socialLinks.map((link, index) => {
+          const Icon = link.label === 'LinkedIn' ? Briefcase : 
+                       link.label === 'GitHub' ? Code : ExternalLink;
+          
+          return (
+            <a 
+              key={index}
+              href={link.url} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className={link.type === 'primary' ? styles.btnPrimary : styles.btnSecondary}
+            >
+              <Icon size={20} />
+              {link.label}
+            </a>
+          );
+        })}
       </div>
     </section>
   );
