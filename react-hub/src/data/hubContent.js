@@ -20,7 +20,7 @@ import {
 
 export const HERO_CONTENT = {
   name: 'Farleir Luís Minozzo',
-  avatarUrl: './src/assets/avatar_premium.png',
+  avatarUrl: '/avatar_premium.png',
   tagline: 'Cloud Architect | IT Infrastructure Expert | Data Governance',
   summary: 'Com mais de 15 anos de carreira, construo ecossistemas de tecnologia robustos, escaláveis e seguros por design. Especialista em arquitetura multi-cloud (AWS, Azure, GCP) com foco em governança (ITIL, COBIT) e conformidade (LGPD, GDPR).',
   socialLinks: [
