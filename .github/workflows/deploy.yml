@@ -12,9 +12,9 @@ permissions:
   id-token: write
 
 env:
-  # Silencia avisos de depreciação conforme sugerido pelo log de erro
+  # Silencia avisos de depreciação conforme sugerido pelo log original de erro.
+  # Removida flag ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION por causar conflito.
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
 jobs:
   build:
@@ -27,7 +27,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          # Cache desativado para garantir um build limpo sem conflitos de diretório
 
       - name: Install and Build
         run: |
