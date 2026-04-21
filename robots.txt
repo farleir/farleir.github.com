@@ -1,13 +1,12 @@
+# Professional robots.txt for Farleir.com
 User-agent: *
 Allow: /
-Disallow: /dist/
-Disallow: /node_modules/
 
-# AI Crawlers instructions
+# Specifically allow major AI crawlers
 User-agent: GPTBot
 Allow: /
 
-User-agent: ChatGPT-User
+User-agent: Claude-Web
 Allow: /
 
 User-agent: Google-Extended
