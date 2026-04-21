@@ -8,6 +8,9 @@ on:
 permissions:
   contents: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Silencia o aviso de depreciação conforme sugerido pelo log
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -18,24 +21,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20.18.0'
+          node-version: '22' # Node 22 LTS para máxima estabilidade com Vite 6
 
-      - name: Install Dependencies
+      - name: Install and Build
         working-directory: ./react-hub
         run: |
-          npm install --legacy-peer-deps --verbose > npm_error.log 2>&1 || (
-            echo "FAILED - CAPTURING LOG"
-            git config --global user.name "GitHub Action Error Bot"
-            git config --global user.email "error-bot@github.com"
-            git add npm_error.log
-            git commit -m "Capture Build Error: $(date)"
-            git push origin master
-            exit 1
-          )
-
-      - name: Build Project
-        working-directory: ./react-hub
-        run: npm run build
+          npm install --legacy-peer-deps
+          npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
