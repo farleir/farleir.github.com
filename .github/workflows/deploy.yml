@@ -4,26 +4,30 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 env:
-  # Corrige as limitações e avisos de depreciação conforme sugerido pelo erro do GitHub
+  # Silencia avisos de depreciação conforme log sugerido
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '22' # Versão LTS estável recomendada para Vite 6
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: './react-hub/package.json'
 
       - name: Install and Build
         working-directory: ./react-hub
@@ -31,10 +35,18 @@ jobs:
           npm install --legacy-peer-deps
           npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./react-hub/dist
-          publish_branch: gh-pages
-          force_orphan: false
+          path: ./react-hub/dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
