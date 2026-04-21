@@ -8,6 +8,21 @@
   <!-- SEO & AI Meta Tags -->
   <meta name="description" content="Cloud Architect & IT Infrastructure Expert. Especialista em Governança de Dados (LGPD/IA).">
   <meta name="keywords" content="Farleir, IT Infrastructure, Cloud Architect, LGPD, IA, Governance">
+  <link rel="canonical" href="https://www.farleir.com/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.farleir.com/">
+  <meta property="og:title" content="Farleir | Digital Curator">
+  <meta property="og:description" content="Expert em Infraestrutura de TI, Cloud Architect e Governança de Dados (LGPD/IA).">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/492476?v=4">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.farleir.com/">
+  <meta property="twitter:title" content="Farleir | Digital Curator">
+  <meta property="twitter:description" content="Expert em Infraestrutura de TI, Cloud Architect e Governança de Dados (LGPD/IA).">
+  <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/492476?v=4">
   
   <!-- Fonts & Tools -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +31,16 @@
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   
-  <!-- Analytics -->
+  <!-- Google Analytics (gtag) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RM0HXXR2SX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RM0HXXR2SX');
+  </script>
+
+  <!-- Microsoft Clarity -->
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -26,59 +50,22 @@
   </script>
 
   <style>
-    :root {
-      --bg-obsidian: #111418;
-    }
-    body {
-      background-color: var(--bg-obsidian);
-      font-family: 'Noto Sans', sans-serif;
-      color: #e2e8f0;
-    }
-    .font-heading {
-      font-family: 'Space Grotesk', sans-serif;
-    }
-    .text-gradient {
-      background: linear-gradient(135deg, #fff 0%, #a1a1aa 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .card-glass {
-      background: rgba(255, 255, 255, 0.03);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .card-glass:hover {
-      background: rgba(255, 255, 255, 0.05);
-      border-color: rgba(255, 255, 255, 0.15);
-      transform: translateY(-4px);
-    }
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 */
-      height: 0;
-      overflow: hidden;
-      border-radius: 0.75rem;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-    @keyframes reveal {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .animate-reveal {
-      animation: reveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-      opacity: 0;
-    }
+    :root { --bg-obsidian: #111418; }
+    body { background-color: var(--bg-obsidian); font-family: 'Noto Sans', sans-serif; color: #e2e8f0; margin: 0; overflow-x: hidden; }
+    .font-heading { font-family: 'Space Grotesk', sans-serif; }
+    .text-gradient { background: linear-gradient(135deg, #fff 0%, #a1a1aa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .card-glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+    .card-glass:hover { background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.15); transform: translateY(-4px); }
+    .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 0.75rem; background: #000; }
+    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+    @keyframes reveal { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .animate-reveal { animation: reveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+    #particles-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: -5; opacity: 0.4; }
   </style>
 </head>
 <body class="antialiased selection:bg-cyan-500/30">
+
+  <canvas id="particles-canvas"></canvas>
 
   <div class="relative min-h-screen flex flex-col">
     <!-- Decorative background elements -->
@@ -124,10 +111,12 @@
       <!-- Grid Sections -->
       <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
         
-        <!-- Farleir.app Card (Large) -->
+        <!-- Cards and Content here (already defined in previous version) -->
+        <!-- ... porting over the full structure ... -->
+        
         <section class="md:col-span-8 card-glass p-8 md:p-12 rounded-[2rem] flex flex-col justify-between gap-12 animate-reveal" style="animation-delay: 0.2s; opacity: 1;">
           <div class="space-y-6">
-            <div class="w-12 h-12 bg-cyan-500/10 border border-cyan-500/20 rounded-2xl flex items-center justify-center text-cyan-400">
+            <div class="w-12 h-12 bg-cyan-500/10 border border-cyan-500/20 rounded-2xl flex items-center justify-center text-cyan-400 font-heading">
               <i data-lucide="sparkles"></i>
             </div>
             <h2 class="text-4xl font-bold font-heading text-white">Farleir.app</h2>
@@ -140,7 +129,6 @@
           </a>
         </section>
 
-        <!-- Sink Card (Medium) -->
         <section class="md:col-span-4 card-glass p-8 rounded-[2rem] flex flex-col justify-between gap-8 animate-reveal" style="animation-delay: 0.3s; opacity: 1;">
           <div class="space-y-4">
             <i data-lucide="link-2" class="text-slate-400"></i>
@@ -152,7 +140,7 @@
           </a>
         </section>
 
-        <!-- Digital Media Section (Embedded Videos) -->
+        <!-- Digital Media Section -->
         <section class="md:col-span-12 space-y-8 py-12 animate-reveal" style="animation-delay: 0.4s; opacity: 1;">
           <div class="flex items-end justify-between border-b border-white/5 pb-6">
             <div>
@@ -161,30 +149,22 @@
             </div>
             <i data-lucide="play-circle" class="w-8 h-8 text-white/20"></i>
           </div>
-          
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="space-y-4">
-              <div class="video-container shadow-2xl shadow-black">
-                <iframe src="https://www.youtube.com/embed/ngnNzP9cySM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
+              <div class="video-container shadow-2xl shadow-black"><iframe src="https://www.youtube.com/embed/ngnNzP9cySM" allowfullscreen></iframe></div>
               <p class="text-sm text-slate-500 font-medium px-1 uppercase tracking-widest">Pitch: Novo Energia</p>
             </div>
             <div class="space-y-4">
-              <div class="video-container shadow-2xl shadow-black">
-                <iframe src="https://www.youtube.com/embed/BYA-J9wVkgk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
+              <div class="video-container shadow-2xl shadow-black"><iframe src="https://www.youtube.com/embed/BYA-J9wVkgk" allowfullscreen></iframe></div>
               <p class="text-sm text-slate-500 font-medium px-1 uppercase tracking-widest">Inovação e Podcast</p>
             </div>
             <div class="space-y-4">
-              <div class="video-container shadow-2xl shadow-black">
-                <iframe src="https://www.youtube.com/embed/QET-g2i6Ywo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
+              <div class="video-container shadow-2xl shadow-black"><iframe src="https://www.youtube.com/embed/QET-g2i6Ywo" allowfullscreen></iframe></div>
               <p class="text-sm text-slate-500 font-medium px-1 uppercase tracking-widest">Demonstração: Pick2Me</p>
             </div>
           </div>
         </section>
 
-        <!-- Bingo Card (Small) -->
         <section class="md:col-span-4 card-glass p-8 rounded-[2rem] flex flex-col justify-between gap-8 animate-reveal" style="animation-delay: 0.5s; opacity: 1;">
           <div class="space-y-4">
             <i data-lucide="quote" class="text-slate-400"></i>
@@ -196,7 +176,6 @@
           </a>
         </section>
 
-        <!-- infrastructure (Medium) -->
         <section class="md:col-span-4 card-glass p-8 rounded-[2rem] flex flex-col justify-between gap-8 animate-reveal" style="animation-delay: 0.6s; opacity: 1;">
           <div class="space-y-4">
             <i data-lucide="cloud" class="text-slate-400"></i>
@@ -208,7 +187,6 @@
           </a>
         </section>
 
-        <!-- Analista (Small) -->
         <section class="md:col-span-4 card-glass p-8 rounded-[2rem] flex flex-col justify-between gap-8 animate-reveal" style="animation-delay: 0.7s; opacity: 1;">
           <div class="space-y-4">
             <i data-lucide="coffee" class="text-slate-400"></i>
@@ -223,19 +201,69 @@
       </div>
     </main>
 
-    <!-- Footer -->
     <footer class="max-w-6xl mx-auto px-6 py-20 w-full border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-slate-500">
       <p>&copy; 2026 Farleir Luís Minozzo</p>
       <div class="flex gap-8">
         <a href="https://go.farleir.com/linkedin" class="hover:text-white transition-colors">LinkedIn</a>
         <a href="https://go.farleir.com/go-footer-github" class="hover:text-white transition-colors">GitHub</a>
       </div>
-      <p class="text-xs uppercase tracking-widest font-medium">Digital Curator Aesthetic</p>
+      <p class="text-xs uppercase tracking-widest font-medium">Consolidated & SEO Optimized</p>
     </footer>
   </div>
 
   <script>
     lucide.createIcons();
+
+    // Particle Background Engine
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    let particlesArray;
+    let mouse = { x: null, y: null, radius: (canvas.height / 80) * (canvas.width / 80) };
+    window.addEventListener('mousemove', (e) => { mouse.x = e.x; mouse.y = e.y; });
+
+    class Particle {
+      constructor(x, y, dx, dy, size, color) {
+        this.x = x; this.y = y; this.dx = dx; this.dy = dy; this.size = size; this.color = color;
+      }
+      draw() {
+        ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+        ctx.fillStyle = '#ffffff'; ctx.fill();
+      }
+      update() {
+        if (this.x > canvas.width || this.x < 0) this.dx = -this.dx;
+        if (this.y > canvas.height || this.y < 0) this.dy = -this.dy;
+        let dax = mouse.x - this.x; let day = mouse.y - this.y;
+        let distance = Math.sqrt(dax * dax + day * day);
+        if (distance < mouse.radius + this.size) {
+          if (mouse.x < this.x && this.x < canvas.width - this.size * 10) this.x += 10;
+          if (mouse.x > this.x && this.x > this.size * 10) this.x -= 10;
+          if (mouse.y < this.y && this.y < canvas.height - this.size * 10) this.y += 10;
+          if (mouse.y > this.y && this.y > this.size * 10) this.y -= 10;
+        }
+        this.x += this.dx; this.y += this.dy; this.draw();
+      }
+    }
+
+    function init() {
+      particlesArray = [];
+      let numberOfParticles = (canvas.height * canvas.width) / 9000;
+      for (let i = 0; i < numberOfParticles; i++) {
+        let size = (Math.random() * 2) + 1;
+        let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
+        let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
+        let dx = (Math.random() * 2) - 1; let dy = (Math.random() * 2) - 1;
+        particlesArray.push(new Particle(x, y, dx, dy, size, '#ffffff'));
+      }
+    }
+    function animate() {
+      requestAnimationFrame(animate); ctx.clearRect(0, 0, innerWidth, innerHeight);
+      for (let i = 0; i < particlesArray.length; i++) particlesArray[i].update();
+    }
+    window.addEventListener('resize', () => { canvas.width = innerWidth; canvas.height = innerHeight; init(); });
+    init(); animate();
   </script>
 </body>
 </html>
