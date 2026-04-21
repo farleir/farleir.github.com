@@ -18,11 +18,18 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '20.18.0' # Versão específica estável
+
+      - name: Debug Directory
+        run: |
+          echo "Listing root:"
+          ls -F
+          echo "Listing react-hub:"
+          ls -F react-hub/
 
       - name: Install Dependencies
         working-directory: ./react-hub
-        run: npm install --legacy-peer-deps
+        run: npm install --legacy-peer-deps --verbose
 
       - name: Build Project
         working-directory: ./react-hub
