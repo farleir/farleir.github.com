@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - master
-    paths:
-      - 'react-hub/**'
-      - '.github/workflows/deploy.yml'
 
 permissions:
   contents: write
@@ -14,7 +11,6 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    # Removido FORCE_JAVASCRIPT_ACTIONS_TO_NODE24 para evitar instabilidade nas actions v4
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -23,12 +19,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: './react-hub/package-lock.json'
 
       - name: Install Dependencies
         working-directory: ./react-hub
-        run: npm ci --legacy-peer-deps
+        run: npm install --legacy-peer-deps
 
       - name: Build Project
         working-directory: ./react-hub
@@ -40,4 +34,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./react-hub/dist
           publish_branch: gh-pages
-          force_orphan: true
+          force_orphan: false
