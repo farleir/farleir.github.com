@@ -67,9 +67,6 @@
     .animate-ping-slow { animation: ping 3s cubic-bezier(0, 0, 0.2, 1) infinite; }
     @keyframes ping { 75%, 100% { transform: scale(2); opacity: 0; } }
     
-    .whatsapp-btn { position: fixed; bottom: 2rem; right: 2rem; z-index: 50; transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
-    .whatsapp-btn:hover { transform: scale(1.1); }
-    
     .border-patent { border: 2px solid rgba(245, 158, 11, 0.3) !important; background: linear-gradient(135deg, rgba(245, 158, 11, 0.05) 0%, rgba(255, 255, 255, 0.03) 100%); }
     .badge-icon { filter: grayscale(1) opacity(0.7); transition: all 0.3s ease; }
     .badge-icon:hover { filter: grayscale(0) opacity(1); transform: scale(1.05); }
@@ -365,9 +362,7 @@
           <div class="space-y-6">
             <h4 class="text-white font-bold font-heading uppercase tracking-widest text-sm">Contatos Diretos</h4>
             <ul class="space-y-4">
-              <li><a href="https://wa.me/farleir-pessoal" target="_blank" class="flex items-center gap-3 text-slate-400 hover:text-white transition-colors"><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Pessoal</a></li>
-              <li><a href="https://wa.me/farleir-ifsc" target="_blank" class="flex items-center gap-3 text-slate-400 hover:text-white transition-colors"><i data-lucide="building-2" class="w-4 h-4"></i> WhatsApp IFSC</a></li>
-              <li><a href="mailto:contato@farleir.com" class="flex items-center gap-3 text-slate-400 hover:text-white transition-colors"><i data-lucide="mail" class="w-4 h-4"></i> contato@farleir.com</a></li>
+              <li><a href="https://go.farleir.com/contato" target="_blank" class="flex items-center gap-3 text-slate-400 hover:text-white transition-colors"><i data-lucide="mail" class="w-4 h-4"></i> Contato Direto</a></li>
             </ul>
           </div>
           
@@ -375,10 +370,10 @@
           <div class="space-y-6">
             <h4 class="text-white font-bold font-heading uppercase tracking-widest text-sm">Redes Sociais</h4>
             <div class="flex flex-wrap gap-4">
-              <a href="https://x.com/farleir" target="_blank" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-all"><i data-lucide="twitter" class="w-5 h-5"></i></a>
-              <a href="https://facebook.com/farleir" target="_blank" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-all"><i data-lucide="facebook" class="w-5 h-5"></i></a>
-              <a href="https://instagram.com/farleir" target="_blank" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-all"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-              <a href="https://pinterest.com/farleir" target="_blank" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-all"><i data-lucide="image" class="w-5 h-5"></i></a>
+              <a href="https://go.farleir.com/x" target="_blank" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-all"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+              <a href="https://go.farleir.com/facebook" target="_blank" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-all"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+              <a href="https://go.farleir.com/instagram" target="_blank" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-all"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+              <a href="https://go.farleir.com/pinterest" target="_blank" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-all"><i data-lucide="image" class="w-5 h-5"></i></a>
             </div>
           </div>
 
@@ -414,16 +409,6 @@
       </div>
     </footer>
 
-    <!-- Sticky WhatsApp Button -->
-    <a href="https://wa.me/farleir-pessoal" target="_blank" class="whatsapp-btn group">
-      <div class="relative flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-2xl shadow-green-500/20 active:scale-90 transition-transform">
-        <i data-lucide="message-circle" class="w-8 h-8"></i>
-        <div class="absolute -top-1 -right-1 flex h-5 w-5">
-          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-          <span class="relative inline-flex rounded-full h-5 w-5 bg-red-500 border-2 border-white flex items-center justify-center text-[10px] font-bold">1</span>
-        </div>
-      </div>
-    </a>
   </div>
 
   <script>
