@@ -335,41 +335,57 @@
                 </a>
               </div>
             </article>
-          </div>
-        </section>
+      </div> <!-- End of Bento Grid -->
 
-      </div>
-    </main>
-
-        <!-- Archive Section -->
-        <section class="md:col-span-12 py-16 animate-reveal" style="animation-delay: 0.9s;">
-          <div class="card-glass p-8 md:p-12 rounded-[2.5rem] border-white/5 space-y-8">
-            <div class="flex items-center gap-3 text-slate-500">
+      <!-- Archive Section -->
+      <section class="py-20 animate-reveal" style="animation-delay: 0.9s;">
+        <div class="card-glass p-10 md:p-16 rounded-[3rem] border-white/5 space-y-12">
+          <div class="flex items-center gap-4 text-slate-500">
+            <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
               <i data-lucide="archive" class="w-5 h-5"></i>
-              <h3 class="text-lg font-bold uppercase tracking-[0.2em]">Arquivo Pessoal</h3>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <a href="https://go.farleir.com/blogspot" target="_blank" class="flex items-center gap-3 p-4 rounded-2xl hover:bg-white/5 transition-colors group">
-                <i data-lucide="edit-3" class="text-slate-400 group-hover:text-orange-500 transition-colors"></i>
-                <span class="text-slate-300 font-medium">Blogspot</span>
-              </a>
-              <a href="https://go.farleir.com/blog" target="_blank" class="flex items-center gap-3 p-4 rounded-2xl hover:bg-white/5 transition-colors group">
-                <i data-lucide="pen-tool" class="text-slate-400 group-hover:text-blue-500 transition-colors"></i>
-                <span class="text-slate-300 font-medium">WordPress</span>
-              </a>
-              <a href="https://go.farleir.com/tumblr" target="_blank" class="flex items-center gap-3 p-4 rounded-2xl hover:bg-white/5 transition-colors group">
-                <i data-lucide="type" class="text-slate-400 group-hover:text-indigo-500 transition-colors"></i>
-                <span class="text-slate-300 font-medium">Tumblr</span>
-              </a>
-              <a href="https://go.farleir.com/500px" target="_blank" class="flex items-center gap-3 p-4 rounded-2xl hover:bg-white/5 transition-colors group">
-                <i data-lucide="camera" class="text-slate-400 group-hover:text-white transition-colors"></i>
-                <span class="text-slate-300 font-medium">500px</span>
-              </a>
-            </div>
+            <h3 class="text-xl font-bold font-heading uppercase tracking-[0.3em]">Arquivo Pessoal</h3>
           </div>
-        </section>
-
-      </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <a href="https://go.farleir.com/blogspot" target="_blank" class="flex items-center gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/0 hover:border-white/10 hover:bg-white/5 transition-all group">
+              <div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="edit-3" class="text-orange-500"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-white font-bold">Blogspot</span>
+                <span class="text-xs text-slate-500 uppercase tracking-tighter">Histórico Pessoal</span>
+              </div>
+            </a>
+            <a href="https://go.farleir.com/blog" target="_blank" class="flex items-center gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/0 hover:border-white/10 hover:bg-white/5 transition-all group">
+              <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="pen-tool" class="text-blue-500"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-white font-bold">WordPress</span>
+                <span class="text-xs text-slate-500 uppercase tracking-tighter">Tecnologia & Dev</span>
+              </div>
+            </a>
+            <a href="https://go.farleir.com/tumblr" target="_blank" class="flex items-center gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/0 hover:border-white/10 hover:bg-white/5 transition-all group">
+              <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="type" class="text-indigo-500"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-white font-bold">Tumblr</span>
+                <span class="text-xs text-slate-500 uppercase tracking-tighter">Curadoria Visual</span>
+              </div>
+            </a>
+            <a href="https://go.farleir.com/500px" target="_blank" class="flex items-center gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/0 hover:border-white/10 hover:bg-white/5 transition-all group">
+              <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="camera" class="text-white/80"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-white font-bold">500px</span>
+                <span class="text-xs text-slate-500 uppercase tracking-tighter">Fotografia</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Strategic Footer -->
@@ -385,27 +401,34 @@
             </ul>
           </div>
           
-          <!-- Socials -->
-          <div class="space-y-6">
+          <div class="space-y-6 flex flex-col items-center md:items-start">
             <h4 class="text-white font-bold font-heading uppercase tracking-widest text-sm">Redes Sociais</h4>
-            <div class="flex justify-center md:justify-start gap-4">
-              <a href="https://go.farleir.com/x" target="_blank" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-all"><i data-lucide="twitter" class="w-5 h-5"></i></a>
-              <a href="https://go.farleir.com/facebook" target="_blank" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-all"><i data-lucide="facebook" class="w-5 h-5"></i></a>
-              <a href="https://go.farleir.com/instagram" target="_blank" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-all"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-              <a href="https://go.farleir.com/pinterest" target="_blank" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-all"><i data-lucide="image" class="w-5 h-5"></i></a>
+            <div class="flex gap-4">
+              <a href="https://go.farleir.com/x" target="_blank" class="w-12 h-12 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all">
+                <i data-lucide="twitter" class="w-5 h-5"></i>
+              </a>
+              <a href="https://go.farleir.com/facebook" target="_blank" class="w-12 h-12 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all">
+                <i data-lucide="facebook" class="w-5 h-5"></i>
+              </a>
+              <a href="https://go.farleir.com/instagram" target="_blank" class="w-12 h-12 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all">
+                <i data-lucide="instagram" class="w-5 h-5"></i>
+              </a>
+              <a href="https://go.farleir.com/pinterest" target="_blank" class="w-12 h-12 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all">
+                <i data-lucide="pinterest" class="w-5 h-5"></i>
+              </a>
             </div>
           </div>
 
           <!-- Status -->
-          <div class="space-y-6">
+          <div class="space-y-6 flex flex-col items-center md:items-start">
             <h4 class="text-white font-bold font-heading uppercase tracking-widest text-sm">Status</h4>
-            <div class="flex justify-center md:justify-start">
-              <a href="https://go.farleir.com/status" target="_blank" class="flex items-center gap-3 px-4 py-2 bg-white/5 rounded-full border border-white/5 hover:border-emerald-500/30 transition-all group">
+            <div class="flex">
+              <a href="https://go.farleir.com/status" target="_blank" class="flex items-center gap-3 px-6 py-3 bg-white/5 rounded-full border border-white/5 hover:border-emerald-500/30 transition-all group">
                 <div class="relative flex h-3 w-3">
                   <span class="animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
                 </div>
-                <span class="text-xs font-medium text-emerald-500 group-hover:text-emerald-400 transition-colors">Sistemas Online</span>
+                <span class="text-xs font-bold text-emerald-500 group-hover:text-emerald-400 transition-colors uppercase tracking-widest">Sistemas Online</span>
               </a>
             </div>
           </div>
