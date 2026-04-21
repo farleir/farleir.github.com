@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Farleir | Professional Hub</title>
+  <title>Farleir | Digital Curator</title>
   
   <!-- SEO & AI Meta Tags -->
   <meta name="description" content="Cloud Architect & IT Infrastructure Expert. Especialista em Governança de Dados (LGPD/IA).">
-  <meta name="keywords" content="Farleir, IT Infrastructure, Cloud Architect, LGPD, AI Governance, IT Manager">
+  <meta name="keywords" content="Farleir, IT Infrastructure, Cloud Architect, LGPD, IA, Governance">
   
-  <!-- Google Fonts & Icons -->
+  <!-- Fonts & Tools -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-  <link rel="stylesheet" href="style.css">
-
+  
   <!-- Analytics -->
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -21,99 +24,213 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "t6rflgleu7");
   </script>
+
+  <style>
+    :root {
+      --bg-obsidian: #111418;
+    }
+    body {
+      background-color: var(--bg-obsidian);
+      font-family: 'Noto Sans', sans-serif;
+      color: #e2e8f0;
+    }
+    .font-heading {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, #fff 0%, #a1a1aa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-glass {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-glass:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.15);
+      transform: translateY(-4px);
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: 0.75rem;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    @keyframes reveal {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-reveal {
+      animation: reveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      opacity: 0;
+    }
+  </style>
 </head>
-<body>
+<body class="antialiased selection:bg-cyan-500/30">
 
-  <div class="container">
-    <!-- Hero Section -->
-    <header class="hero animate">
-      <img src="https://avatars.githubusercontent.com/u/492476?v=4" alt="Farleir" class="avatar">
-      <h1>Hello. I'm <span class="text-gradient-accent">Farleir</span>.</h1>
-      <p class="tagline">Expert em Infraestrutura de TI, Cloud Architect e Governança de Dados (LGPD/IA).</p>
+  <div class="relative min-h-screen flex flex-col">
+    <!-- Decorative background elements -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden -z-10">
+      <div class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-cyan-500/10 rounded-full blur-[120px]"></div>
+      <div class="absolute -bottom-[10%] -right-[10%] w-[40%] h-[40%] bg-violet-500/10 rounded-full blur-[120px]"></div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-6xl mx-auto px-6 py-20 lg:py-32 flex flex-col gap-24">
       
-      <div class="social-links">
-        <a href="https://go.farleir.com/linkedin" target="_blank" class="btn btn-primary">
-          <i data-lucide="briefcase"></i> LinkedIn
-        </a>
-        <a href="https://go.farleir.com/go-footer-github" target="_blank" class="btn btn-secondary">
-          <i data-lucide="github"></i> GitHub
-        </a>
-        <a href="https://go.farleir.com/lattes" target="_blank" class="btn btn-secondary">
-          <i data-lucide="external-link"></i> Lattes
-        </a>
-      </div>
-    </header>
-
-    <!-- Bento Grid -->
-    <section class="bento-grid">
-      <!-- Farleir.app -->
-      <div class="card card-large animate delay-1">
-        <div>
-          <h2><i data-lucide="sparkles" class="icon-gradient"></i> Farleir.app</h2>
-          <p>Portfólio de aplicativos e utilitários inteligentes cocriados com IA para otimizar processos e produtividade.</p>
+      <!-- Hero Section -->
+      <header class="max-w-3xl flex flex-col gap-8 animate-reveal" style="animation-delay: 0.1s; opacity: 1;">
+        <div class="flex items-center gap-6">
+          <img src="https://avatars.githubusercontent.com/u/492476?v=4" alt="Farleir" 
+               class="w-24 h-24 rounded-full border-2 border-white/10 p-1 bg-white/5 ring-8 ring-white/5">
         </div>
-        <a href="https://go.farleir.com/apps" target="_blank" class="card-link">Explorar Apps <i data-lucide="arrow-up-right"></i></a>
-      </div>
-
-      <!-- Sink -->
-      <div class="card card-medium animate delay-2">
-        <div>
-          <h2><i data-lucide="link-2"></i> Sink</h2>
-          <p>Encurtador de links e tracker de analytics customizado sob domínio próprio.</p>
+        <div class="space-y-4">
+          <h1 class="text-5xl md:text-7xl font-bold font-heading tracking-tight leading-tight text-gradient">
+            Hello. I'm Farleir.
+          </h1>
+          <p class="text-xl md:text-2xl text-slate-400 font-light max-w-2xl leading-relaxed">
+            Expert em Infraestrutura de TI, Cloud Architect e <span class="text-white font-medium">Governança de Dados (LGPD/IA)</span>.
+          </p>
         </div>
-        <a href="https://go.farleir.com/go" target="_blank" class="card-link">Gerenciar <i data-lucide="arrow-up-right"></i></a>
-      </div>
-
-      <!-- Bingo -->
-      <div class="card card-medium animate delay-3">
-        <div>
-          <h2><i data-lucide="quote"></i> Frases do Bingo</h2>
-          <p>Sátira humorística de chavões corporativos e termos "vips".</p>
+        
+        <div class="flex flex-wrap gap-4 pt-4">
+          <a href="https://go.farleir.com/linkedin" target="_blank" 
+             class="flex items-center gap-2 px-6 py-3 bg-white text-black font-semibold rounded-full hover:bg-slate-200 transition-colors">
+            <i data-lucide="linkedin" class="w-5 h-5"></i> LinkedIn
+          </a>
+          <a href="https://go.farleir.com/go-footer-github" target="_blank" 
+             class="flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 transition-colors">
+            <i data-lucide="github" class="w-5 h-5"></i> GitHub
+          </a>
+          <a href="https://go.farleir.com/lattes" target="_blank" 
+             class="flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 transition-colors">
+            <i data-lucide="external-link" class="w-5 h-5"></i> Lattes
+          </a>
         </div>
-        <a href="https://go.farleir.com/bingo" target="_blank" class="card-link">Jogar <i data-lucide="arrow-up-right"></i></a>
-      </div>
+      </header>
 
-      <!-- Video Highlights -->
-      <div class="card card-large animate delay-2">
-        <div>
-          <h2><i data-lucide="play-circle"></i> Digital Media</h2>
-          <p>Pitchs de inovação, participações em podcasts e demonstrações técnicas.</p>
-          <div class="video-grid">
-            <a href="https://go.farleir.com/yt-novoenergia" target="_blank" class="video-thumb">
-              <img src="https://img.youtube.com/vi/ngnNzP9cySM/mqdefault.jpg" alt="Novo Energia">
-            </a>
-            <a href="https://go.farleir.com/yt-podcast" target="_blank" class="video-thumb">
-              <img src="https://img.youtube.com/vi/BYA-J9wVkgk/mqdefault.jpg" alt="Podcast">
-            </a>
-            <a href="https://go.farleir.com/yt-pick2me" target="_blank" class="video-thumb">
-              <img src="https://img.youtube.com/vi/QET-g2i6Ywo/mqdefault.jpg" alt="Pick2Me">
-            </a>
+      <!-- Grid Sections -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+        
+        <!-- Farleir.app Card (Large) -->
+        <section class="md:col-span-8 card-glass p-8 md:p-12 rounded-[2rem] flex flex-col justify-between gap-12 animate-reveal" style="animation-delay: 0.2s; opacity: 1;">
+          <div class="space-y-6">
+            <div class="w-12 h-12 bg-cyan-500/10 border border-cyan-500/20 rounded-2xl flex items-center justify-center text-cyan-400">
+              <i data-lucide="sparkles"></i>
+            </div>
+            <h2 class="text-4xl font-bold font-heading text-white">Farleir.app</h2>
+            <p class="text-xl text-slate-400 font-light leading-relaxed">
+              Portfólio de aplicativos e utilitários inteligentes cocriados com IA para otimizar processos e produtividade em larga escala.
+            </p>
           </div>
-        </div>
-      </div>
+          <a href="https://go.farleir.app" target="_blank" class="group flex items-center gap-3 text-cyan-400 font-medium text-lg">
+            Explorar Ecossistema <i data-lucide="arrow-up-right" class="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+          </a>
+        </section>
 
-      <!-- Analista de Bagé -->
-      <div class="card card-medium animate delay-3">
-        <div>
-          <h2><i data-lucide="coffee"></i> Analista de Bagé</h2>
-          <p>Filosofia gaúcha e humor tradicional encapsulado em um app interativo.</p>
-        </div>
-        <a href="https://go.farleir.com/analista" target="_blank" class="card-link">Consultar <i data-lucide="arrow-up-right"></i></a>
-      </div>
+        <!-- Sink Card (Medium) -->
+        <section class="md:col-span-4 card-glass p-8 rounded-[2rem] flex flex-col justify-between gap-8 animate-reveal" style="animation-delay: 0.3s; opacity: 1;">
+          <div class="space-y-4">
+            <i data-lucide="link-2" class="text-slate-400"></i>
+            <h3 class="text-2xl font-bold font-heading text-white">Sink</h3>
+            <p class="text-slate-400 font-light">Encurtador de links e tracker de analytics customizado sob domínio próprio.</p>
+          </div>
+          <a href="https://go.farleir.com/go" target="_blank" class="flex items-center gap-2 text-white/60 hover:text-white transition-colors">
+            Gerenciar links <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+        </section>
 
-      <!-- Infrastructure -->
-      <div class="card card-medium animate delay-1">
-        <div>
-          <h2><i data-lucide="cloud"></i> AWS Design</h2>
-          <p>Arquitetura escalável e conformidade em ambientes Multi-Cloud.</p>
-        </div>
-        <a href="https://go.farleir.com/arquitetoaws" target="_blank" class="card-link">Ver Case <i data-lucide="arrow-up-right"></i></a>
+        <!-- Digital Media Section (Embedded Videos) -->
+        <section class="md:col-span-12 space-y-8 py-12 animate-reveal" style="animation-delay: 0.4s; opacity: 1;">
+          <div class="flex items-end justify-between border-b border-white/5 pb-6">
+            <div>
+              <h2 class="text-3xl font-bold font-heading text-white">Digital Media</h2>
+              <p class="text-slate-400 mt-2">Pitchs de inovação e demonstrações técnicas.</p>
+            </div>
+            <i data-lucide="play-circle" class="w-8 h-8 text-white/20"></i>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="space-y-4">
+              <div class="video-container shadow-2xl shadow-black">
+                <iframe src="https://www.youtube.com/embed/ngnNzP9cySM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <p class="text-sm text-slate-500 font-medium px-1 uppercase tracking-widest">Pitch: Novo Energia</p>
+            </div>
+            <div class="space-y-4">
+              <div class="video-container shadow-2xl shadow-black">
+                <iframe src="https://www.youtube.com/embed/BYA-J9wVkgk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <p class="text-sm text-slate-500 font-medium px-1 uppercase tracking-widest">Inovação e Podcast</p>
+            </div>
+            <div class="space-y-4">
+              <div class="video-container shadow-2xl shadow-black">
+                <iframe src="https://www.youtube.com/embed/QET-g2i6Ywo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <p class="text-sm text-slate-500 font-medium px-1 uppercase tracking-widest">Demonstração: Pick2Me</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bingo Card (Small) -->
+        <section class="md:col-span-4 card-glass p-8 rounded-[2rem] flex flex-col justify-between gap-8 animate-reveal" style="animation-delay: 0.5s; opacity: 1;">
+          <div class="space-y-4">
+            <i data-lucide="quote" class="text-slate-400"></i>
+            <h3 class="text-2xl font-bold font-heading text-white">Bingo</h3>
+            <p class="text-slate-400 font-light">Sátira humorística de chavões corporativos e termos do mundo tech.</p>
+          </div>
+          <a href="https://go.farleir.com/bingo" target="_blank" class="flex items-center gap-2 text-white/60 hover:text-white transition-colors">
+            Gerar Frase <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+        </section>
+
+        <!-- infrastructure (Medium) -->
+        <section class="md:col-span-4 card-glass p-8 rounded-[2rem] flex flex-col justify-between gap-8 animate-reveal" style="animation-delay: 0.6s; opacity: 1;">
+          <div class="space-y-4">
+            <i data-lucide="cloud" class="text-slate-400"></i>
+            <h3 class="text-2xl font-bold font-heading text-white">AWS Design</h3>
+            <p class="text-slate-400 font-light">Arquitetura escalável em ambientes Multi-Cloud.</p>
+          </div>
+          <a href="https://go.farleir.com/arquitetoaws" target="_blank" class="flex items-center gap-2 text-white/60 hover:text-white transition-colors">
+            Ver Case <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+        </section>
+
+        <!-- Analista (Small) -->
+        <section class="md:col-span-4 card-glass p-8 rounded-[2rem] flex flex-col justify-between gap-8 animate-reveal" style="animation-delay: 0.7s; opacity: 1;">
+          <div class="space-y-4">
+            <i data-lucide="coffee" class="text-slate-400"></i>
+            <h3 class="text-2xl font-bold font-heading text-white">Bagé AI</h3>
+            <p class="text-slate-400 font-light">Filosofia gaúcha encapsulada em um app interativo.</p>
+          </div>
+          <a href="https://go.farleir.com/analista" target="_blank" class="flex items-center gap-2 text-white/60 hover:text-white transition-colors">
+            Consultar <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+        </section>
+
       </div>
-    </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="hero animate delay-3">
-      <p style="color: var(--text-secondary);">&copy; 2026 Farleir | Built with Static Integrity</p>
+    <footer class="max-w-6xl mx-auto px-6 py-20 w-full border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-slate-500">
+      <p>&copy; 2026 Farleir Luís Minozzo</p>
+      <div class="flex gap-8">
+        <a href="https://go.farleir.com/linkedin" class="hover:text-white transition-colors">LinkedIn</a>
+        <a href="https://go.farleir.com/go-footer-github" class="hover:text-white transition-colors">GitHub</a>
+      </div>
+      <p class="text-xs uppercase tracking-widest font-medium">Digital Curator Aesthetic</p>
     </footer>
   </div>
 
