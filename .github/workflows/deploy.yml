@@ -12,8 +12,9 @@ permissions:
   id-token: write
 
 env:
-  # Silencia avisos de depreciação conforme log sugerido
+  # Silencia avisos de depreciação conforme sugerido pelo log de erro
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
 jobs:
   build:
@@ -26,12 +27,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: 'npm'
-          cache-dependency-path: './react-hub/package.json'
+          # Cache desativado para garantir um build limpo sem conflitos de diretório
 
       - name: Install and Build
-        working-directory: ./react-hub
         run: |
+          cd react-hub
           npm install --legacy-peer-deps
           npm run build
 
