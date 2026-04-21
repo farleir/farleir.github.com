@@ -18,18 +18,20 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20.18.0' # Versão específica estável
-
-      - name: Debug Directory
-        run: |
-          echo "Listing root:"
-          ls -F
-          echo "Listing react-hub:"
-          ls -F react-hub/
+          node-version: '20.18.0'
 
       - name: Install Dependencies
         working-directory: ./react-hub
-        run: npm install --legacy-peer-deps --verbose
+        run: |
+          npm install --legacy-peer-deps --verbose > npm_error.log 2>&1 || (
+            echo "FAILED - CAPTURING LOG"
+            git config --global user.name "GitHub Action Error Bot"
+            git config --global user.email "error-bot@github.com"
+            git add npm_error.log
+            git commit -m "Capture Build Error: $(date)"
+            git push origin master
+            exit 1
+          )
 
       - name: Build Project
         working-directory: ./react-hub
