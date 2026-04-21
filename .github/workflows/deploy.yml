@@ -9,7 +9,9 @@ permissions:
   contents: write
 
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Silencia o aviso de depreciação conforme sugerido pelo log
+  # Corrige as limitações e avisos de depreciação conforme sugerido pelo erro do GitHub
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
 jobs:
   build-and-deploy:
@@ -21,7 +23,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22' # Node 22 LTS para máxima estabilidade com Vite 6
+          node-version: '22' # Versão LTS estável recomendada para Vite 6
 
       - name: Install and Build
         working-directory: ./react-hub
