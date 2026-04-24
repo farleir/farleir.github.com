@@ -97,9 +97,19 @@
                  class="w-24 h-24 rounded-full border-2 border-white/10 p-1 bg-white/5 ring-8 ring-white/5 shadow-2xl shadow-cyan-500/10">
           </div>
           <div class="space-y-4">
-            <h1 class="text-5xl md:text-7xl font-bold font-heading tracking-tight leading-tight text-gradient">
-              Hello. I'm Farleir.
-            </h1>
+            <div class="flex items-center gap-3">
+              <h1 class="text-5xl md:text-7xl font-bold font-heading tracking-tight leading-tight text-gradient">
+                Hello. I'm Farleir.
+              </h1>
+              <!-- Moved Status Indicator -->
+              <a href="https://go.farleir.com/uptime-farleircom" target="_blank" class="flex items-center gap-2 px-3 py-1 bg-white/5 rounded-full border border-white/5 hover:border-emerald-500/30 transition-all group mt-2">
+                <div class="relative flex h-2 w-2">
+                  <span class="animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </div>
+                <span class="text-[10px] font-bold text-emerald-500 group-hover:text-emerald-400 transition-colors uppercase tracking-widest">Live</span>
+              </a>
+            </div>
             <p class="text-xl md:text-2xl text-slate-400 font-light max-w-2xl leading-relaxed">
               Expert em Infraestrutura de TI, Cloud Architect e <span class="text-white font-medium">Governança de Dados (LGPD/IA)</span>.
             </p>
@@ -143,6 +153,68 @@
           </a>
         </div>
       </header>
+
+      <!-- Academic & Certifications Section -->
+      <section class="animate-reveal" style="animation-delay: 0.2s;">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div class="lg:col-span-8 card-glass p-8 rounded-[2rem] border-white/5">
+            <div class="flex items-center gap-4 mb-8">
+              <div class="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400">
+                <i data-lucide="graduation-cap"></i>
+              </div>
+              <h2 class="text-2xl font-bold font-heading text-white">Formação Acadêmica</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="space-y-4">
+                <div class="border-l-2 border-cyan-500/30 pl-4 space-y-1">
+                  <h4 class="text-white font-bold">Mestrado em Mecatrônica</h4>
+                  <p class="text-sm text-slate-400">IFSC (Aprovado com Distinção)</p>
+                  <p class="text-xs text-slate-500 italic">Intercâmbio na Hochschule Neubrandenburg (Alemanha)</p>
+                </div>
+                <div class="border-l-2 border-white/10 pl-4 space-y-1">
+                  <h4 class="text-white font-bold">Pós-Graduação em Dev. de Produtos Eletrônicos</h4>
+                  <p class="text-sm text-slate-400">IFSC</p>
+                </div>
+              </div>
+              <div class="space-y-4">
+                <div class="border-l-2 border-white/10 pl-4 space-y-1">
+                  <h4 class="text-white font-bold">Graduação em Sistemas de Telecomunicações</h4>
+                  <p class="text-sm text-slate-400">IFSC</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="lg:col-span-4 card-glass p-8 rounded-[2rem] border-white/5">
+            <div class="flex items-center gap-4 mb-8">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400">
+                <i data-lucide="shield-check"></i>
+              </div>
+              <h2 class="text-2xl font-bold font-heading text-white">Certificações</h2>
+            </div>
+            <ul class="space-y-6">
+              <li class="flex items-start gap-4 group">
+                <div class="mt-1 w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-amber-500/20 transition-colors">
+                  <img src="https://cdn.simpleicons.org/amazonaws/white" class="w-4 h-4" alt="AWS">
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">AWS Certified Cloud Practitioner</h4>
+                  <p class="text-[10px] text-slate-500 uppercase tracking-widest">Global Certification</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4 group">
+                <div class="mt-1 w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-amber-500/20 transition-colors">
+                   <img src="https://cdn.simpleicons.org/amazonaws/white" class="w-4 h-4" alt="AWS">
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">AWS Academy Cloud Foundations</h4>
+                  <p class="text-[10px] text-slate-500 uppercase tracking-widest">Academic Specialization</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
 
       <!-- Digital Media Section -->
@@ -202,88 +274,78 @@
         <!-- Cards and Content here (already defined in previous version) -->
         <!-- ... porting over the full structure ... -->
         
-        <section class="md:col-span-8 card-glass p-8 md:p-12 rounded-[2rem] flex flex-col justify-between gap-12 animate-reveal" style="animation-delay: 0.2s; opacity: 1;">
-          <div class="space-y-6">
-            <div class="w-12 h-12 bg-cyan-500/10 border border-cyan-500/20 rounded-2xl flex items-center justify-center text-cyan-400 font-heading">
-              <i data-lucide="sparkles"></i>
+        <!-- PhD Focus: Pick2.me -->
+        <section class="md:col-span-12 card-glass p-1 rounded-[2.5rem] border-2 border-cyan-500/30 overflow-hidden group animate-reveal" style="animation-delay: 0.3s;">
+          <div class="p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 bg-gradient-to-br from-cyan-500/10 to-transparent">
+            <div class="w-20 h-20 md:w-24 md:h-24 bg-cyan-500 text-black rounded-3xl flex items-center justify-center shadow-[0_0_50px_rgba(6,182,212,0.3)] group-hover:scale-105 transition-transform">
+              <i data-lucide="mouse-pointer-2" class="w-10 h-10 md:w-12 md:h-12"></i>
             </div>
-            <h2 class="text-4xl font-bold font-heading text-white">Farleir.app</h2>
-            <p class="text-xl text-slate-400 font-light leading-relaxed">
-              Portfólio de aplicativos e utilitários inteligentes cocriados com IA para otimizar processos e produtividade em larga escala.
+            <div class="space-y-6 flex-grow text-center md:text-left">
+              <div class="space-y-2">
+                <span class="px-3 py-1 bg-cyan-500/20 text-cyan-400 text-[10px] font-bold uppercase tracking-widest rounded-full">Foco de Doutorado</span>
+                <h2 class="text-4xl md:text-5xl font-bold font-heading text-white">Pick2.me</h2>
+              </div>
+              <p class="text-xl text-slate-300 font-light leading-relaxed max-w-3xl">
+                Ferramenta inteligente para análise e visualização de dados complexos. O núcleo da minha pesquisa acadêmica aplicada ao mercado real.
+              </p>
+              <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                <a href="https://go.farleir.com/pick2me" target="_blank" class="px-10 py-4 bg-cyan-500 text-black font-bold rounded-full hover:bg-cyan-400 transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-cyan-500/20">
+                  Experimentar Agora
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Farleir.app & Sink (Reduced spaces) -->
+        <section class="md:col-span-6 card-glass p-8 rounded-[2rem] flex flex-col justify-between gap-6 animate-reveal" style="animation-delay: 0.4s;">
+          <div class="space-y-4">
+            <div class="w-10 h-10 bg-cyan-500/10 border border-cyan-500/20 rounded-xl flex items-center justify-center text-cyan-400">
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <h2 class="text-2xl font-bold font-heading text-white">Farleir.app</h2>
+            <p class="text-slate-400 font-light leading-relaxed">
+              Utilitários inteligentes cocriados com IA para produtividade.
             </p>
           </div>
-          <a href="https://go.farleir.com/apps" target="_blank" class="group flex items-center gap-3 text-cyan-400 font-medium text-lg">
-            Explorar Ecossistema <i data-lucide="arrow-up-right" class="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+          <a href="https://go.farleir.com/apps" target="_blank" class="group flex items-center gap-2 text-cyan-400 font-medium">
+            Acessar <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
           </a>
-
-          </div>
         </section>
 
-        <section class="md:col-span-4 card-glass p-8 rounded-[2rem] flex flex-col justify-between gap-8 animate-reveal" style="animation-delay: 0.3s; opacity: 1;">
+        <section class="md:col-span-6 card-glass p-8 rounded-[2rem] flex flex-col justify-between gap-6 animate-reveal" style="animation-delay: 0.5s;">
           <div class="space-y-4">
-            <i data-lucide="link-2" class="text-slate-400"></i>
-            <h3 class="text-2xl font-bold font-heading text-white">Sink</h3>
-            <p class="text-slate-400 font-light">Encurtador de links e tracker de analytics customizado sob domínio próprio.</p>
+            <div class="w-10 h-10 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-slate-400">
+              <i data-lucide="link-2" class="w-5 h-5"></i>
+            </div>
+            <h2 class="text-2xl font-bold font-heading text-white">Sink</h2>
+            <p class="text-slate-400 font-light">Encurtador de links e analytics tracker.</p>
           </div>
-          <a href="https://go.farleir.com/go" target="_blank" class="flex items-center gap-2 text-white/60 hover:text-white transition-colors">
-            Gerenciar links <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          <a href="https://go.farleir.com/go" target="_blank" class="flex items-center gap-2 text-white/40 hover:text-white transition-colors">
+            Gerenciar <i data-lucide="chevron-right" class="w-4 h-4"></i>
           </a>
         </section>
 
-        <!-- Research & Innovation -->
-        <section class="md:col-span-12 card-glass p-10 md:p-14 rounded-[2.5rem] border-patent flex flex-col md:flex-row items-center gap-12 animate-reveal" style="animation-delay: 0.4s;">
-          <div class="w-24 h-24 md:w-32 md:h-32 bg-amber-500/10 border border-amber-500/20 rounded-[2rem] flex items-center justify-center text-amber-400 flex-shrink-0">
-            <i data-lucide="lightbulb" class="w-12 h-12 md:w-16 md:h-16"></i>
+        <!-- Research & Innovation (Tightened) -->
+        <section class="md:col-span-12 card-glass p-8 md:p-10 rounded-[2.5rem] border-patent flex flex-col md:flex-row items-center gap-8 animate-reveal" style="animation-delay: 0.6s;">
+          <div class="w-20 h-20 bg-amber-500/10 border border-amber-500/20 rounded-2xl flex items-center justify-center text-amber-400 flex-shrink-0">
+            <i data-lucide="lightbulb" class="w-10 h-10"></i>
           </div>
-          <div class="space-y-6 flex-grow text-center md:text-left">
-            <div class="space-y-2">
-              <span class="text-amber-500 text-sm font-bold uppercase tracking-[0.2em]">Inovação Registrada</span>
-              <h2 class="text-4xl md:text-5xl font-bold font-heading text-white">Patente de Invenção</h2>
+          <div class="space-y-4 flex-grow text-center md:text-left">
+            <div class="space-y-1">
+              <span class="text-amber-500 text-[10px] font-bold uppercase tracking-widest">Inovação Registrada</span>
+              <h2 class="text-3xl font-bold font-heading text-white">Patente de Invenção</h2>
             </div>
-            <p class="text-xl text-slate-400 font-light leading-relaxed max-w-2xl">
-              Desenvolvimento e registro de Propriedade Intelectual: <span class="text-white font-medium">Filtro Inteligente de Conteúdo</span>. Uma solução escalável para moderação e governança de dados.
+            <p class="text-lg text-slate-400 font-light leading-relaxed">
+              Propriedade Intelectual: <span class="text-white font-medium">Filtro Inteligente de Conteúdo</span>. Governança e moderação escalável.
             </p>
-            <div class="flex flex-wrap justify-center md:justify-start gap-4">
-              <a href="https://go.farleir.com/patente" target="_blank" class="px-8 py-4 bg-amber-500 text-black font-bold rounded-full hover:bg-amber-400 transition-all hover:scale-105 active:scale-95">
-                Ver Documentação
-              </a>
-            </div>
+            <a href="https://go.farleir.com/patente" target="_blank" class="inline-flex px-6 py-3 bg-amber-500/10 text-amber-500 border border-amber-500/20 font-bold rounded-full hover:bg-amber-500 hover:text-black transition-all">
+              Ver Documentação
+            </a>
           </div>
         </section>
 
 
-        <section class="md:col-span-4 card-glass p-8 rounded-[2rem] flex flex-col justify-between gap-8 animate-reveal" style="animation-delay: 0.5s; opacity: 1;">
-          <div class="space-y-4">
-            <i data-lucide="quote" class="text-slate-400"></i>
-            <h3 class="text-2xl font-bold font-heading text-white">Bingo</h3>
-            <p class="text-slate-400 font-light">Sátira humorística de chavões corporativos e termos do mundo tech.</p>
-          </div>
-          <a href="https://go.farleir.com/bingo" target="_blank" class="flex items-center gap-2 text-white/60 hover:text-white transition-colors">
-            Gerar Frase <i data-lucide="chevron-right" class="w-4 h-4"></i>
-          </a>
-        </section>
-
-        <section class="md:col-span-4 card-glass p-8 rounded-[2rem] flex flex-col justify-between gap-8 animate-reveal" style="animation-delay: 0.6s; opacity: 1;">
-          <div class="space-y-4">
-            <i data-lucide="cloud" class="text-slate-400"></i>
-            <h3 class="text-2xl font-bold font-heading text-white">AWS Design</h3>
-            <p class="text-slate-400 font-light">Arquitetura escalável em ambientes Multi-Cloud.</p>
-          </div>
-          <a href="https://go.farleir.com/arquitetoaws" target="_blank" class="flex items-center gap-2 text-white/60 hover:text-white transition-colors">
-            Ver Case <i data-lucide="chevron-right" class="w-4 h-4"></i>
-          </a>
-        </section>
-
-        <section class="md:col-span-4 card-glass p-8 rounded-[2rem] flex flex-col justify-between gap-8 animate-reveal" style="animation-delay: 0.7s; opacity: 1;">
-          <div class="space-y-4">
-            <i data-lucide="coffee" class="text-slate-400"></i>
-            <h3 class="text-2xl font-bold font-heading text-white">Bagé AI</h3>
-            <p class="text-slate-400 font-light">Filosofia gaúcha encapsulada em um app interativo.</p>
-          </div>
-          <a href="https://go.farleir.com/analistadebage" target="_blank" class="flex items-center gap-2 text-white/60 hover:text-white transition-colors">
-            Consultar <i data-lucide="chevron-right" class="w-4 h-4"></i>
-          </a>
-        </section>
 
         <!-- Thought Leadership -->
         <section class="md:col-span-12 space-y-12 py-16 animate-reveal" style="animation-delay: 0.8s;">
@@ -311,10 +373,10 @@
               </div>
             </article>
 
-            <!-- Article 2 -->
+            <!-- Article 2: Patos x Galinhas -->
             <article class="group space-y-6">
               <div class="aspect-[16/10] overflow-hidden rounded-3xl bg-slate-800 border border-white/5 shadow-2xl transition-all group-hover:border-white/20 group-hover:-translate-y-2">
-                <img src="https://images.unsplash.com/photo-1553481187-be93c21490a9?auto=format&fit=crop&q=80&w=800" alt="Patos x Galinhas" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all">
+                <img src="https://media.licdn.com/dms/image/v2/C5612AQGlBkxqINH37A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1520202936658?e=1778716800&v=beta&t=dyIMUxY191cteYYOD7RA7WJoD6PllPnOuOEMzqcmqfc" alt="Patos x Galinhas" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all">
               </div>
               <div class="space-y-3 px-2">
                 <span class="text-xs font-bold uppercase tracking-widest text-violet-500">Startups</span>
@@ -389,6 +451,30 @@
               </div>
             </a>
           </div>
+
+          <!-- Personal Projects (Low Prominence) -->
+          <div class="pt-12 border-t border-white/5 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <a href="https://go.farleir.com/bingo" target="_blank" class="flex items-center justify-between p-6 rounded-2xl bg-white/[0.01] hover:bg-white/5 transition-all group">
+              <div class="flex items-center gap-4">
+                <i data-lucide="quote" class="text-slate-500 group-hover:text-slate-300"></i>
+                <div>
+                  <h4 class="text-slate-300 font-bold">Bingo Corporativo</h4>
+                  <p class="text-xs text-slate-500">Sátira tech e chavões.</p>
+                </div>
+              </div>
+              <i data-lucide="chevron-right" class="w-4 h-4 text-slate-700"></i>
+            </a>
+            <a href="https://go.farleir.com/analistadebage" target="_blank" class="flex items-center justify-between p-6 rounded-2xl bg-white/[0.01] hover:bg-white/5 transition-all group">
+              <div class="flex items-center gap-4">
+                <i data-lucide="coffee" class="text-slate-500 group-hover:text-slate-300"></i>
+                <div>
+                  <h4 class="text-slate-300 font-bold">Analista de Bagé AI</h4>
+                  <p class="text-xs text-slate-500">Filosofia gaúcha via app.</p>
+                </div>
+              </div>
+              <i data-lucide="chevron-right" class="w-4 h-4 text-slate-700"></i>
+            </a>
+          </div>
         </div>
       </section>
     </main>
@@ -424,16 +510,15 @@
             </div>
           </div>
 
-          <!-- Status -->
           <div class="space-y-6 flex flex-col items-center md:items-start">
             <h4 class="text-white font-bold font-heading uppercase tracking-widest text-sm">Status</h4>
             <div class="flex">
-              <a href="https://go.farleir.com/status" target="_blank" class="flex items-center gap-3 px-6 py-3 bg-white/5 rounded-full border border-white/5 hover:border-emerald-500/30 transition-all group">
+              <a href="https://go.farleir.com/uptime-farleircom" target="_blank" class="flex items-center gap-3 px-6 py-3 bg-white/5 rounded-full border border-white/5 hover:border-emerald-500/30 transition-all group">
                 <div class="relative flex h-3 w-3">
                   <span class="animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
                 </div>
-                <span class="text-xs font-bold text-emerald-500 group-hover:text-emerald-400 transition-colors uppercase tracking-widest">Sistemas Online</span>
+                <span class="text-xs font-bold text-emerald-500 group-hover:text-emerald-400 transition-colors uppercase tracking-widest">Sistemas Operacionais</span>
               </a>
             </div>
           </div>
