@@ -27,3 +27,15 @@ Este documento descreve melhorias de otimização de performance web (Web Perfor
 **Contexto:** O script do Canvas que gera as partículas animadas inicia imediatamente junto com a carga da página via `requestAnimationFrame`. Em conexões móveis ou dispositivos com baixa capacidade de processamento, isso concorre por recursos de CPU/GPU durante o carregamento crítico.
 **Task:** Refatorar o script contido na tag `<script>` no final do corpo da página para utilizar um `IntersectionObserver`. O script do Canvas só deve invocar `requestAnimationFrame(animate)` quando o Hero Section estiver visível, pausando a animação de fundo caso o usuário role até o rodapé.
 **Result:** Menor consumo de bateria e CPU, e alívio do processo de renderização inicial da thread principal (Main Thread). O script de fundo deve pausar inteligentemente dependendo de onde o usuário navega.
+
+## 5. Implementação de "Facades" para Vídeos (Lite-YouTube)
+
+**Contexto:** O lazy loading em iframes (item 1) resolve o carregamento massivo na abertura da página, mas quando o usuário rolar a tela, o navegador ainda precisará baixar dezenas de megabytes de scripts pesados do player do YouTube para cada vídeo exibido na tela simultaneamente.
+**Task:** Substituir os blocos `<iframe>` da seção "Digital Media" por componentes de "Facade" (como o `lite-youtube-embed` de Paul Irish). Esse padrão carrega apenas a imagem de miniatura (thumbnail) do vídeo disfarçada como player. O iframe real (junto com o JavaScript pesado do Google) só é injetado no DOM quando o usuário ativamente clica para dar "Play".
+**Result:** Uma redução vertiginosa na alocação de memória RAM e processamento no momento em que a seção de vídeos entra na tela. A usabilidade e o visual permanecem idênticos, mas a performance aumenta exponencialmente.
+
+## 6. Resource Hints (Preconnect e DNS-Prefetch)
+
+**Contexto:** O site depende de origens de terceiros cruciais: Google Fonts, Tailwind CDN, Google Analytics, Microsoft Clarity, etc. Atualmente, o navegador só resolve o DNS e estabelece as conexões TCP/TLS quando encontra essas tags espalhadas pelo `<head>`.
+**Task:** Adicionar as tags `<link rel="preconnect">` e `<link rel="dns-prefetch">` logo no topo da tag `<head>` para os domínios mais lentos e essenciais (ex: `https://fonts.gstatic.com` e `https://cdn.tailwindcss.com`).
+**Result:** O processo de negociação segura de conexão com as CDNs (TCP Handshake e TLS negotiation) ocorrerá muito antes no ciclo de carregamento, reduzindo a latência quando os scripts e fontes precisarem de fato ser baixados.

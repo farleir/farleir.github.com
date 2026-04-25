@@ -25,3 +25,17 @@ Este documento descreve melhorias de segurança e funcionalidade para o portal e
 **Contexto:** O script de animação de partículas (`particles-canvas`) no final do `index.html` depende do objeto `window` e do tamanho da tela. Se houver falha de carregamento ou num resize bizarro, o script não possui bloco `try...catch` para falhar graciosamente sem travar outras renderizações da página.
 **Task:** Envolver a inicialização (`init()`) e animação (`animate()`) do script no `index.html` em blocos `try...catch` com feedback amigável no console.
 **Result:** O script de background no `index.html` possui tratamento de exceção básico para aumentar a confiabilidade em dispositivos diversos.
+
+## 5. Cabeçalhos de Segurança (Edge Level Security)
+
+**Contexto:** Sendo um site hospedado em uma CDN para arquivos estáticos (como o GitHub Pages com eventual integração com Cloudflare), é possível (e recomendado) adicionar cabeçalhos estritos de proteção a nível de servidor/edge.
+**Task:** Criar regras para adicionar os headers de segurança HTTP. A implementação depende do provedor:
+- Se for GitHub Pages, configurar restrições através de meta tags ou utilizar um proxy Cloudflare.
+- **Headers a serem injetados:** `Strict-Transport-Security: max-age=31536000; includeSubDomains; preload` (HSTS), `X-Content-Type-Options: nosniff` (impede ataques de MIME sniffing), e `X-Frame-Options: DENY` ou `SAMEORIGIN` (previne clickjacking impedindo que seu hub seja embutido em sites maliciosos).
+**Result:** Maior pontuação em varreduras de segurança (como o SecurityHeaders.com) e forte camada de defesa que opera no navegador antes mesmo do HTML ser renderizado.
+
+## 6. Permissions-Policy (Feature Policy)
+
+**Contexto:** APIs sensíveis do navegador (como microfone, câmera e geolocalização) não são utilizadas por este site de hub/portfólio estático, porém, iframes (como o YouTube) ou scripts de terceiros podem ter acesso subjacente a funcionalidades.
+**Task:** Inserir um cabeçalho HTTP ou tag `<meta http-equiv="Permissions-Policy" content="...">` no `<head>` desabilitando explicitamente APIs não utilizadas: `camera=(), microphone=(), geolocation=(), payment=()`.
+**Result:** Bloqueio robusto de acesso a hardwares sensíveis do dispositivo do usuário, aprimorando substancialmente a privacidade (alinhado à proposta LGPD/IA listada na própria página).
