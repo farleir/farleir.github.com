@@ -157,34 +157,25 @@
         </div>
 
         <!-- Badges Sidebar Area -->
-        <div class="flex lg:flex-col flex-row flex-wrap gap-4 p-6 card-glass rounded-3xl self-start flex-shrink-0 animate-reveal lg:w-64" style="animation-delay: 0.3s;">
-          <a href="https://go.farleir.com/arquitetoaws" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 group w-full">
-            <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center badge-icon shadow-lg group-hover:border-orange-500/50 group-hover:bg-orange-500/10 transition-all flex-shrink-0">
+        <div class="flex lg:flex-col flex-row gap-6 p-6 card-glass rounded-3xl self-start flex-shrink-0 animate-reveal" style="animation-delay: 0.3s;">
+          <div class="flex flex-col items-center gap-2 group">
+            <div class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center badge-icon shadow-lg group-hover:border-orange-500/50 group-hover:bg-orange-500/10 transition-all">
                <i data-lucide="award" class="text-orange-400 drop-shadow-[0_0_8px_rgba(251,146,60,0.5)]"></i>
             </div>
-            <div class="text-left">
-              <h4 class="text-[10px] uppercase tracking-tighter text-slate-300 font-bold group-hover:text-white transition-colors leading-tight">AWS Certified<br>Solutions Architect</h4>
-              <p class="text-[8px] text-slate-500 mt-1 uppercase">Associate • Exp: 2028</p>
-            </div>
-          </a>
-          <a href="https://go.farleir.com/practitioneraws" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 group w-full">
-            <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center badge-icon shadow-lg group-hover:border-blue-500/50 group-hover:bg-blue-500/10 transition-all flex-shrink-0">
+            <span class="text-[10px] uppercase tracking-tighter text-slate-300 text-center font-bold group-hover:text-white transition-colors">AWS<br>Skills</span>
+          </div>
+          <div class="flex flex-col items-center gap-2 group">
+            <div class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center badge-icon shadow-lg group-hover:border-blue-500/50 group-hover:bg-blue-500/10 transition-all">
               <i data-lucide="cloud" class="text-blue-400 drop-shadow-[0_0_8px_rgba(96,165,250,0.5)]"></i>
             </div>
-            <div class="text-left">
-              <h4 class="text-[10px] uppercase tracking-tighter text-slate-300 font-bold group-hover:text-white transition-colors leading-tight">AWS Certified<br>Cloud Practitioner</h4>
-              <p class="text-[8px] text-slate-500 mt-1 uppercase">Foundational • Exp: 2028</p>
-            </div>
-          </a>
-          <a href="https://go.farleir.com/foundationsaws" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 group w-full">
-            <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center badge-icon shadow-lg group-hover:border-emerald-500/50 group-hover:bg-emerald-500/10 transition-all flex-shrink-0">
+            <span class="text-[10px] uppercase tracking-tighter text-slate-300 text-center font-bold group-hover:text-white transition-colors">Google<br>Cloud</span>
+          </div>
+          <div class="flex flex-col items-center gap-2 group">
+            <div class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center badge-icon shadow-lg group-hover:border-emerald-500/50 group-hover:bg-emerald-500/10 transition-all">
               <i data-lucide="shield-check" class="text-emerald-400 drop-shadow-[0_0_8px_rgba(52,211,153,0.5)]"></i>
             </div>
-            <div class="text-left">
-              <h4 class="text-[10px] uppercase tracking-tighter text-slate-300 font-bold group-hover:text-white transition-colors leading-tight">AWS Academy<br>Graduate</h4>
-              <p class="text-[8px] text-slate-500 mt-1 uppercase">Cloud Foundations</p>
-            </div>
-          </a>
+            <span class="text-[10px] uppercase tracking-tighter text-slate-300 text-center font-bold group-hover:text-white transition-colors">Security<br>Expert</span>
+          </div>
         </div>
       </header>
 
@@ -463,21 +454,36 @@
             </div>
             <ul class="space-y-6">
               <li class="flex items-start gap-4 group">
-                <div class="mt-1 w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-amber-500/20 transition-colors">
-                  <i data-lucide="cloud" class="w-4 h-4 text-amber-500"></i>
-                </div>
-                <div>
-                  <h4 class="text-sm font-bold text-white">AWS Certified Cloud Practitioner</h4>
-                  <p class="text-[10px] text-slate-500 uppercase tracking-widest">Global Certification</p>
-                </div>
-              </li>
-              <li class="flex items-start gap-4 group">
-                <div class="mt-1 w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-amber-500/20 transition-colors">
+                <div class="mt-1 w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-amber-500/20 transition-colors flex-shrink-0">
                    <i data-lucide="award" class="w-4 h-4 text-amber-500"></i>
                 </div>
                 <div>
-                  <h4 class="text-sm font-bold text-white">AWS Academy Cloud Foundations</h4>
-                  <p class="text-[10px] text-slate-500 uppercase tracking-widest">Academic Specialization</p>
+                  <a href="https://go.farleir.com/arquitetoaws" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors block">
+                    <h4 class="text-sm font-bold text-white">AWS Certified Solutions Architect</h4>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-widest mt-1">Associate • Exp: 2028</p>
+                  </a>
+                </div>
+              </li>
+              <li class="flex items-start gap-4 group">
+                <div class="mt-1 w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-amber-500/20 transition-colors flex-shrink-0">
+                  <i data-lucide="cloud" class="w-4 h-4 text-amber-500"></i>
+                </div>
+                <div>
+                  <a href="https://go.farleir.com/practitioneraws" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors block">
+                    <h4 class="text-sm font-bold text-white">AWS Certified Cloud Practitioner</h4>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-widest mt-1">Foundational • Exp: 2028</p>
+                  </a>
+                </div>
+              </li>
+              <li class="flex items-start gap-4 group">
+                <div class="mt-1 w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-amber-500/20 transition-colors flex-shrink-0">
+                   <i data-lucide="shield-check" class="w-4 h-4 text-amber-500"></i>
+                </div>
+                <div>
+                  <a href="https://go.farleir.com/foundationsaws" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors block">
+                    <h4 class="text-sm font-bold text-white">AWS Academy Graduate</h4>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-widest mt-1">Cloud Foundations</p>
+                  </a>
                 </div>
               </li>
             </ul>
