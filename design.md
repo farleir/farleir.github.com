@@ -17,8 +17,8 @@ Este documento aponta falhas visuais, problemas de acessibilidade/usabilidade e 
 ## 3. Validação Preventiva de "Shortlinks"
 
 **Contexto:** O portal depende extensivamente de uma arquitetura de shortlinks (`https://go.farleir.com/...`). Embora o portal seja estático, uma quebra no Sink (encurtador) ou erro de digitação torna a usabilidade nula.
-**Task:** Criar um script auxiliar `scripts/check_links.sh` (ou em Python) que varre o `index.html`, extrai todas as URLs que iniciam com `https://go.farleir.com/` e faz uma requisição HEAD para verificar se a resposta é um redirecionamento válido (ex: status 301, 302, 307 ou 308).
-**Result:** O repositório passa a ter uma ferramenta na pasta de scripts que permite auditar os links curtos rapidamente.
+**Task:** Criar um script Bash auxiliar `scripts/check_links.sh` e integrá-lo via GitHub Actions. O script deve varrer o `index.html`, extrair todas as URLs que iniciam com `https://go.farleir.com/` e fazer uma requisição HEAD via curl para verificar se a resposta é um redirecionamento válido (ex: status 301, 302, 307 ou 308), sendo compatível com o ecossistema estático do GitHub Pages.
+**Result:** O repositório passa a ter uma ferramenta de auditoria CI/CD (GitHub Actions + Bash) que verifica os links curtos sem depender de linguagens de backend no ambiente de produção.
 
 ## 4. Expansão do Ecossistema: Novos Links Encontrados
 
