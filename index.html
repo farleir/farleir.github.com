@@ -11,7 +11,7 @@
   <link rel="canonical" href="https://www.farleir.com/">
 
   <!-- Security & A11y -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://unpkg.com https://www.googletagmanager.com https://www.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.clarity.ms https://c.bing.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://w.clarity.ms; frame-src 'self' https://www.youtube.com;">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://unpkg.com https://www.googletagmanager.com https://www.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://w.clarity.ms; frame-src 'self' https://www.youtube.com;">
   <style>
     /* Focus Rings for A11y */
     a:focus-visible, button:focus-visible {
@@ -184,15 +184,27 @@
           <!-- Tech Skills -->
           <div class="card-glass p-8 rounded-[2rem] border-white/5 h-full">
             <h2 class="text-2xl font-bold font-heading text-white border-b border-white/5 pb-4 mb-6">Habilidades & Especialidades</h2>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-slate-300 hover:border-cyan-500/50 hover:text-cyan-400 transition-colors cursor-default">Analista de TI</span>
-              <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-slate-300 hover:border-cyan-500/50 hover:text-cyan-400 transition-colors cursor-default">Mestre em Mecatrônica</span>
-              <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-slate-300 hover:border-cyan-500/50 hover:text-cyan-400 transition-colors cursor-default">Desenvolvedor de Produtos Eletrônicos</span>
-              <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-slate-300 hover:border-cyan-500/50 hover:text-cyan-400 transition-colors cursor-default">Técnico em Telecom</span>
-              <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-slate-300 hover:border-emerald-500/50 hover:text-emerald-400 transition-colors cursor-default">Inventor</span>
-              <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-slate-300 hover:border-orange-500/50 hover:text-orange-400 transition-colors cursor-default">Linux / Proxmox</span>
-              <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-slate-300 hover:border-blue-500/50 hover:text-blue-400 transition-colors cursor-default">Azure AD</span>
-              <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-slate-300 hover:border-orange-500/50 hover:text-orange-400 transition-colors cursor-default">AWS Platform Engineer</span>
+            <div class="flex flex-wrap gap-3">
+              <!-- Microsoft / Azure -->
+              <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full text-xs font-bold text-blue-400 hover:bg-blue-500/20 transition-colors cursor-default shadow-[0_0_15px_rgba(59,130,246,0.15)]">Microsoft Entra</span>
+              <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full text-xs font-bold text-blue-400 hover:bg-blue-500/20 transition-colors cursor-default shadow-[0_0_15px_rgba(59,130,246,0.15)]">Microsoft Intune</span>
+              <!-- AWS -->
+              <span class="px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full text-xs font-bold text-orange-400 hover:bg-orange-500/20 transition-colors cursor-default shadow-[0_0_15px_rgba(249,115,22,0.15)]">AWS Platform Engineer</span>
+              <!-- Google Cloud -->
+              <span class="px-4 py-2 bg-blue-400/10 border border-blue-400/30 rounded-full text-xs font-bold text-blue-300 hover:bg-blue-400/20 transition-colors cursor-default shadow-[0_0_15px_rgba(96,165,250,0.15)]">Google Cloud</span>
+              <!-- Linux / Infrastructure -->
+              <span class="px-4 py-2 bg-orange-600/10 border border-orange-600/30 rounded-full text-xs font-bold text-orange-500 hover:bg-orange-600/20 transition-colors cursor-default shadow-[0_0_15px_rgba(234,88,12,0.15)]">Ubuntu</span>
+              <span class="px-4 py-2 bg-purple-500/10 border border-purple-500/30 rounded-full text-xs font-bold text-purple-400 hover:bg-purple-500/20 transition-colors cursor-default shadow-[0_0_15px_rgba(168,85,247,0.15)]">CentOS</span>
+              <span class="px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full text-xs font-bold text-orange-400 hover:bg-orange-500/20 transition-colors cursor-default shadow-[0_0_15px_rgba(249,115,22,0.15)]">Proxmox VE</span>
+              <span class="px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full text-xs font-bold text-cyan-400 hover:bg-cyan-500/20 transition-colors cursor-default shadow-[0_0_15px_rgba(6,182,212,0.15)]">Docker & Kubernetes</span>
+              <!-- Dev / Data -->
+              <span class="px-4 py-2 bg-yellow-500/10 border border-yellow-500/30 rounded-full text-xs font-bold text-yellow-400 hover:bg-yellow-500/20 transition-colors cursor-default shadow-[0_0_15px_rgba(234,179,8,0.15)]">Python</span>
+              <!-- Compliance -->
+              <span class="px-4 py-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full text-xs font-bold text-emerald-400 hover:bg-emerald-500/20 transition-colors cursor-default shadow-[0_0_15px_rgba(16,185,129,0.15)]">LGPD / GDPR</span>
+              <!-- General -->
+              <span class="px-4 py-2 bg-slate-500/10 border border-slate-500/30 rounded-full text-xs font-bold text-slate-300 hover:bg-slate-500/20 transition-colors cursor-default">Desenvolvedor Eletrônico</span>
+              <span class="px-4 py-2 bg-slate-500/10 border border-slate-500/30 rounded-full text-xs font-bold text-slate-300 hover:bg-slate-500/20 transition-colors cursor-default">Técnico em Telecom</span>
+              <span class="px-4 py-2 bg-slate-500/10 border border-slate-500/30 rounded-full text-xs font-bold text-slate-300 hover:bg-slate-500/20 transition-colors cursor-default">Inventor</span>
             </div>
           </div>
 
@@ -210,20 +222,20 @@
                   <span class="text-[10px] text-emerald-400 font-bold tracking-wider">NATIVO</span>
                 </div>
                 <div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
-                  <div class="h-full bg-emerald-500/80 rounded-full w-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+                  <div class="h-full bg-gradient-to-r from-emerald-600 to-emerald-400 rounded-full w-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
                 </div>
               </div>
               
               <div class="space-y-2">
                 <div class="flex justify-between items-end">
                   <div>
-                    <h3 class="text-sm font-bold text-slate-200">Inglês <span class="text-[10px] text-emerald-400 font-mono ml-1">EN</span></h3>
+                    <h3 class="text-sm font-bold text-slate-200">Inglês <span class="text-[10px] text-teal-400 font-mono ml-1">EN</span></h3>
                     <p class="text-[10px] text-slate-500 mt-0.5">Compreende Bem, Fala Bem, Lê Bem, Escreve Bem</p>
                   </div>
-                  <span class="text-[10px] text-emerald-400 font-bold tracking-wider">FLUENTE</span>
+                  <span class="text-[10px] text-teal-400 font-bold tracking-wider">FLUENTE</span>
                 </div>
                 <div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
-                  <div class="h-full bg-emerald-500/80 rounded-full w-[90%] shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+                  <div class="h-full bg-gradient-to-r from-teal-600 to-teal-400 rounded-full w-[90%] shadow-[0_0_10px_rgba(45,212,191,0.5)]"></div>
                 </div>
               </div>
               
@@ -236,20 +248,20 @@
                   <span class="text-[10px] text-cyan-400 font-bold tracking-wider">AVANÇADO</span>
                 </div>
                 <div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
-                  <div class="h-full bg-cyan-500/80 rounded-full w-[75%] shadow-[0_0_10px_rgba(6,182,212,0.5)]"></div>
+                  <div class="h-full bg-gradient-to-r from-cyan-600 to-cyan-400 rounded-full w-[75%] shadow-[0_0_10px_rgba(6,182,212,0.5)]"></div>
                 </div>
               </div>
 
               <div class="space-y-2">
                 <div class="flex justify-between items-end">
                   <div>
-                    <h3 class="text-sm font-bold text-slate-200">Italiano <span class="text-[10px] text-cyan-400 font-mono ml-1">IT</span></h3>
+                    <h3 class="text-sm font-bold text-slate-200">Italiano <span class="text-[10px] text-blue-400 font-mono ml-1">IT</span></h3>
                     <p class="text-[10px] text-slate-500 mt-0.5">Compreende Bem, Fala Bem, Lê Razoavelmente, Escreve Pouco</p>
                   </div>
-                  <span class="text-[10px] text-cyan-400 font-bold tracking-wider">INTERMEDIÁRIO</span>
+                  <span class="text-[10px] text-blue-400 font-bold tracking-wider">INTERMEDIÁRIO</span>
                 </div>
                 <div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
-                  <div class="h-full bg-cyan-500/80 rounded-full w-[50%] shadow-[0_0_10px_rgba(6,182,212,0.5)]"></div>
+                  <div class="h-full bg-gradient-to-r from-blue-600 to-blue-400 rounded-full w-[50%] shadow-[0_0_10px_rgba(59,130,246,0.5)]"></div>
                 </div>
               </div>
 
@@ -262,7 +274,7 @@
                   <span class="text-[10px] text-slate-400 font-bold tracking-wider">BÁSICO</span>
                 </div>
                 <div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
-                  <div class="h-full bg-slate-500/80 rounded-full w-[20%]"></div>
+                  <div class="h-full bg-gradient-to-r from-slate-600 to-slate-400 rounded-full w-[20%]"></div>
                 </div>
               </div>
             </div>
@@ -419,14 +431,14 @@
               <div class="space-y-4">
                 <div class="border-l-2 border-cyan-500/30 pl-4 space-y-1">
                   <h4 class="text-white font-bold">Mestrado em Mecatrônica</h4>
-                  <p class="text-sm text-slate-400">IFSC (Aprovado com Distinção)</p>
+                  <p class="text-sm text-slate-400">IFSC (Aprovado com Distinção devido a obtenção de Patente)</p>
                   <p class="text-xs text-slate-500">Foco em <span class="text-cyan-400/80">Inteligência Artificial & Robótica</span></p>
-                  <p class="text-xs text-slate-500 italic">Intercâmbio na Hochschule Neubrandenburg (Alemanha)</p>
                 </div>
                 <div class="border-l-2 border-white/10 pl-4 space-y-1">
                   <h4 class="text-white font-bold">Pós-Graduação em Dev. de Produtos Eletrônicos</h4>
                   <p class="text-sm text-slate-400">IFSC</p>
                   <p class="text-xs text-slate-500">Sistemas Embarcados e <span class="text-slate-300">IoT</span></p>
+                  <p class="text-xs text-slate-500 italic">Intercâmbio na Hochschule Neubrandenburg (Alemanha)</p>
                 </div>
               </div>
               <div class="space-y-4">
