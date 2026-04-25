@@ -10,6 +10,17 @@
   <meta name="keywords" content="Farleir, IT Infrastructure, Cloud Architect, LGPD, IA, Governance">
   <link rel="canonical" href="https://www.farleir.com/">
 
+  <!-- Security & A11y -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://unpkg.com https://www.googletagmanager.com https://www.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.clarity.ms https://c.bing.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://w.clarity.ms; frame-src 'self' https://www.youtube.com;">
+  <style>
+    /* Focus Rings for A11y */
+    a:focus-visible, button:focus-visible {
+      outline: none !important;
+      box-shadow: 0 0 0 2px #06b6d4, 0 0 0 4px #0f172a !important;
+      border-radius: 4px;
+    }
+  </style>
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.farleir.com/">
@@ -30,7 +41,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/jpeg" href="images/farleir.jpg">
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@1.11.0/dist/umd/lucide.min.js" integrity="sha384-7PArHXNzg1s/WgbAH9xkBpx4T6MJ0jPAxaEM9yld+zvdFEjSf+wzzv0hDnem/6rw" crossorigin="anonymous"></script>
   
   <!-- Google Analytics (gtag) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RM0HXXR2SX"></script>
@@ -102,7 +113,7 @@
                 Hello. I'm Farleir.
               </h1>
               <!-- High-Visibility Status -->
-              <a href="https://go.farleir.com/status" target="_blank" class="flex items-center gap-3 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full animate-pulse self-start md:self-center hover:bg-emerald-500/20 transition-all">
+              <a href="https://go.farleir.com/status" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full animate-pulse self-start md:self-center hover:bg-emerald-500/20 transition-all">
                 <div class="relative flex h-3 w-3">
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
@@ -130,15 +141,15 @@
           </div>
           
           <div class="flex flex-wrap gap-4 pt-4">
-            <a href="https://go.farleir.com/linkedin" target="_blank" 
+            <a href="https://go.farleir.com/linkedin" target="_blank" rel="noopener noreferrer" 
                class="flex items-center gap-2 px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-slate-200 transition-all hover:scale-105 active:scale-95 shadow-xl shadow-white/5 text-xs uppercase tracking-widest">
               <i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn
             </a>
-            <a href="https://go.farleir.com/lattes" target="_blank" 
+            <a href="https://go.farleir.com/lattes" target="_blank" rel="noopener noreferrer" 
                class="flex items-center gap-2 px-6 py-4 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 transition-all hover:border-white/20 text-xs uppercase tracking-widest">
               <i data-lucide="book-open" class="w-4 h-4"></i> Lattes
             </a>
-            <a href="https://go.farleir.com/portfolio" target="_blank" 
+            <a href="https://go.farleir.com/portfolio" target="_blank" rel="noopener noreferrer" 
                class="flex items-center gap-2 px-6 py-4 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 transition-all hover:border-white/20 text-xs text-cyan-400 font-bold uppercase tracking-widest">
               <i data-lucide="external-link" class="w-4 h-4"></i> Portfólio
             </a>
@@ -147,26 +158,125 @@
 
         <!-- Badges Sidebar Area -->
         <div class="flex lg:flex-col flex-row gap-6 p-6 card-glass rounded-3xl self-start flex-shrink-0 animate-reveal" style="animation-delay: 0.3s;">
-          <a href="https://go.farleir.com/arquitetoaws" target="_blank" class="flex flex-col items-center gap-2 group">
+          <a href="https://go.farleir.com/arquitetoaws" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 group">
             <div class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center badge-icon shadow-lg group-hover:border-orange-500/50 group-hover:bg-orange-500/10 transition-all">
                <i data-lucide="award" class="text-orange-400 drop-shadow-[0_0_8px_rgba(251,146,60,0.5)]"></i>
             </div>
-            <span class="text-[10px] uppercase tracking-tighter text-slate-500 font-bold group-hover:text-slate-300 transition-colors">AWS Arquiteto</span>
+            <span class="text-[10px] uppercase tracking-tighter text-slate-400 text-center font-bold group-hover:text-slate-300 transition-colors">AWS<br>Arquiteto</span>
           </a>
-          <a href="https://go.farleir.com/aws" target="_blank" class="flex flex-col items-center gap-2 group">
+          <a href="https://go.farleir.com/practitioneraws" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 group">
             <div class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center badge-icon shadow-lg group-hover:border-blue-500/50 group-hover:bg-blue-500/10 transition-all">
               <i data-lucide="cloud" class="text-blue-400 drop-shadow-[0_0_8px_rgba(96,165,250,0.5)]"></i>
             </div>
-            <span class="text-[10px] uppercase tracking-tighter text-slate-500 font-bold group-hover:text-slate-300 transition-colors">AWS Skills</span>
+            <span class="text-[10px] uppercase tracking-tighter text-slate-400 text-center font-bold group-hover:text-slate-300 transition-colors">AWS<br>Practitioner</span>
           </a>
-          <a href="https://go.farleir.com/google-skills" target="_blank" class="flex flex-col items-center gap-2 group">
-            <div class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center badge-icon shadow-lg group-hover:border-green-500/50 group-hover:bg-green-500/10 transition-all">
-              <i data-lucide="shield-check" class="text-green-400 drop-shadow-[0_0_8px_rgba(74,222,128,0.5)]"></i>
+          <a href="https://go.farleir.com/foundationsaws" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 group">
+            <div class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center badge-icon shadow-lg group-hover:border-emerald-500/50 group-hover:bg-emerald-500/10 transition-all">
+              <i data-lucide="shield-check" class="text-emerald-400 drop-shadow-[0_0_8px_rgba(52,211,153,0.5)]"></i>
             </div>
-            <span class="text-[10px] uppercase tracking-tighter text-slate-500 font-bold group-hover:text-slate-300 transition-colors">Google Cloud</span>
+            <span class="text-[10px] uppercase tracking-tighter text-slate-400 text-center font-bold group-hover:text-slate-300 transition-colors">AWS<br>Foundations</span>
           </a>
         </div>
       </header>
+
+      <!-- Core Competencies & Languages -->
+      <section class="animate-reveal py-10" style="animation-delay: 0.12s; opacity: 1;">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          
+          <!-- Core Competencies -->
+          <div class="space-y-6">
+            <h2 class="text-2xl font-bold font-heading text-white border-b border-white/5 pb-4">Core Competencies</h2>
+            
+            <div class="space-y-4">
+              <div class="space-y-2">
+                <div class="flex justify-between items-end">
+                  <div>
+                    <h3 class="text-sm font-bold text-slate-200">Cloud Architecture</h3>
+                    <p class="text-[10px] text-slate-500 mt-0.5">Arquiteturas resilientes em AWS & Google Cloud.</p>
+                  </div>
+                  <span class="text-[10px] text-orange-400 font-bold tracking-wider">MEDIA</span>
+                </div>
+                <div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                  <div class="h-full bg-orange-500/80 rounded-full w-2/3 shadow-[0_0_10px_rgba(249,115,22,0.5)]"></div>
+                </div>
+              </div>
+              
+              <div class="space-y-2">
+                <div class="flex justify-between items-end">
+                  <div>
+                    <h3 class="text-sm font-bold text-slate-200">Data Governance</h3>
+                    <p class="text-[10px] text-slate-500 mt-0.5">Compliance (LGPD) e segurança de dados críticos.</p>
+                  </div>
+                  <span class="text-[10px] text-emerald-400 font-bold tracking-wider">ALTA</span>
+                </div>
+                <div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                  <div class="h-full bg-emerald-500/80 rounded-full w-11/12 shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+                </div>
+              </div>
+              
+              <div class="space-y-2">
+                <div class="flex justify-between items-end">
+                  <div>
+                    <h3 class="text-sm font-bold text-slate-200">AI & Machine Learning</h3>
+                    <p class="text-[10px] text-slate-500 mt-0.5">Modelagem preditiva e LLMs para automação.</p>
+                  </div>
+                  <span class="text-[10px] text-cyan-400 font-bold tracking-wider">MEDIA</span>
+                </div>
+                <div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                  <div class="h-full bg-cyan-500/80 rounded-full w-2/3 shadow-[0_0_10px_rgba(6,182,212,0.5)]"></div>
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <div class="flex justify-between items-end">
+                  <div>
+                    <h3 class="text-sm font-bold text-slate-200">Mechatronics</h3>
+                    <p class="text-[10px] text-slate-500 mt-0.5">Fusão entre hardware, firmware e sistemas digitais.</p>
+                  </div>
+                  <span class="text-[10px] text-slate-400 font-bold tracking-wider">BAIXA</span>
+                </div>
+                <div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                  <div class="h-full bg-slate-500/80 rounded-full w-1/3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div class="space-y-6">
+            <h2 class="text-2xl font-bold font-heading text-white border-b border-white/5 pb-4">Languages</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-white/20 transition-colors">
+                <h3 class="text-sm font-bold text-slate-200 flex justify-between">Inglês <span class="text-[10px] text-emerald-400 font-mono">EN</span></h3>
+                <p class="text-[10px] text-slate-500 mt-1 leading-relaxed">Compreende Bem, Fala Bem, Lê Bem, Escreve Bem.</p>
+              </div>
+              
+              <div class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-white/20 transition-colors">
+                <h3 class="text-sm font-bold text-slate-200 flex justify-between">Português <span class="text-[10px] text-emerald-400 font-mono">PT</span></h3>
+                <p class="text-[10px] text-slate-500 mt-1 leading-relaxed">Compreende Bem, Fala Bem, Lê Bem, Escreve Bem.</p>
+              </div>
+              
+              <div class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-white/20 transition-colors">
+                <h3 class="text-sm font-bold text-slate-200 flex justify-between">Espanhol <span class="text-[10px] text-cyan-400 font-mono">ES</span></h3>
+                <p class="text-[10px] text-slate-500 mt-1 leading-relaxed">Compreende Bem, Fala Bem, Lê Bem, Escreve Razoavelmente.</p>
+              </div>
+              
+              <div class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-white/20 transition-colors">
+                <h3 class="text-sm font-bold text-slate-200 flex justify-between">Italiano <span class="text-[10px] text-cyan-400 font-mono">IT</span></h3>
+                <p class="text-[10px] text-slate-500 mt-1 leading-relaxed">Compreende Bem, Fala Bem, Lê Razoavelmente, Escreve Pouco.</p>
+              </div>
+              
+              <div class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-white/20 transition-colors sm:col-span-2">
+                <h3 class="text-sm font-bold text-slate-200 flex justify-between">Alemão <span class="text-[10px] text-slate-400 font-mono">DE</span></h3>
+                <p class="text-[10px] text-slate-500 mt-1 leading-relaxed">Compreende Pouco, Fala Pouco, Lê Pouco, Escreve Pouco.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
 
       <!-- Digital Media Section (Reordered to Top) -->
       <section class="animate-reveal" style="animation-delay: 0.15s; opacity: 1;">
@@ -187,7 +297,7 @@
                 <iframe src="https://www.youtube.com/embed/y7yJp7nqxwg?start=1541&enablejsapi=1&rel=0" allowfullscreen></iframe>
               </div>
               <div class="px-1">
-                <a href="https://youtu.be/y7yJp7nqxwg?t=1541" target="_blank" class="block">
+                <a href="https://youtu.be/y7yJp7nqxwg?t=1541" target="_blank" rel="noopener noreferrer" class="block">
                   <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-cyan-500">Apresentação Recente</span>
                   <p class="text-[10px] text-slate-400 font-medium mt-1 group-hover:text-slate-300 transition-colors">Seminário IA: Governança e Educação</p>
                 </a>
@@ -200,7 +310,7 @@
                 <iframe src="https://www.youtube.com/embed/zE4jDyE142s?enablejsapi=1&rel=0" allowfullscreen></iframe>
               </div>
               <div class="px-1">
-                <a href="https://youtu.be/zE4jDyE142s" target="_blank" class="block">
+                <a href="https://youtu.be/zE4jDyE142s" target="_blank" rel="noopener noreferrer" class="block">
                   <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-purple-500">Band-SC</span>
                   <p class="text-[10px] text-slate-400 font-medium mt-1 group-hover:text-slate-300 transition-colors">Notícias da Redação</p>
                 </a>
@@ -213,7 +323,7 @@
                 <iframe src="https://www.youtube.com/embed/E2TMLKjTCPg?enablejsapi=1&rel=0" allowfullscreen></iframe>
               </div>
               <div class="px-1">
-                <a href="https://youtu.be/E2TMLKjTCPg" target="_blank" class="block">
+                <a href="https://youtu.be/E2TMLKjTCPg" target="_blank" rel="noopener noreferrer" class="block">
                   <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-500">IFSCTV</span>
                   <p class="text-[10px] text-slate-400 font-medium mt-1 group-hover:text-slate-300 transition-colors">Programa Repórter IFSC</p>
                 </a>
@@ -226,7 +336,7 @@
                 <iframe src="https://www.youtube.com/embed/BYA-J9wVkgk?enablejsapi=1&rel=0" allowfullscreen></iframe>
               </div>
               <div class="px-1">
-                <a href="https://youtu.be/BYA-J9wVkgk" target="_blank" class="block">
+                <a href="https://youtu.be/BYA-J9wVkgk" target="_blank" rel="noopener noreferrer" class="block">
                   <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-500">RBS TV / Globo</span>
                   <p class="text-[10px] text-slate-400 font-medium mt-1 group-hover:text-slate-300 transition-colors">Inovação</p>
                 </a>
@@ -239,7 +349,7 @@
                 <iframe src="https://www.youtube.com/embed/ngnNzP9cySM?enablejsapi=1&rel=0" allowfullscreen></iframe>
               </div>
               <div class="px-1">
-                <a href="https://go.farleir.com/yt-novoenergia" target="_blank" class="block">
+                <a href="https://go.farleir.com/yt-novoenergia" target="_blank" rel="noopener noreferrer" class="block">
                   <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-orange-500">Pitch de Inovação</span>
                   <p class="text-[10px] text-slate-400 font-medium mt-1 group-hover:text-slate-300 transition-colors">Novo Energia</p>
                 </a>
@@ -252,7 +362,7 @@
                 <iframe src="https://www.youtube.com/embed/ErrEF552FhI?start=1&enablejsapi=1&rel=0" allowfullscreen></iframe>
               </div>
               <div class="px-1">
-                <a href="https://www.youtube.com/watch?v=ErrEF552FhI&t=1s" target="_blank" class="block">
+                <a href="https://www.youtube.com/watch?v=ErrEF552FhI&t=1s" target="_blank" rel="noopener noreferrer" class="block">
                   <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-yellow-500">NOVO Energia na Globo RBS/SC</span>
                   <p class="text-[10px] text-slate-400 font-medium mt-1 group-hover:text-slate-300 transition-colors">Matéria veiculada no final de 2014 na Rede Brasil Sul de TV e promovida pelo setor de Jornalismo do IFSC - Campus Florianópolis.</p>
                 </a>
@@ -261,7 +371,7 @@
           </div>
           
           <div class="mt-8 flex justify-center">
-            <a href="https://go.farleir.com/yt-playlist" target="_blank" class="text-xs font-bold uppercase tracking-widest text-slate-500 hover:text-white transition-colors flex items-center gap-2">
+            <a href="https://go.farleir.com/yt-playlist" target="_blank" rel="noopener noreferrer" class="text-xs font-bold uppercase tracking-widest text-slate-500 hover:text-white transition-colors flex items-center gap-2">
               Playlist Completa no Canal <i data-lucide="external-link" class="w-3 h-3"></i>
             </a>
           </div>
@@ -280,7 +390,7 @@
               <p class="text-xs text-slate-400 font-light">Produtividade cocriada com IA.</p>
             </div>
           </div>
-          <a href="https://go.farleir.com/apps" target="_blank" class="group flex items-center gap-2 text-cyan-400 text-sm font-medium">
+          <a href="https://go.farleir.com/apps" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-2 text-cyan-400 text-sm font-medium">
             Acessar Ecossistema <i data-lucide="arrow-up-right" class="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
           </a>
         </section>
@@ -295,7 +405,7 @@
               <p class="text-xs text-slate-400 font-light">Link Shortener & Analytics.</p>
             </div>
           </div>
-          <a href="https://go.farleir.com/go" target="_blank" class="flex items-center gap-2 text-white/40 hover:text-white text-sm transition-colors">
+          <a href="https://go.farleir.com/go" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-white/40 hover:text-white text-sm transition-colors">
             Gerenciar <i data-lucide="chevron-right" class="w-3 h-3"></i>
           </a>
         </section>
@@ -460,7 +570,7 @@
               </div>
 
               <div class="flex flex-wrap justify-center lg:justify-start gap-6 pt-6">
-                <a href="https://go.farleir.com/pick2me" target="_blank" class="px-10 py-4 bg-cyan-500 text-black font-black rounded-full hover:bg-cyan-400 transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-cyan-500/40 text-lg uppercase tracking-widest">
+                <a href="https://go.farleir.com/pick2me" target="_blank" rel="noopener noreferrer" class="px-10 py-4 bg-cyan-500 text-black font-black rounded-full hover:bg-cyan-400 transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-cyan-500/40 text-lg uppercase tracking-widest">
                   Experimentar Chatbot
                 </a>
               </div>
@@ -483,7 +593,7 @@
             <p class="text-lg text-slate-400 font-light leading-relaxed">
               Propriedade Intelectual: <span class="text-white font-medium">Filtro Inteligente de Conteúdo</span>.
             </p>
-            <a href="https://go.farleir.com/patente" target="_blank" class="inline-flex px-6 py-3 bg-amber-500/10 text-amber-500 border border-amber-500/20 font-bold rounded-full hover:bg-amber-500 hover:text-black transition-all">
+            <a href="https://go.farleir.com/patente" target="_blank" rel="noopener noreferrer" class="inline-flex px-6 py-3 bg-amber-500/10 text-amber-500 border border-amber-500/20 font-bold rounded-full hover:bg-amber-500 hover:text-black transition-all">
               Ver Documentação
             </a>
           </div>
@@ -511,7 +621,7 @@
                 <span class="text-xs font-bold uppercase tracking-widest text-cyan-500 bg-cyan-500/10 px-2 py-0.5 rounded">Liderança & IA</span>
                 <h3 class="text-2xl font-bold font-heading text-white leading-tight group-hover:text-cyan-400 transition-colors">O Profissional Procurador-geral de Problemas</h3>
                 <p class="text-slate-400 font-light line-clamp-2 leading-relaxed text-sm">O papel insubstituível do ser humano como orquestrador de soluções complexas em um mundo automatizado.</p>
-                <a href="https://go.farleir.com/tree-profissionalfuturo" target="_blank" class="flex items-center gap-2 text-white/40 group-hover:text-white font-medium transition-all text-sm">
+                <a href="https://go.farleir.com/tree-profissionalfuturo" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-white/40 group-hover:text-white font-medium transition-all text-sm">
                   Ler Artigo <i data-lucide="arrow-right" class="w-3 h-3"></i>
                 </a>
               </div>
@@ -526,7 +636,7 @@
                 <span class="text-xs font-bold uppercase tracking-widest text-violet-500">Startups</span>
                 <h3 class="text-2xl font-bold font-heading text-white leading-tight group-hover:text-violet-400 transition-colors">Patos x Galinhas aplicados a startups</h3>
                 <p class="text-slate-400 font-light line-clamp-2">Entenda a metáfora que define a resiliência e a agilidade nas empresas de tecnologia emergentes.</p>
-                <a href="https://go.farleir.com/tree-patosxgalinhas" target="_blank" class="flex items-center gap-2 text-white/40 group-hover:text-white font-medium transition-colors">
+                <a href="https://go.farleir.com/tree-patosxgalinhas" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-white/40 group-hover:text-white font-medium transition-colors">
                   Ler Artigo <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </a>
               </div>
@@ -541,7 +651,7 @@
                 <span class="text-xs font-bold uppercase tracking-widest text-amber-500 bg-amber-500/10 px-2 py-0.5 rounded">Inovação</span>
                 <h3 class="text-2xl font-bold font-heading text-white leading-tight group-hover:text-amber-400 transition-colors">Como passar seu primeiro pitch</h3>
                 <p class="text-slate-400 font-light line-clamp-2">Guia prático para fundadores que estão submetendo suas ideias pela primeira vez a investidores.</p>
-                <a href="https://go.farleir.com/tree-novoenergia" target="_blank" class="flex items-center gap-2 text-white/40 group-hover:text-white font-medium transition-all text-sm">
+                <a href="https://go.farleir.com/tree-novoenergia" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-white/40 group-hover:text-white font-medium transition-all text-sm">
                   Ler Artigo <i data-lucide="arrow-right" class="w-3 h-3"></i>
                 </a>
               </div>
@@ -558,7 +668,7 @@
             <h3 class="text-xl font-bold font-heading uppercase tracking-[0.3em]">Arquivo Pessoal</h3>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <a href="https://go.farleir.com/blogspot" target="_blank" class="flex items-center gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/0 hover:border-white/10 hover:bg-white/5 transition-all group">
+            <a href="https://go.farleir.com/blogspot" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/0 hover:border-white/10 hover:bg-white/5 transition-all group">
               <div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <i data-lucide="edit-3" class="text-orange-500"></i>
               </div>
@@ -567,7 +677,7 @@
                 <span class="text-xs text-slate-500 uppercase tracking-tighter">Histórico Pessoal</span>
               </div>
             </a>
-            <a href="https://go.farleir.com/blog" target="_blank" class="flex items-center gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/0 hover:border-white/10 hover:bg-white/5 transition-all group">
+            <a href="https://go.farleir.com/blog" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/0 hover:border-white/10 hover:bg-white/5 transition-all group">
               <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <i data-lucide="pen-tool" class="text-blue-500"></i>
               </div>
@@ -576,7 +686,7 @@
                 <span class="text-xs text-slate-500 uppercase tracking-tighter">Tecnologia & Dev</span>
               </div>
             </a>
-            <a href="https://go.farleir.com/tumblr" target="_blank" class="flex items-center gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/0 hover:border-white/10 hover:bg-white/5 transition-all group">
+            <a href="https://go.farleir.com/tumblr" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/0 hover:border-white/10 hover:bg-white/5 transition-all group">
               <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <i data-lucide="type" class="text-indigo-500"></i>
               </div>
@@ -585,7 +695,7 @@
                 <span class="text-xs text-slate-500 uppercase tracking-tighter">Curadoria Visual</span>
               </div>
             </a>
-            <a href="https://go.farleir.com/500px" target="_blank" class="flex items-center gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/0 hover:border-white/10 hover:bg-white/5 transition-all group">
+            <a href="https://go.farleir.com/500px" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/0 hover:border-white/10 hover:bg-white/5 transition-all group">
               <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <i data-lucide="camera" class="text-white/80"></i>
               </div>
@@ -603,7 +713,7 @@
               <span class="text-[10px] uppercase font-bold tracking-[0.2em]">Farleir Labs</span>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <a href="https://go.farleir.com/bingo" target="_blank" class="flex items-center justify-between p-6 rounded-2xl bg-white/[0.01] hover:bg-white/5 transition-all group border border-transparent hover:border-white/5">
+              <a href="https://go.farleir.com/bingo" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-6 rounded-2xl bg-white/[0.01] hover:bg-white/5 transition-all group border border-transparent hover:border-white/5">
                 <div class="flex items-center gap-4">
                   <div class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center">
                     <i data-lucide="quote" class="w-4 h-4 text-slate-500 group-hover:text-slate-300"></i>
@@ -615,7 +725,7 @@
                 </div>
                 <i data-lucide="arrow-right" class="w-4 h-4 text-slate-700 group-hover:text-slate-400 transition-all"></i>
               </a>
-              <a href="https://go.farleir.com/analistadebage" target="_blank" class="flex items-center justify-between p-6 rounded-2xl bg-white/[0.01] hover:bg-white/5 transition-all group border border-transparent hover:border-white/5">
+              <a href="https://go.farleir.com/analistadebage" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-6 rounded-2xl bg-white/[0.01] hover:bg-white/5 transition-all group border border-transparent hover:border-white/5">
                 <div class="flex items-center gap-4">
                   <div class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center">
                     <i data-lucide="coffee" class="text-slate-500 group-hover:text-slate-300"></i>
@@ -642,24 +752,24 @@
           <div class="space-y-4">
             <h4 class="text-white font-bold font-heading uppercase tracking-widest text-sm">Contatos Diretos</h4>
             <ul class="space-y-4">
-              <li><a href="https://go.farleir.com/email" target="_blank" class="flex items-center justify-center md:justify-start gap-3 text-slate-400 hover:text-white transition-colors"><i data-lucide="mail" class="w-4 h-4"></i> E-mail Profissional</a></li>
+              <li><a href="https://go.farleir.com/email" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center md:justify-start gap-3 text-slate-400 hover:text-white transition-colors"><i data-lucide="mail" class="w-4 h-4"></i> E-mail Profissional</a></li>
             </ul>
           </div>
           
           <div class="space-y-4 flex flex-col items-center md:items-start">
             <h4 class="text-white font-bold font-heading uppercase tracking-widest text-sm">Redes Sociais</h4>
             <div class="flex flex-wrap gap-x-6 gap-y-4 justify-center md:justify-start pt-2">
-              <a href="https://go.farleir.com/linkedin" target="_blank" class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 hover:text-white transition-colors">LinkedIn</a>
-              <a href="https://go.farleir.com/x" target="_blank" class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 hover:text-white transition-colors">X (Twitter)</a>
-              <a href="https://go.farleir.com/instagram" target="_blank" class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 hover:text-white transition-colors">Instagram</a>
-              <a href="https://go.farleir.com/facebook" target="_blank" class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 hover:text-white transition-colors">Facebook</a>
+              <a href="https://go.farleir.com/linkedin" target="_blank" rel="noopener noreferrer" class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 hover:text-white transition-colors">LinkedIn</a>
+              <a href="https://go.farleir.com/x" target="_blank" rel="noopener noreferrer" class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 hover:text-white transition-colors">X (Twitter)</a>
+              <a href="https://go.farleir.com/instagram" target="_blank" rel="noopener noreferrer" class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 hover:text-white transition-colors">Instagram</a>
+              <a href="https://go.farleir.com/facebook" target="_blank" rel="noopener noreferrer" class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 hover:text-white transition-colors">Facebook</a>
             </div>
           </div>
 
           <div class="space-y-4 flex flex-col items-center md:items-start">
             <h4 class="text-white font-bold font-heading uppercase tracking-widest text-sm">Status</h4>
             <div class="flex">
-              <a href="https://go.farleir.com/uptime-farleircom" target="_blank" class="flex items-center gap-3 px-6 py-3 bg-white/5 rounded-full border border-white/5 hover:border-emerald-500/30 transition-all group">
+              <a href="https://go.farleir.com/uptime-farleircom" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-6 py-3 bg-white/5 rounded-full border border-white/5 hover:border-emerald-500/30 transition-all group">
                 <div class="relative flex h-3 w-3">
                   <span class="animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
