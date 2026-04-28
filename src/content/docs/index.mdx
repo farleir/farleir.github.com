@@ -1,0 +1,36 @@
+---
+title: Farleir Hub
+description: O centro do seu ecossistema SaaS e agentes autônomos.
+template: splash
+hero:
+  tagline: Explore meu portfólio interativo e acesse o ecossistema de aplicativos em um único lugar.
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Ver Portfólio
+      link: /portfolio
+      icon: right-arrow
+    - text: Acessar Aplicativos
+      link: /aplicativos
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Ecossistema Integrado
+
+<CardGrid stagger>
+	<Card title="Portfólio Profissional" icon="document">
+		Conheça minha trajetória, projetos e experiência em Infraestrutura, Cloud, Segurança e Inovação. Tudo reunido em uma timeline interativa.
+	</Card>
+	<Card title="Aplicativos SaaS" icon="puzzle">
+		Acesso direto ao ecossistema de aplicativos baseados em IA e ferramentas de produtividade. (Em migração)
+	</Card>
+	<Card title="Agentes Autônomos" icon="setting">
+		Infraestrutura preparada para comercialização e implantação de Agentes de IA dedicados no futuro.
+	</Card>
+	<Card title="Performance e Segurança" icon="rocket">
+		Construído sob Cloudflare Pages com Astro, garantindo velocidade máxima e segurança de ponta.
+	</Card>
+</CardGrid>
