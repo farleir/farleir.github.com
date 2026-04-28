@@ -1,0 +1,74 @@
+/* Custom premium styles for Farleir Hub */
+
+:root {
+  --sl-color-accent-low: #082f49;
+  --sl-color-accent: #0ea5e9;
+  --sl-color-accent-high: #bae6fd;
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #f1f5f9;
+  --sl-color-gray-2: #e2e8f0;
+  --sl-color-gray-3: #cbd5e1;
+  --sl-color-gray-4: #94a3b8;
+  --sl-color-gray-5: #64748b;
+  --sl-color-gray-6: #475569;
+  --sl-color-black: #0f172a;
+}
+
+:root[data-theme='dark'] {
+  --sl-color-accent-low: #0c4a6e;
+  --sl-color-accent: #38bdf8;
+  --sl-color-accent-high: #e0f2fe;
+  --sl-color-black: #020617;
+  --sl-color-gray-6: #1e293b;
+  --sl-color-gray-5: #334155;
+}
+
+/* Premium Hero styling */
+.hero {
+  padding: 4rem 1rem;
+  background: radial-gradient(circle at top right, rgba(14, 165, 233, 0.1), transparent),
+              radial-gradient(circle at bottom left, rgba(14, 165, 233, 0.05), transparent);
+}
+
+.hero img {
+  filter: drop-shadow(0 0 2rem rgba(14, 165, 233, 0.3));
+}
+
+/* Glassmorphism for cards */
+.sl-card {
+  background: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  transition: transform 0.3s ease, border-color 0.3s ease !important;
+}
+
+.sl-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--sl-color-accent) !important;
+}
+
+/* Fix for iframe height and alignment */
+iframe {
+  width: 100%;
+  height: calc(100vh - 12rem);
+  border-radius: 12px;
+  background: transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sl-color-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sl-color-gray-5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sl-color-accent);
+}
