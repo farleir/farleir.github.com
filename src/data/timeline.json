@@ -510,12 +510,29 @@
   "certifications": [
     {
       "icon": "<svg class=\"w-6 h-6 text-yellow-400 min-w-max\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z\"></path></svg>",
+      "issued": "2026-05-13",
+      "expires": "2029-05-13",
       "translations": {
-        "pt-BR": "Certificação AWS Certified AI Practitioner (2026)",
-        "en-US": "AWS Certified AI Practitioner Certification (2026)",
-        "es-ES": "Certificación AWS Certified AI Practitioner (2026)",
-        "it-IT": "Certificazione AWS Certified AI Practitioner (2026)",
-        "de-DE": "AWS Certified AI Practitioner Zertifizierung (2026)"
+        "pt-BR": {
+          "title": "Certificação AWS Certified AI Practitioner (2026)",
+          "description": "Compreensão de conceitos, métodos e estratégias de IA, ML e IA generativa na AWS. Capacidade de determinar tecnologias de IA/ML para casos de uso específicos e uso responsável de IA generativa."
+        },
+        "en-US": {
+          "title": "AWS Certified AI Practitioner Certification (2026)",
+          "description": "Understanding of AI, ML, and generative AI concepts, methods, and strategies on AWS. Ability to determine AI/ML technologies for specific use cases and responsible use of generative AI."
+        },
+        "es-ES": {
+          "title": "Certificación AWS Certified AI Practitioner (2026)",
+          "description": "Comprensión de conceptos, métodos y estrategias de IA, ML e IA generativa en AWS. Capacidad para determinar tecnologías de IA/ML para casos de uso específicos y uso responsable de IA generativa."
+        },
+        "it-IT": {
+          "title": "Certificazione AWS Certified AI Practitioner (2026)",
+          "description": "Comprensione di concetti, metodi e strategie di IA, ML e IA generativa su AWS. Capacità di determinare tecnologie IA/ML per casi d'uso specifici e uso responsabile dell'IA generativa."
+        },
+        "de-DE": {
+          "title": "AWS Certified AI Practitioner Zertifizierung (2026)",
+          "description": "Verständnis von KI-, ML- und generativen KI-Konzepten, Methoden und Strategien auf AWS. Fähigkeit, KI/ML-Technologien für spezifische Anwendungsfälle zu bestimmen und verantwortungsbewusster Einsatz von generativer KI."
+        }
       }
     },
     {
