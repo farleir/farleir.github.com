@@ -537,22 +537,46 @@
     },
     {
       "icon": "<svg class=\"w-6 h-6 text-yellow-400 min-w-max\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z\"></path></svg>",
+      "issued": "2025-12-01",
+      "expires": "2028-12-01",
       "translations": {
-        "pt-BR": "Certificação AWS Cloud Architect (2025)",
-        "en-US": "AWS Cloud Architect Certification (2025)",
-        "es-ES": "Certificación AWS Cloud Architect (2025)",
-        "it-IT": "Certificazione AWS Cloud Architect (2025)",
-        "de-DE": "AWS Cloud Architect Zertifizierung (2025)"
+        "pt-BR": {
+          "title": "AWS Certified Solutions Architect – Associate"
+        },
+        "en-US": {
+          "title": "AWS Certified Solutions Architect – Associate"
+        },
+        "es-ES": {
+          "title": "AWS Certified Solutions Architect – Associate"
+        },
+        "it-IT": {
+          "title": "AWS Certified Solutions Architect – Associate"
+        },
+        "de-DE": {
+          "title": "AWS Certified Solutions Architect – Associate"
+        }
       }
     },
     {
       "icon": "<svg class=\"w-6 h-6 text-yellow-400 min-w-max\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z\"></path></svg>",
+      "issued": "2022-10-01",
+      "expires": "2028-12-01",
       "translations": {
-        "pt-BR": "Certificação AWS Cloud Practitioner (2022)",
-        "en-US": "AWS Cloud Practitioner Certification (2022)",
-        "es-ES": "Certificación AWS Cloud Practitioner (2022)",
-        "it-IT": "Certificazione AWS Cloud Practitioner (2022)",
-        "de-DE": "AWS Cloud Practitioner Zertifizierung (2022)"
+        "pt-BR": {
+          "title": "AWS Certified Cloud Practitioner"
+        },
+        "en-US": {
+          "title": "AWS Certified Cloud Practitioner"
+        },
+        "es-ES": {
+          "title": "AWS Certified Cloud Practitioner"
+        },
+        "it-IT": {
+          "title": "AWS Certified Cloud Practitioner"
+        },
+        "de-DE": {
+          "title": "AWS Certified Cloud Practitioner"
+        }
       }
     },
     {
@@ -627,12 +651,23 @@
     },
     {
       "icon": "<svg class=\"w-6 h-6 text-sky-400 min-w-max\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z\"></path></svg>",
+      "issued": "2022-10-01",
       "translations": {
-        "pt-BR": "AWS Academy Cloud Foundations",
-        "en-US": "AWS Academy Cloud Foundations",
-        "es-ES": "AWS Academy Cloud Foundations",
-        "it-IT": "AWS Academy Cloud Foundations",
-        "de-DE": "AWS Academy Cloud Foundations"
+        "pt-BR": {
+          "title": "AWS Academy Graduate - Cloud Foundations - Training Badge"
+        },
+        "en-US": {
+          "title": "AWS Academy Graduate - Cloud Foundations - Training Badge"
+        },
+        "es-ES": {
+          "title": "AWS Academy Graduate - Cloud Foundations - Training Badge"
+        },
+        "it-IT": {
+          "title": "AWS Academy Graduate - Cloud Foundations - Training Badge"
+        },
+        "de-DE": {
+          "title": "AWS Academy Graduate - Cloud Foundations - Training Badge"
+        }
       }
     },
     {
