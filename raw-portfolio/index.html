@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-TT6BKKZLQK"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-TT6BKKZLQK'); </script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "tvigerizp4");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Farleir Luís Minozzo, Analista de TI especialista em Infraestrutura, Cloud (AWS), Segurança e Inovação, com mais de 15 anos de experiência.">
+    <meta name="keywords" content="Farleir Luís Minozzo, Portfólio, IT Analyst, Mechatronics, AWS Platform Engineer, Inventor, Cloud, Cibersegurança, Governança de TI">
+    <title>Portfólio Interativo | Farleir Luís Minozzo - Especialista em Cloud, Segurança e Inovação</title>
+    
+    <!-- Script do Tailwind CSS para estilização rápida -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {}
+            }
+        }
+    </script>
+    
+    <!-- Fonte Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased bg-gray-50 dark:bg-black text-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+    <!-- 
+      SEÇÃO 1: O CANVAS INTERATIVO ("HERO")
+      Aqui está a apresentação criativa que você pediu.
+      O canvas renderiza uma rede de partículas com suas habilidades.
+    -->
+    <section id="canvas-hero" class="flex items-center justify-center text-center bg-gray-50 dark:bg-black relative">
+        <canvas id="network-canvas"></canvas>
+        
+        <div class="absolute top-4 right-4 flex items-center space-x-4 z-20">
+            <a href="https://go.farleir.com/lattes" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-sky-500 transition-colors">Lattes</a>
+            <a href="https://go.farleir.com/linkedin" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-sky-500 transition-colors">LinkedIn</a>
+            <button id="theme-toggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white" aria-label="Toggle theme">
+                <!-- Sun icon for light mode -->
+                <svg id="theme-toggle-sun" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M12 5a7 7 0 100 14 7 7 0 000-14z"></path></svg>
+                <!-- Moon icon for dark mode -->
+                <svg id="theme-toggle-moon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+            </button>
+            <div id="language-switcher" class="flex space-x-2">
+                <button class="lang-btn text-base px-2 py-1 rounded bg-gray-200 dark:bg-gray-800 hover:bg-sky-500 transition-colors" data-lang="pt-BR" title="Português">🇧🇷</button>
+                <button class="lang-btn text-base px-2 py-1 rounded bg-gray-200 dark:bg-gray-800 hover:bg-sky-500 transition-colors" data-lang="en-US" title="English">🇺🇸</button>
+                <button class="lang-btn text-base px-2 py-1 rounded bg-gray-200 dark:bg-gray-800 hover:bg-sky-500 transition-colors" data-lang="es-ES" title="Español">🇪🇸</button>
+                <button class="lang-btn text-base px-2 py-1 rounded bg-gray-200 dark:bg-gray-800 hover:bg-sky-500 transition-colors" data-lang="it-IT" title="Italiano">🇮🇹</button>
+                <button class="lang-btn text-base px-2 py-1 rounded bg-gray-200 dark:bg-gray-800 hover:bg-sky-500 transition-colors" data-lang="de-DE" title="Deutsch">🇩🇪</button>
+            </div>
+        </div>
+
+        <div class="hero-content max-w-4xl mx-auto p-4">
+            <h1 class="text-3xl sm:text-4xl md:text-6xl font-black text-gray-900 dark:text-white drop-shadow-lg leading-tight" data-translate="author_name">
+                Farleir Luís Minozzo
+            </h1>
+            <p class="mt-4 text-lg sm:text-xl md:text-2xl font-light text-sky-600 dark:text-sky-300 drop-shadow-md" data-translate="hero_subtitle">
+                IT Analyst | MSc Mechatronics | AWS Platform Engineer | Inventor
+            </p>
+            <p class="mt-8 text-base sm:text-lg text-gray-700 dark:text-slate-300 max-w-2xl mx-auto" data-translate="hero_description">
+                Mais de 15 anos de experiência conectando infraestrutura, segurança, cloud e inovação de hardware. Role para explorar a minha trajetória.
+            </p>
+            <div class="mt-12">
+                <a href="#about" class="px-8 py-3 bg-sky-600 text-white font-semibold rounded-lg shadow-lg hover:bg-sky-500 transition-colors duration-300" data-translate="explore_journey_button">
+                    Explorar Trajetória
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+      SEÇÃO 2: CONTEÚDO DO PORTFÓLIO
+      Abaixo do canvas, apresentamos os detalhes extraídos dos seus documentos.
+    -->
+    <main class="relative z-10 bg-gray-100 dark:bg-gray-900 py-16 md:py-24">
+        <div class="container mx-auto max-w-6xl p-6">
+
+            <!-- SEÇÃO "SOBRE" -->
+            <section id="about" class="mb-20">
+                <h2 class="text-4xl font-bold text-gray-900 dark:text-white text-center" data-translate="about_me_title">
+                    Especialista em Infraestrutura, Cloud e Inovação
+                </h2>
+                <div class="h-1 w-20 bg-sky-500 mx-auto mt-4 mb-10"></div>
+                <p class="text-lg text-gray-700 dark:text-slate-300 max-w-3xl mx-auto text-center leading-relaxed" data-translate="about_me_description">
+                    Com mais de 15 anos de experiência, combino uma carreira como Analista de TI, focado em Governança de TI (ITIL, COBIT), Cibersegurança (LGPD/GDPR), Sistemas Linux (Debian, RedHat) e Ambientes Multicloud (AWS, Azure, GCP), com graduação em Telecomunicações, Pós em Desenvolvimento de Produtos Eletrônicos (com intercâmbio na Alemanha) e Mestrado em Mecatrônica (com Distinção e um depósito de Patente).
+                </p>
+            </section>
+
+            <!-- SEÇÃO DE EXPERIÊNCIA (LINHA DO TEMPO) -->
+            <section id="experience" class="mb-20">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12" data-translate="professional_journey_title">
+                    Trajetória Profissional
+                </h2>
+                <div id="experience-container" class="max-w-3xl mx-auto">
+                    <!-- JS vai renderizar os itens aqui -->
+                </div>
+            </section>
+            
+            <!-- SEÇÃO DE PROJETOS -->
+            <section id="projects" class="mb-20">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12" data-translate="projects_title">
+                    Projetos em Destaque
+                </h2>
+                <div id="projects-container" class="max-w-3xl mx-auto pl-4">
+                    <!-- JS vai renderizar os itens aqui -->
+                </div>
+            </section>
+            
+            <!-- SEÇÃO DE INOVAÇÃO E PESQUISA (A PATENTE) -->
+            <section id="patent" class="mb-20 max-w-3xl mx-auto bg-white dark:bg-gray-800 p-8 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-700">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8" data-translate="patent_title">
+                    Inovação Registrada (Patente)
+                </h2>
+                <a href="assets/BR202016027003-4.pdf" target="_blank" rel="noopener noreferrer" class="block text-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors p-4 rounded-lg cursor-pointer">
+                    <span class="inline-block bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-full uppercase mb-4" data-translate="patent_type">Patente de Modelo de Utilidade</span>
+                    <h3 class="text-2xl font-semibold text-sky-600 dark:text-sky-300 mb-3" data-translate="patent_name">
+                        DISPOSIÇÃO CONSTRUTIVA APLICADA EM FILTRO DE LINHA
+                    </h3>
+                    <p class="text-gray-700 dark:text-slate-300 mb-6 max-w-2xl mx-auto" data-translate="patent_desc">
+                        BR 20 2016 027003 4 - Dispositivo projetado durante a dissertação de mestrado para proteção inteligente de equipamentos eletroeletrônicos contra distúrbios na rede elétrica, integrando sensores e atuadores de estado sólido com resposta em nanossegundos.
+                    </p>
+                    <div class="flex justify-center items-center gap-4 text-sm text-gray-500 dark:text-slate-400 mb-8">
+                        <span class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            <span data-translate="patent_date">Depósito: 17/11/2016</span>
+                        </span>
+                        <span class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                            <span data-translate="patent_institution">Titular: IFSC</span>
+                        </span>
+                    </div>
+                    <!-- Botão para PDF da Patente -->
+                    <span class="inline-flex items-center gap-2 px-6 py-3 bg-sky-600 hover:bg-sky-500 text-white font-semibold rounded-lg transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        <span data-translate="read_article">Ler Documento</span>
+                    </span>
+                </a>
+            </section>
+
+            <!-- SEÇÃO DE FORMAÇÃO E CERTIFICAÇÕES -->
+            <section id="education" class="mb-20">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12" data-translate="education_title">
+                    Formação Acadêmica
+                </h2>
+                <div id="education-container" class="max-w-3xl mx-auto pl-4">
+                    <!-- JS vai renderizar os itens aqui -->
+                </div>
+            </section>
+
+            <section id="certifications" class="mb-20">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12" data-translate="certifications_title">
+                    Certificações & Treinamentos
+                </h2>
+                <div id="certifications-container" class="max-w-3xl mx-auto pl-4">
+                    <!-- JS vai renderizar os itens aqui -->
+                </div>
+            </section>
+
+            <!-- SEÇÃO DE EVENTOS -->
+            <section id="events" class="mb-20">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12" data-translate="events_title">
+                    Eventos & Participações
+                </h2>
+                <div id="events-container" class="max-w-3xl mx-auto pl-4">
+                    <!-- JS vai renderizar os itens aqui -->
+                </div>
+            </section>
+
+            <!-- SEÇÃO DE IDIOMAS -->
+            <section id="languages" class="mb-20">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12" data-translate="languages_title">
+                    Idiomas
+                </h2>
+                <div class="flex flex-wrap justify-center items-center gap-6 text-lg text-gray-700 dark:text-slate-300">
+                    <p><span class="fi fi-br"></span> 🇧🇷 Português (Nativo)</p>
+                    <p><span class="fi fi-us"></span> 🇺🇸 Inglês (Profissional)</p>
+                    <p><span class="fi fi-es"></span> 🇪🇸 Espanhol (Trabalho)</p>
+                    <p><span class="fi fi-it"></span> 🇮🇹 Italiano (Limitado)</p>
+                    <p><span class="fi fi-de"></span> 🇩🇪 Alemão (Básico)</p>
+                </div>
+            </section>
+
+            <!-- SEÇÃO DE CONTATO -->
+            <section id="contact" class="text-center">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6" data-translate="contact_title">Conecte-se Comigo</h2>
+                <p class="text-lg text-gray-700 dark:text-slate-300 mb-8 max-w-xl mx-auto" data-translate="contact_description">
+                    Vamos conversar sobre arquitetura de cloud, governança de TI, segurança, inovação em hardware ou projetos de IA.
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <a href="http://lattes.cnpq.br/0332020910767714" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white font-semibold rounded-lg hover:bg-sky-500 hover:text-white transition-colors duration-300" data-translate="lattes_button">
+                        Currículo Lattes
+                    </a>
+                    <a href="https://github.com/farleir" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white font-semibold rounded-lg hover:bg-sky-500 hover:text-white transition-colors duration-300" data-translate="github_button">
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/farleir/" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white font-semibold rounded-lg hover:bg-sky-500 hover:text-white transition-colors duration-300" data-translate="linkedin_button">
+                        LinkedIn
+                    </a>
+                    <!-- Adicionar outros links se desejar, como email -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-gray-200 dark:bg-gray-800 text-center p-6 text-gray-600 dark:text-slate-500 border-t border-gray-300 dark:border-gray-700">
+        <div class="flex justify-center space-x-6 mb-4">
+            <a href="https://go.farleir.com/footer-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" class="h-6 w-6"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path></svg></a>
+            <a href="https://go.farleir.com/footer-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-6 w-6"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93-.91 0-1.38.61-1.38 1.93V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.28.93 3.28 4.3v4.8z"></path></svg></a>
+            <a href="https://go.farleir.com/footer-x" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><svg viewBox="0 0 1200 1227" fill="currentColor" aria-hidden="true" class="h-6 w-6"><path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.163 519.284ZM569.165 687.828L521.697 619.934L144.011 79.6902H306.615L611.412 515.685L658.88 583.579L1055.08 1150.31H892.476L569.165 687.828Z"></path></svg></a>
+            <a href="https://go.farleir.com/footer-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-6 w-6"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.644-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.441 1.441 1.441 1.441-.645 1.441-1.441-.645-1.44-1.441-1.44z"></path></svg></a>
+            <a href="https://go.farleir.com/footer-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-6 w-6"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path></svg></a>
+        </div>
+        <p>&copy; <span id="current-year"></span> Farleir Luís Minozzo. <span data-translate="footer_rights">Todos os direitos reservados.</span></p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+

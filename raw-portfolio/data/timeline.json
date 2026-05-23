@@ -1,0 +1,837 @@
+{
+  "experience": [
+    {
+      "isCurrent": true,
+      "translations": {
+        "pt-BR": {
+          "title": "Analista de TI - Gestão de Dados & IA",
+          "company": "Instituto Federal de Santa Catarina (IFSC) - Reitoria (Desde Jan 2024)",
+          "description": "Foco atual em análise de dados com Inteligência Artificial, governança de TI e segurança da informação."
+        },
+        "en-US": {
+          "title": "IT Analyst - Data Management & AI",
+          "company": "Federal Institute of Santa Catarina (IFSC) - Rectory (Since Jan 2024)",
+          "description": "Current focus on data analysis with Artificial Intelligence, IT governance, and information security."
+        },
+        "es-ES": {
+          "title": "Analista de TI - Gestión de Datos e IA",
+          "company": "Instituto Federal de Santa Catarina (IFSC) - Rectorado (Desde Ene 2024)",
+          "description": "Foco actual en análisis de datos con Inteligencia Artificial, gobernanza de TI y seguridad de la información."
+        },
+        "it-IT": {
+          "title": "Analista IT - Gestione Dati & IA",
+          "company": "Istituto Federale di Santa Catarina (IFSC) - Rettorato (Da Gen 2024)",
+          "description": "Focus attuale sull'analisi dei dati con Intelligenza Artificiale, governance IT e sicurezza delle informazioni."
+        },
+        "de-DE": {
+          "title": "IT-Analyst - Datenmanagement & KI",
+          "company": "Bundesinstitut von Santa Catarina (IFSC) - Rektorat (Seit Jan 2024)",
+          "description": "Aktueller Fokus auf Datenanalyse mit künstlicher Intelligenz, IT-Governance und Informationssicherheit."
+        }
+      }
+    },
+    {
+      "isCurrent": false,
+      "translations": {
+        "pt-BR": {
+          "title": "Analista de TI - Cibersegurança",
+          "company": "IFSC - Reitoria (Mar 2023 - Jan 2024)",
+          "description": "Implementação inicial de processos e políticas de segurança da informação."
+        },
+        "en-US": {
+          "title": "IT Analyst - Cybersecurity",
+          "company": "IFSC - Rectory (Mar 2023 - Jan 2024)",
+          "description": "Initial implementation of information security processes and policies."
+        },
+        "es-ES": {
+          "title": "Analista de TI - Ciberseguridad",
+          "company": "IFSC - Rectorado (Mar 2023 - Ene 2024)",
+          "description": "Implementación inicial de procesos y políticas de seguridad de la información."
+        },
+        "it-IT": {
+          "title": "Analista IT - Cybersecurity",
+          "company": "IFSC - Rettorato (Mar 2023 - Gen 2024)",
+          "description": "Implementazione iniziale di processi e politiche di sicurezza delle informazioni."
+        },
+        "de-DE": {
+          "title": "IT-Analyst - Cybersicherheit",
+          "company": "IFSC - Rektorat (Mär 2023 - Jan 2024)",
+          "description": "Erstmalige Implementierung von Informationssicherheitsprozessen und -richtlinien."
+        }
+      }
+    },
+    {
+      "isCurrent": false,
+      "translations": {
+        "pt-BR": {
+          "title": "Analista de TI / Coordenador - Governança",
+          "company": "IFSC - Reitoria (Fev 2020 - Mai 2023)",
+          "description": "Implementação da LGPD, elaboração de políticas, Planos de Dados Abertos e Continuidade de Negócios para 23 Campi."
+        },
+        "en-US": {
+          "title": "IT Analyst / Coordinator - Governance",
+          "company": "IFSC - Rectory (Feb 2020 - May 2023)",
+          "description": "Implementation of LGPD, development of policies, Open Data Plans, and Business Continuity for 23 Campuses."
+        },
+        "es-ES": {
+          "title": "Analista de TI / Coordinador - Gobernanza",
+          "company": "IFSC - Rectorado (Feb 2020 - May 2023)",
+          "description": "Implementación de LGPD, elaboración de políticas, Planes de Datos Abiertos y Continuidad de Negocio para 23 Campus."
+        },
+        "it-IT": {
+          "title": "Analista IT / Coordinatore - Governance",
+          "company": "IFSC - Rettorato (Feb 2020 - Mag 2023)",
+          "description": "Implementazione del LGPD, sviluppo di politiche, Piani di Dati Aperti e Continuità Operativa per 23 Campus."
+        },
+        "de-DE": {
+          "title": "IT-Analyst / Koordinator - Governance",
+          "company": "IFSC - Rektorat (Feb 2020 - Mai 2023)",
+          "description": "Implementierung der DSGVO, Entwicklung von Richtlinien, Open-Data-Plänen und Geschäftskontinuität für 23 Standorte."
+        }
+      }
+    },
+    {
+      "isCurrent": true,
+      "translations": {
+        "pt-BR": {
+          "title": "Analista de Sistemas",
+          "company": "Norus (2020 - Atual)",
+          "description": "Especialista em infraestrutura híbrida, projetando soluções de rede (Unifi) para clusters de virtualização (Proxmox). Experiência em automação e integração com a nuvem AWS e na administração do ecossistema Microsoft (MS Entra ID, Microsoft 365, Intune)."
+        },
+        "en-US": {
+          "title": "Systems Analyst",
+          "company": "Norus (2020 - Present)",
+          "description": "Specialist in hybrid infrastructure, designing network solutions (Unifi) for virtualization clusters (Proxmox). Experience in automation and AWS cloud integration, and managing the Microsoft ecosystem (MS Entra ID, Microsoft 365, Intune)."
+        },
+        "es-ES": {
+          "title": "Analista de Sistemas",
+          "company": "Norus (2020 - Actual)",
+          "description": "Especialista en infraestructura híbrida, diseñando soluciones de red (Unifi) para clústeres de virtualización (Proxmox). Experiencia en automatización e integración en la nube AWS y administración del ecosistema Microsoft (MS Entra ID, Microsoft 365, Intune)."
+        },
+        "it-IT": {
+          "title": "Analista di Sistemi",
+          "company": "Norus (2020 - Attuale)",
+          "description": "Specialista in infrastruttura ibrida, progettazione di soluzioni di rete (Unifi) per cluster di virtualizzazione (Proxmox). Esperienza in automazione e integrazione cloud AWS e gestione dell'ecosistema Microsoft (MS Entra ID, Microsoft 365, Intune)."
+        },
+        "de-DE": {
+          "title": "Systemanalytiker",
+          "company": "Norus (2020 - Heute)",
+          "description": "Spezialist für hybride Infrastrukturen, Entwurf von Netzwerklösungen (Unifi) für Virtualisierungscluster (Proxmox). Erfahrung in der Automatisierung und AWS-Cloud-Integration sowie in der Verwaltung des Microsoft-Ökosystems (MS Entra ID, Microsoft 365, Intune)."
+        }
+      }
+    },
+    {
+      "isCurrent": true,
+      "translations": {
+        "pt-BR": {
+          "title": "Co-Fundador e Diretor Executivo",
+          "company": "Novo Energia (Jan 2012 - Atual)",
+          "description": "Projeto originado na Pós-Graduação, intercâmbio na Alemanha e fomento CNPq. Finalista do Darwin Starter 2015 e vencedor do Sinapse da Inovação V em 2016."
+        },
+        "en-US": {
+          "title": "Co-Founder and Executive Director",
+          "company": "Novo Energia (Jan 2012 - Present)",
+          "description": "Project originated in Post-Graduation, exchange in Germany, and CNPq funding. Finalist in Darwin Starter 2015 and winner of Sinapse da Inovação V in 2016."
+        },
+        "es-ES": {
+          "title": "Cofundador y Director Ejecutivo",
+          "company": "Novo Energia (Ene 2012 - Actual)",
+          "description": "Proyecto originado en Posgrado, intercambio en Alemania y financiación CNPq. Finalista de Darwin Starter 2015 y ganador de Sinapse da Inovação V en 2016."
+        },
+        "it-IT": {
+          "title": "Cofondatore e Direttore Esecutivo",
+          "company": "Novo Energia (Gen 2012 - Attuale)",
+          "description": "Progetto originato dalla specializzazione, scambio in Germania e finanziamento CNPq. Finalista del Darwin Starter 2015 e vincitore di Sinapse da Inovação V nel 2016."
+        },
+        "de-DE": {
+          "title": "Mitbegründer und Geschäftsführer",
+          "company": "Novo Energia (Jan 2012 - Heute)",
+          "description": "Projekt aus dem Postgraduiertenstudium, Austausch in Deutschland und CNPq-Förderung. Finalist beim Darwin Starter 2015 und Gewinner der Sinapse da Inovação V im Jahr 2016."
+        }
+      }
+    },
+    {
+      "isCurrent": false,
+      "translations": {
+        "pt-BR": {
+          "title": "Analista de Infraestrutura",
+          "company": "IFSC - Reitoria (Nov 2014 - Abr 2018)",
+          "description": "Administração Linux (CentOS/Debian), manutenção de datacenter (EMC/HP Blade/VMWare) e suporte de rede para mais de 20 Campi."
+        },
+        "en-US": {
+          "title": "Infrastructure Analyst",
+          "company": "IFSC - Rectory (Nov 2014 - Apr 2018)",
+          "description": "Linux administration (CentOS/Debian), datacenter maintenance (EMC/HP Blade/VMWare), and network support for over 20 Campuses."
+        },
+        "es-ES": {
+          "title": "Analista de Infraestructura",
+          "company": "IFSC - Rectorado (Nov 2014 - Abr 2018)",
+          "description": "Administración Linux (CentOS/Debian), mantenimiento de centro de datos (EMC/HP Blade/VMWare) y soporte de red para más de 20 Campus."
+        },
+        "it-IT": {
+          "title": "Analista di Infrastruttura",
+          "company": "IFSC - Rettorato (Nov 2014 - Apr 2018)",
+          "description": "Amministrazione Linux (CentOS/Debian), manutenzione data center (EMC/HP Blade/VMWare) e supporto di rete per oltre 20 Campus."
+        },
+        "de-DE": {
+          "title": "Infrastruktur-Analyst",
+          "company": "IFSC - Rektorat (Nov 2014 - Apr 2018)",
+          "description": "Linux-Administration (CentOS/Debian), Rechenzentrumswartung (EMC/HP Blade/VMWare) und Netzwerk-Support für über 20 Standorte."
+        }
+      }
+    },
+    {
+      "isCurrent": false,
+      "translations": {
+        "pt-BR": {
+          "title": "Tutor - Suporte a distância",
+          "company": "Universidade Aberta do Brasil - UAB (Mai 2012 - Jun 2013)",
+          "description": "Suporte ao Sistema de Informação Moodle para Educação a Distância (EaD)."
+        },
+        "en-US": {
+          "title": "Tutor - Distance Support",
+          "company": "Open University of Brazil - UAB (May 2012 - Jun 2013)",
+          "description": "Support for the Moodle Information System for Distance Education (EaD)."
+        },
+        "es-ES": {
+          "title": "Tutor - Soporte a distancia",
+          "company": "Universidad Abierta de Brasil - UAB (May 2012 - Jun 2013)",
+          "description": "Soporte al Sistema de Información Moodle para Educación a Distancia (EaD)."
+        },
+        "it-IT": {
+          "title": "Tutor - Supporto a distanza",
+          "company": "Università Aperta del Brasile - UAB (Mag 2012 - Giu 2013)",
+          "description": "Supporto per il Sistema Informativo Moodle per l'Educazione a Distanza (EaD)."
+        },
+        "de-DE": {
+          "title": "Tutor - Fernbetreuung",
+          "company": "Offene Universität Brasiliens - UAB (Mai 2012 - Jun 2013)",
+          "description": "Unterstützung des Moodle-Informationssystems für den Fernunterricht (EaD)."
+        }
+      }
+    },
+    {
+      "isCurrent": false,
+      "translations": {
+        "pt-BR": {
+          "title": "Analista de Tecnologia da Informação",
+          "company": "Instituto Federal Catarinense - IFC (2010 - 2011)",
+          "description": "Coordenação de TI (Concórdia) e Analista (Camboriú). Gerenciamento de projetos de rede, virtualização (KVM), migração para Open Source e implantação de sistemas web."
+        },
+        "en-US": {
+          "title": "Information Technology Analyst",
+          "company": "Federal Institute of Catarinense - IFC (2010 - 2011)",
+          "description": "IT Coordination (Concórdia) and Analyst (Camboriú). Network project management, virtualization (KVM), migration to Open Source, and web systems implementation."
+        },
+        "es-ES": {
+          "title": "Analista de Tecnología de la Información",
+          "company": "Instituto Federal Catarinense - IFC (2010 - 2011)",
+          "description": "Coordinación de TI (Concórdia) y Analista (Camboriú). Gestión de proyectos de red, virtualización (KVM), migración a Open Source e implementación de sistemas web."
+        },
+        "it-IT": {
+          "title": "Analista di Tecnologia dell'Informazione",
+          "company": "Istituto Federale Catarinense - IFC (2010 - 2011)",
+          "description": "Coordinamento IT (Concórdia) e Analista (Camboriú). Gestione di progetti di rete, virtualizzazione (KVM), migrazione a Open Source e implementazione di sistemi web."
+        },
+        "de-DE": {
+          "title": "Analyst für Informationstechnologie",
+          "company": "Bundesinstitut Catarinense - IFC (2010 - 2011)",
+          "description": "IT-Koordination (Concórdia) und Analyst (Camboriú). Netzwerkprojektmanagement, Virtualisierung (KVM), Migration zu Open Source und Implementierung von Websystemen."
+        }
+      }
+    },
+    {
+      "isCurrent": false,
+      "translations": {
+        "pt-BR": {
+          "title": "Administrador de Sistemas (Cloud)",
+          "company": "Beck et al. Services (Alemanha) (Ago 2009 - Jan 2010)",
+          "description": "Experiência internacional chave. Administração e customização de sistemas Open Source/IBM, com foco na migração de servidores locais para a nuvem Amazon EC2."
+        },
+        "en-US": {
+          "title": "Systems Administrator (Cloud)",
+          "company": "Beck et al. Services (Germany) (Aug 2009 - Jan 2010)",
+          "description": "Key international experience. Administration and customization of Open Source/IBM systems, with a focus on migrating local servers to the Amazon EC2 cloud."
+        },
+        "es-ES": {
+          "title": "Administrador de Sistemas (Nube)",
+          "company": "Beck et al. Services (Alemania) (Ago 2009 - Ene 2010)",
+          "description": "Experiencia internacional clave. Administración y personalización de sistemas Open Source/IBM, con un enfoque en la migración de servidores locales a la nube de Amazon EC2."
+        },
+        "it-IT": {
+          "title": "Amministratore di Sistemi (Cloud)",
+          "company": "Beck et al. Services (Germania) (Ago 2009 - Gen 2010)",
+          "description": "Esperienza internazionale chiave. Amministrazione e personalizzazione di sistemi Open Source/IBM, con un focus sulla migrazione di server locali al cloud di Amazon EC2."
+        },
+        "de-DE": {
+          "title": "Systemadministrator (Cloud)",
+          "company": "Beck et al. Services (Deutschland) (Aug 2009 - Jan 2010)",
+          "description": "Wichtige internationale Erfahrung. Verwaltung und Anpassung von Open-Source-/IBM-Systemen mit Schwerpunkt auf der Migration lokaler Server in die Amazon EC2-Cloud."
+        }
+      }
+    },
+    {
+      "isCurrent": false,
+      "translations": {
+        "pt-BR": {
+          "title": "Técnico de Confiabilidade / Estagiário (P&D)",
+          "company": "Intelbras S/A (Dez 2007 - Jan 2009)",
+          "description": "Pesquisa & Desenvolvimento em Redes e Telefonia Convergente. Validação e aprovação de hardware e software em cenários de teste para produtos SOHO."
+        },
+        "en-US": {
+          "title": "Reliability Technician / Intern (R&D)",
+          "company": "Intelbras S/A (Dec 2007 - Jan 2009)",
+          "description": "Research & Development in Networks and Convergent Telephony. Validation and approval of hardware and software in test scenarios for SOHO products."
+        },
+        "es-ES": {
+          "title": "Técnico de Confiabilidad / Pasante (I+D)",
+          "company": "Intelbras S/A (Dic 2007 - Ene 2009)",
+          "description": "Investigación y Desarrollo en Redes y Telefonía Convergente. Validación y aprobación de hardware y software en escenarios de prueba para productos SOHO."
+        },
+        "it-IT": {
+          "title": "Tecnico di Affidabilità / Stagista (R&S)",
+          "company": "Intelbras S/A (Dic 2007 - Gen 2009)",
+          "description": "Ricerca e Sviluppo in Reti e Telefonia Convergente. Validazione e approvazione di hardware e software in scenari di test per prodotti SOHO."
+        },
+        "de-DE": {
+          "title": "Zuverlässigkeitstechniker / Praktikant (F&E)",
+          "company": "Intelbras S/A (Dez 2007 - Jan 2009)",
+          "description": "Forschung und Entwicklung in Netzwerken und konvergenter Telefonie. Validierung und Zulassung von Hardware und Software in Testszenarien für SOHO-Produkte."
+        }
+      }
+    },
+    {
+      "isCurrent": false,
+      "translations": {
+        "pt-BR": {
+          "title": "Bolsista / Estagiário",
+          "company": "CEFET-SC (Dez 2005 - Dez 2006)",
+          "description": "Montagem e testes de um kit didático para ensino da técnica PCM (Pulse Code Modulation)."
+        },
+        "en-US": {
+          "title": "Scholarship Holder / Intern",
+          "company": "CEFET-SC (Dec 2005 - Dec 2006)",
+          "description": "Assembly and testing of a didactic kit for teaching the PCM (Pulse Code Modulation) technique."
+        },
+        "es-ES": {
+          "title": "Becario / Pasante",
+          "company": "CEFET-SC (Dic 2005 - Dic 2006)",
+          "description": "Montaje y pruebas de un kit didáctico para la enseñanza de la técnica PCM (Modulación por Impulsos Codificados)."
+        },
+        "it-IT": {
+          "title": "Borsista / Stagista",
+          "company": "CEFET-SC (Dic 2005 - Dic 2006)",
+          "description": "Assemblaggio e test di un kit didattico per l'insegnamento della tecnica PCM (Pulse Code Modulation)."
+        },
+        "de-DE": {
+          "title": "Stipendiat / Praktikant",
+          "company": "CEFET-SC (Dez 2005 - Dez 2006)",
+          "description": "Montage und Prüfung eines didaktischen Bausatzes für den Unterricht der PCM-Technik (Pulse Code Modulation)."
+        }
+      }
+    }
+  ],
+  "education": [
+    {
+      "translations": {
+        "pt-BR": {
+          "degree": "Mestrado em Mecatrônica",
+          "institution": "Instituto Federal de Santa Catarina (IFSC) (2015 - 2017)",
+          "details": "Aprovado com Distinção devido a depósito de patente. Desenvolvimento de um Filtro de Linha Inteligente."
+        },
+        "en-US": {
+          "degree": "Master's in Mechatronics",
+          "institution": "Federal Institute of Santa Catarina (IFSC) (2015 - 2017)",
+          "details": "Approved with Distinction due to patent deposit. Development of a Smart Power Strip."
+        },
+        "es-ES": {
+          "degree": "Máster en Mecatrónica",
+          "institution": "Instituto Federal de Santa Catarina (IFSC) (2015 - 2017)",
+          "details": "Aprobado con Distinción debido al depósito de patente. Desarrollo de un Filtro de Línea Inteligente."
+        },
+        "it-IT": {
+          "degree": "Master in Meccatronica",
+          "institution": "Istituto Federale di Santa Catarina (IFSC) (2015 - 2017)",
+          "details": "Approvato con Lode per deposito di brevetto. Sviluppo di una Smart Power Strip."
+        },
+        "de-DE": {
+          "degree": "Master in Mechatronik",
+          "institution": "Bundesinstitut von Santa Catarina (IFSC) (2015 - 2017)",
+          "details": "Mit Auszeichnung bestanden aufgrund einer Patentanmeldung. Entwicklung einer intelligenten Steckdosenleiste."
+        }
+      }
+    },
+    {
+      "translations": {
+        "pt-BR": {
+          "degree": "Pós-Graduação em Desenv. de Produtos Eletrônicos",
+          "institution": "IFSC / Hochschule Neubrandenburg (2012 - 2014)",
+          "details": "Projeto de proteção elétrica inteligente finalizado durante intercâmbio na Alemanha."
+        },
+        "en-US": {
+          "degree": "Post-Graduate in Electronic Product Development",
+          "institution": "IFSC / Hochschule Neubrandenburg (2012 - 2014)",
+          "details": "Smart electrical protection project completed during an exchange in Germany."
+        },
+        "es-ES": {
+          "degree": "Posgrado en Desarrollo de Productos Electrónicos",
+          "institution": "IFSC / Hochschule Neubrandenburg (2012 - 2014)",
+          "details": "Proyecto de protección eléctrica inteligente finalizado durante un intercambio en Alemania."
+        },
+        "it-IT": {
+          "degree": "Specializzazione in Sviluppo di Prodotti Elettronici",
+          "institution": "IFSC / Hochschule Neubrandenburg (2012 - 2014)",
+          "details": "Progetto di protezione elettrica intelligente completato durante uno scambio in Germania."
+        },
+        "de-DE": {
+          "degree": "Postgraduiertenstudium in der Entwicklung elektronischer Produkte",
+          "institution": "IFSC / Hochschule Neubrandenburg (2012 - 2014)",
+          "details": "Intelligentes elektrisches Schutzprojekt, das während eines Austauschs in Deutschland abgeschlossen wurde."
+        }
+      }
+    },
+    {
+      "translations": {
+        "pt-BR": {
+          "degree": "Graduação em Sistemas de Telecomunicações",
+          "institution": "Instituto Federal de Santa Catarina (IFSC) (2004 - 2009)",
+          "details": "Estudo Comparativo entre o Padrão IEEE802.11g e o Draft 2.0 IEEE802.11n."
+        },
+        "en-US": {
+          "degree": "Degree in Telecommunication Systems",
+          "institution": "Federal Institute of Santa Catarina (IFSC) (2004 - 2009)",
+          "details": "Comparative Study between IEEE802.11g Standard and Draft 2.0 IEEE802.11n."
+        },
+        "es-ES": {
+          "degree": "Licenciatura en Sistemas de Telecomunicaciones",
+          "institution": "Instituto Federal de Santa Catarina (IFSC) (2004 - 2009)",
+          "details": "Estudio comparativo entre el estándar IEEE802.11g y el Draft 2.0 IEEE802.11n."
+        },
+        "it-IT": {
+          "degree": "Laurea in Sistemi di Telecomunicazione",
+          "institution": "Istituto Federale di Santa Catarina (IFSC) (2004 - 2009)",
+          "details": "Studio comparativo tra lo standard IEEE802.11g e il Draft 2.0 IEEE802.11n."
+        },
+        "de-DE": {
+          "degree": "Abschluss in Telekommunikationssystemen",
+          "institution": "Bundesinstitut von Santa Catarina (IFSC) (2004 - 2009)",
+          "details": "Vergleichende Studie zwischen dem IEEE802.11g-Standard und dem Draft 2.0 IEEE802.11n."
+        }
+      }
+    },
+    {
+      "translations": {
+        "pt-BR": {
+          "degree": "Técnico em Telecomunicações",
+          "institution": "Instituto Federal de Santa Catarina (IFSC) (2004 - 2006)",
+          "details": "Curso técnico/profissionalizante."
+        },
+        "en-US": {
+          "degree": "Telecommunications Technician",
+          "institution": "Federal Institute of Santa Catarina (IFSC) (2004 - 2006)",
+          "details": "Technical/vocational course."
+        },
+        "es-ES": {
+          "degree": "Técnico en Telecomunicaciones",
+          "institution": "Instituto Federal de Santa Catarina (IFSC) (2004 - 2006)",
+          "details": "Curso técnico/profesional."
+        },
+        "it-IT": {
+          "degree": "Tecnico in Telecomunicazioni",
+          "institution": "Istituto Federale di Santa Catarina (IFSC) (2004 - 2006)",
+          "details": "Corso tecnico/professionale."
+        },
+        "de-DE": {
+          "degree": "Telekommunikationstechniker",
+          "institution": "Bundesinstitut von Santa Catarina (IFSC) (2004 - 2006)",
+          "details": "Technische/Berufliche Ausbildung."
+        }
+      }
+    },
+    {
+      "translations": {
+        "pt-BR": {
+          "degree": "Graduação em Administração (Interrompida)",
+          "institution": "Centro Universitário Municipal de São José (USJ) (2008 - 2009)",
+          "details": "Graduação interrompida em 2009."
+        },
+        "en-US": {
+          "degree": "Degree in Business Administration (Interrupted)",
+          "institution": "Municipal University Center of São José (USJ) (2008 - 2009)",
+          "details": "Degree interrupted in 2009."
+        },
+        "es-ES": {
+          "degree": "Licenciatura en Administración (Interrumpida)",
+          "institution": "Centro Universitario Municipal de São José (USJ) (2008 - 2009)",
+          "details": "Licenciatura interrumpida en 2009."
+        },
+        "it-IT": {
+          "degree": "Laurea in Economia Aziendale (Interrotta)",
+          "institution": "Centro Universitario Municipale di São José (USJ) (2008 - 2009)",
+          "details": "Laurea interrotta nel 2009."
+        },
+        "de-DE": {
+          "degree": "Abschluss in Betriebswirtschaft (Abgebrochen)",
+          "institution": "Städtisches Universitätszentrum von São José (USJ) (2008 - 2009)",
+          "details": "Abschluss 2009 abgebrochen."
+        }
+      }
+    },
+    {
+      "translations": {
+        "pt-BR": {
+          "degree": "Ensino Médio (2º grau)",
+          "institution": "Instituto Federal de Santa Catarina (IFSC) (2000 - 2003)",
+          "details": "Formação básica."
+        },
+        "en-US": {
+          "degree": "High School",
+          "institution": "Federal Institute of Santa Catarina (IFSC) (2000 - 2003)",
+          "details": "Basic education."
+        },
+        "es-ES": {
+          "degree": "Educación Secundaria",
+          "institution": "Instituto Federal de Santa Catarina (IFSC) (2000 - 2003)",
+          "details": "Educación básica."
+        },
+        "it-IT": {
+          "degree": "Scuola Superiore",
+          "institution": "Istituto Federale di Santa Catarina (IFSC) (2000 - 2003)",
+          "details": "Istruzione di base."
+        },
+        "de-DE": {
+          "degree": "Abitur / Gymnasium",
+          "institution": "Bundesinstitut von Santa Catarina (IFSC) (2000 - 2003)",
+          "details": "Grundausbildung."
+        }
+      }
+    }
+  ],
+  "certifications": [
+    {
+      "icon": "<svg class=\"w-6 h-6 text-yellow-400 min-w-max\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z\"></path></svg>",
+      "issued": "2026-05-13",
+      "expires": "2029-05-13",
+      "translations": {
+        "pt-BR": {
+          "title": "Certificação AWS Certified AI Practitioner (2026)",
+          "description": "Compreensão de conceitos, métodos e estratégias de IA, ML e IA generativa na AWS. Capacidade de determinar tecnologias de IA/ML para casos de uso específicos e uso responsável de IA generativa."
+        },
+        "en-US": {
+          "title": "AWS Certified AI Practitioner Certification (2026)",
+          "description": "Understanding of AI, ML, and generative AI concepts, methods, and strategies on AWS. Ability to determine AI/ML technologies for specific use cases and responsible use of generative AI."
+        },
+        "es-ES": {
+          "title": "Certificación AWS Certified AI Practitioner (2026)",
+          "description": "Comprensión de conceptos, métodos y estrategias de IA, ML e IA generativa en AWS. Capacidad para determinar tecnologías de IA/ML para casos de uso específicos y uso responsable de IA generativa."
+        },
+        "it-IT": {
+          "title": "Certificazione AWS Certified AI Practitioner (2026)",
+          "description": "Comprensione di concetti, metodi e strategie di IA, ML e IA generativa su AWS. Capacità di determinare tecnologie IA/ML per casi d'uso specifici e uso responsabile dell'IA generativa."
+        },
+        "de-DE": {
+          "title": "AWS Certified AI Practitioner Zertifizierung (2026)",
+          "description": "Verständnis von KI-, ML- und generativen KI-Konzepten, Methoden und Strategien auf AWS. Fähigkeit, KI/ML-Technologien für spezifische Anwendungsfälle zu bestimmen und verantwortungsbewusster Einsatz von generativer KI."
+        }
+      }
+    },
+    {
+      "icon": "<svg class=\"w-6 h-6 text-yellow-400 min-w-max\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z\"></path></svg>",
+      "translations": {
+        "pt-BR": "Certificação AWS Cloud Architect (2025)",
+        "en-US": "AWS Cloud Architect Certification (2025)",
+        "es-ES": "Certificación AWS Cloud Architect (2025)",
+        "it-IT": "Certificazione AWS Cloud Architect (2025)",
+        "de-DE": "AWS Cloud Architect Zertifizierung (2025)"
+      }
+    },
+    {
+      "icon": "<svg class=\"w-6 h-6 text-yellow-400 min-w-max\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z\"></path></svg>",
+      "translations": {
+        "pt-BR": "Certificação AWS Cloud Practitioner (2022)",
+        "en-US": "AWS Cloud Practitioner Certification (2022)",
+        "es-ES": "Certificación AWS Cloud Practitioner (2022)",
+        "it-IT": "Certificazione AWS Cloud Practitioner (2022)",
+        "de-DE": "AWS Cloud Practitioner Zertifizierung (2022)"
+      }
+    },
+    {
+      "icon": "<svg class=\"w-6 h-6 text-sky-400 min-w-max\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z\"></path></svg>",
+      "translations": {
+        "pt-BR": "LGPD na Prática - Governança de TI (2020)",
+        "en-US": "LGPD in Practice - IT Governance (2020)",
+        "es-ES": "LGPD en la Práctica - Gobernanza de TI (2020)",
+        "it-IT": "LGPD nella Pratica - Governance IT (2020)",
+        "de-DE": "LGPD in der Praxis - IT-Governance (2020)"
+      }
+    },
+    {
+      "icon": "<svg class=\"w-6 h-6 text-sky-400 min-w-max\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M13 10V3L4 14h7v7l9-11h-7z\"></path></svg>",
+      "translations": {
+        "pt-BR": "Formação Gestão Ágil de Projetos",
+        "en-US": "Agile Project Management Training",
+        "es-ES": "Formación en Gestión Ágil de Proyectos",
+        "it-IT": "Formazione in Gestione Agile dei Progetti",
+        "de-DE": "Schulung zum agilen Projektmanagement"
+      }
+    },
+    {
+      "icon": "<svg class=\"w-6 h-6 text-sky-400 min-w-max\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z\"></path></svg>",
+      "translations": {
+        "pt-BR": "Gestão da Continuidade de Negócios / Segurança (2018)",
+        "en-US": "Business Continuity / Security Management (2018)",
+        "es-ES": "Gestión de Continuidad de Negocio / Seguridad (2018)",
+        "it-IT": "Gestione della Continuità Operativa / Sicurezza (2018)",
+        "de-DE": "Business Continuity / Sicherheitsmanagement (2018)"
+      }
+    },
+    {
+      "icon": "<svg class=\"w-6 h-6 text-sky-400 min-w-max\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4\"></path></svg>",
+      "translations": {
+        "pt-BR": "Formação Gestão da Biblioteca de Infra (ITIL)",
+        "en-US": "Infrastructure Library Management Training (ITIL)",
+        "es-ES": "Formación en Gestión de la Biblioteca de Infraestructura (ITIL)",
+        "it-IT": "Formazione in Gestione della Biblioteca di Infrastruttura (ITIL)",
+        "de-DE": "Schulung zum Management der Infrastrukturbibliothek (ITIL)"
+      }
+    },
+    {
+      "icon": "<svg class=\"w-6 h-6 text-sky-400 min-w-max\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z\"></path></svg>",
+      "translations": {
+        "pt-BR": "Planejamento e Gestão Estratégica de TI (2018)",
+        "en-US": "IT Strategic Planning and Management (2018)",
+        "es-ES": "Planificación y Gestión Estratégica de TI (2018)",
+        "it-IT": "Pianificazione e Gestione Strategica IT (2018)",
+        "de-DE": "IT-Strategieplanung und -management (2018)"
+      }
+    },
+    {
+      "icon": "<svg class=\"w-6 h-6 text-sky-400 min-w-max\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z\"></path></svg>",
+      "translations": {
+        "pt-BR": "Desenvolvimento Web com HTML, CSS e JS - Caelum (2013)",
+        "en-US": "Web Development with HTML, CSS and JS - Caelum (2013)",
+        "es-ES": "Desarrollo Web con HTML, CSS y JS - Caelum (2013)",
+        "it-IT": "Sviluppo Web con HTML, CSS e JS - Caelum (2013)",
+        "de-DE": "Webentwicklung mit HTML, CSS und JS - Caelum (2013)"
+      }
+    },
+    {
+      "icon": "<svg class=\"w-6 h-6 text-sky-400 min-w-max\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z\"></path></svg>",
+      "translations": {
+        "pt-BR": "Administração de Sistemas Linux (2010)",
+        "en-US": "Linux Systems Administration (2010)",
+        "es-ES": "Administración de Sistemas Linux (2010)",
+        "it-IT": "Amministrazione di Sistemi Linux (2010)",
+        "de-DE": "Linux-Systemadministration (2010)"
+      }
+    },
+    {
+      "icon": "<svg class=\"w-6 h-6 text-sky-400 min-w-max\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z\"></path></svg>",
+      "translations": {
+        "pt-BR": "AWS Academy Cloud Foundations",
+        "en-US": "AWS Academy Cloud Foundations",
+        "es-ES": "AWS Academy Cloud Foundations",
+        "it-IT": "AWS Academy Cloud Foundations",
+        "de-DE": "AWS Academy Cloud Foundations"
+      }
+    },
+    {
+      "icon": "<svg class=\"w-6 h-6 text-yellow-400 min-w-max\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z\"></path></svg>",
+      "translations": {
+        "pt-BR": "Empresa Destaque - Sinapse da Inovação V (2015)",
+        "en-US": "Standout Company - Sinapse da Inovação V (2015)",
+        "es-ES": "Empresa Destacada - Sinapse da Inovação V (2015)",
+        "it-IT": "Azienda di Spicco - Sinapse da Inovação V (2015)",
+        "de-DE": "Herausragendes Unternehmen - Sinapse da Inovação V (2015)"
+      }
+    },
+    {
+      "icon": "<svg class=\"w-6 h-6 text-yellow-400 min-w-max\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z\"></path></svg>",
+      "translations": {
+        "pt-BR": "Prêmio Júnior 100% - JCI (2012)",
+        "en-US": "100% Junior Award - JCI (2012)",
+        "es-ES": "Premio Júnior 100% - JCI (2012)",
+        "it-IT": "Premio Junior 100% - JCI (2012)",
+        "de-DE": "100% Junior Auszeichnung - JCI (2012)"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "translations": {
+        "pt-BR": {
+          "title": "Plataforma Institucional de Inteligência Artificial",
+          "context": "IFSC (2025 - Atual)",
+          "description": "Coordenação técnica para arquitetura, prototipação e implantação de uma plataforma centralizada de aplicativos baseados em Inteligência Artificial para otimização de rotinas e suporte à decisão no setor público."
+        },
+        "en-US": {
+          "title": "Institutional Artificial Intelligence Platform",
+          "context": "IFSC (2025 - Present)",
+          "description": "Technical coordination for the architecture, prototyping, and implementation of a centralized platform for Artificial Intelligence-based applications to optimize routines and decision support in the public sector."
+        },
+        "es-ES": {
+          "title": "Plataforma Institucional de Inteligencia Artificial",
+          "context": "IFSC (2025 - Actual)",
+          "description": "Coordinación técnica para la arquitectura, prototipado e implementación de una plataforma centralizada de aplicaciones basadas en Inteligencia Artificial para la optimización de rutinas y apoyo a la toma de decisiones en el sector público."
+        },
+        "it-IT": {
+          "title": "Piattaforma Istituzionale di Intelligenza Artificiale",
+          "context": "IFSC (2025 - Attuale)",
+          "description": "Coordinamento tecnico per l'architettura, la prototipazione e l'implementazione di una piattaforma centralizzata per applicazioni basate sull'Intelligenza Artificiale per l'ottimizzazione delle routine e il supporto decisionale nel settore pubblico."
+        },
+        "de-DE": {
+          "title": "Institutionelle Plattform für künstliche Intelligenz",
+          "context": "IFSC (2025 - Heute)",
+          "description": "Technische Koordination für Architektur, Prototyping und Implementierung einer zentralisierten Plattform für auf künstlicher Intelligenz basierende Anwendungen zur Optimierung von Routinen und Entscheidungsunterstützung im öffentlichen Sektor."
+        }
+      }
+    },
+    {
+      "translations": {
+        "pt-BR": {
+          "title": "Implementação e Governança do PGD",
+          "context": "IFSC (2023)",
+          "description": "Projeto de transformação digital voltado à implementação do teletrabalho e gestão por resultados (PGD), atuando na modelagem de sistemas e fluxos."
+        },
+        "en-US": {
+          "title": "Implementation and Governance of PGD",
+          "context": "IFSC (2023)",
+          "description": "Digital transformation project aimed at implementing telework and management by results (PGD), working on systems and workflows modeling."
+        },
+        "es-ES": {
+          "title": "Implementación y Gobernanza del PGD",
+          "context": "IFSC (2023)",
+          "description": "Proyecto de transformación digital destinado a la implementación del teletrabajo y la gestión por resultados (PGD), trabajando en la modelización de sistemas y flujos."
+        },
+        "it-IT": {
+          "title": "Implementazione e Governance del PGD",
+          "context": "IFSC (2023)",
+          "description": "Progetto di trasformazione digitale volto all'implementazione del telelavoro e della gestione per risultati (PGD), lavorando sulla modellazione di sistemi e flussi."
+        },
+        "de-DE": {
+          "title": "Umsetzung und Governance des PGD",
+          "context": "IFSC (2023)",
+          "description": "Digitales Transformationsprojekt zur Implementierung von Telearbeit und ergebnisorientiertem Management (PGD), das an der Modellierung von Systemen und Abläufen arbeitet."
+        }
+      }
+    },
+    {
+      "translations": {
+        "pt-BR": {
+          "title": "Adequação do IFSC à LGPD",
+          "context": "Coordenação do GT LGPD (2022)",
+          "description": "Coordenação do Grupo de Trabalho culminando na publicação do Plano de Adequação à Lei Geral de Proteção de Dados e diretrizes de privacidade."
+        },
+        "en-US": {
+          "title": "Adaptation of IFSC to LGPD",
+          "context": "Coordination of LGPD WG (2022)",
+          "description": "Coordination of the Working Group culminating in the publication of the General Data Protection Law Adaptation Plan and privacy guidelines."
+        },
+        "es-ES": {
+          "title": "Adecuación del IFSC a la LGPD",
+          "context": "Coordinación del GT LGPD (2022)",
+          "description": "Coordinación del Grupo de Trabajo que culminó en la publicación del Plan de Adecuación a la Ley General de Protección de Datos y directrices de privacidad."
+        },
+        "it-IT": {
+          "title": "Adeguamento dell'IFSC al LGPD",
+          "context": "Coordinamento del GL LGPD (2022)",
+          "description": "Coordinamento del Gruppo di Lavoro culminato nella pubblicazione del Piano di Adeguamento alla Legge Generale sulla Protezione dei Dati e delle linee guida sulla privacy."
+        },
+        "de-DE": {
+          "title": "Anpassung des IFSC an die LGPD",
+          "context": "Koordination der LGPD-Arbeitsgruppe (2022)",
+          "description": "Koordination der Arbeitsgruppe, die in der Veröffentlichung des Anpassungsplans für das Allgemeine Datenschutzgesetz und der Datenschutzrichtlinien gipfelte."
+        }
+      }
+    }
+  ],
+  "events": [
+    {
+      "translations": {
+        "pt-BR": {
+          "title": "SEPOC 2015",
+          "role": "Participante",
+          "details": "9º Seminário de Eletrônica de Potência e Controle."
+        },
+        "en-US": {
+          "title": "SEPOC 2015",
+          "role": "Participant",
+          "details": "9th Power Electronics and Control Seminar."
+        },
+        "es-ES": {
+          "title": "SEPOC 2015",
+          "role": "Participante",
+          "details": "9º Seminario de Electrónica de Potencia y Control."
+        },
+        "it-IT": {
+          "title": "SEPOC 2015",
+          "role": "Partecipante",
+          "details": "9º Seminario di Elettronica di Potenza e Controllo."
+        },
+        "de-DE": {
+          "title": "SEPOC 2015",
+          "role": "Teilnehmer",
+          "details": "9. Seminar für Leistungselektronik und Steuerung."
+        }
+      }
+    },
+    {
+      "translations": {
+        "pt-BR": {
+          "title": "Semana Nacional de C&T",
+          "role": "Expositor (2014)",
+          "details": "Apresentação: Equipamento de Proteção Elétrica Bivolt."
+        },
+        "en-US": {
+          "title": "National S&T Week",
+          "role": "Exhibitor (2014)",
+          "details": "Presentation: Bivolt Electrical Protection Equipment."
+        },
+        "es-ES": {
+          "title": "Semana Nacional de C&T",
+          "role": "Expositor (2014)",
+          "details": "Presentación: Equipo de Protección Eléctrica Bivolt."
+        },
+        "it-IT": {
+          "title": "Settimana Nazionale di S&T",
+          "role": "Espositore (2014)",
+          "details": "Presentazione: Apparecchiatura di Protezione Elettrica Bivolt."
+        },
+        "de-DE": {
+          "title": "Nationale W&T-Woche",
+          "role": "Aussteller (2014)",
+          "details": "Präsentation: Bivolt-Elektroschutzausrüstung."
+        }
+      }
+    },
+    {
+      "translations": {
+        "pt-BR": {
+          "title": "Eventos JCI & Liderança",
+          "role": "Organizador/Participante (2012-2015)",
+          "details": "Congresso Mundial JCI Rio 2013, TEDxUFSC 2013, entre outros."
+        },
+        "en-US": {
+          "title": "JCI & Leadership Events",
+          "role": "Organizer/Participant (2012-2015)",
+          "details": "JCI World Congress Rio 2013, TEDxUFSC 2013, among others."
+        },
+        "es-ES": {
+          "title": "Eventos JCI & Liderazgo",
+          "role": "Organizador/Participante (2012-2015)",
+          "details": "Congreso Mundial JCI Río 2013, TEDxUFSC 2013, entre otros."
+        },
+        "it-IT": {
+          "title": "Eventi JCI & Leadership",
+          "role": "Organizzatore/Partecipante (2012-2015)",
+          "details": "Congresso Mondiale JCI Rio 2013, TEDxUFSC 2013, tra gli altri."
+        },
+        "de-DE": {
+          "title": "JCI & Leadership Events",
+          "role": "Organisator/Teilnehmer (2012-2015)",
+          "details": "JCI-Weltkongress Rio 2013, TEDxUFSC 2013, unter anderem."
+        }
+      }
+    }
+  ]
+}
