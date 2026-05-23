@@ -4,14 +4,14 @@
 - **Framework**: Astro 6.x (configured with Tailwind CSS and Sitemap integrations)
 - **Styling**: Tailwind CSS (CDN in legacy pages, Tailwind package in Astro pages)
 - **Deployment**:
-  - **GitHub Pages**: Serves `master` branch at `farleir.com` / `www.farleir.com` (Legacy portfolio)
-  - **Cloudflare Pages**: Serves `gh-pages` branch at `dev.farleir.com` / `farleir-github-com.pages.dev`
+  - **GitHub Pages**: Serves `gh-pages` branch at `farleir.com` / `www.farleir.com`
+  - **Cloudflare Pages**: Serves `master` branch at `dev.farleir.com` / `farleir-github-com.pages.dev`
 - **Asset/Routing Override**: Static legacy files placed in `public/` (e.g. `public/index.html`, `public/images/`) take precedence over compiled Astro routes in `src/pages/` during the Astro build step.
 
 ## Branch Strategy & Environment Setup
-- **`master` branch**: Contains the legacy single-page portfolio. Hosted on GitHub Pages.
-- **`gh-pages` branch**: Contains the Astro-based hub project. Hosted on Cloudflare Pages.
-- **Testing Copy**: To test SEO changes, WhatsApp link previews, and metadata updates before modifying `master` (production), we copy files from the `legacy/` directory to the Astro `public/` directory on the `gh-pages` branch. This makes `dev.farleir.com` render a copy of the portfolio page.
+- **`gh-pages` branch**: The production branch containing the Astro-based project. Hosted on GitHub Pages.
+- **`master` branch**: The development/staging branch containing staging overrides. Hosted on Cloudflare Pages.
+- **Promotion to Production**: Changes are implemented and tested on `master` branch (deploying to `dev.farleir.com`). Once validated, `master` is merged into `gh-pages` and pushed to GitHub to deploy to production (`farleir.com`).
 - **Local Paths Note**: Avoid running heavy Node operations or builds inside virtual directories (like Google Drive). Instead, clone/work on the local SSD path `C:\Repos\Pessoal\farleir.github.com\` if needed, or run light git operations in `i:\Meu Drive\Antigravity\farleir.github.com`.
 
 ## Code Style & SEO Guidelines
